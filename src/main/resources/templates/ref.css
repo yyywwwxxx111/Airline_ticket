@@ -1,0 +1,25 @@
+/*移动按钮*/
+#btn1{
+    position:relative;
+    top:10px;
+    left:10px;
+    border-radius: 8px;
+}
+#btn1:hover {
+    background-color: dodgerblue; /* Green */
+    color: white;
+}
+#btn2{
+    position:relative;
+    top:10px;
+    left:18px;
+    border-radius:8px;
+}
+#btn2:hover {
+    background-color: dodgerblue; /* Green */
+    color: white;
+}
+/*移动菜单*/
+#menu1{
+    margin-right: 50px;
+}
