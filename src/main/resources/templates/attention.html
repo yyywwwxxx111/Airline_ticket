@@ -44,12 +44,9 @@
                 <span class="sr-only">Toggle navigation</span>
             </a>
 
-            <div class="navbar-custom-menu">
+            <div class="navbar-custom-menu" id="menu1">
                 <ul class="nav navbar-nav">
-                    <li type="button" onclick="DoLogin()" style="cursor:pointer;color: #9c6f08">
-                        <button style="background-color: #532b07">您好,请登录
-                        </button>
-                    </li>
+
                     <!-- Messages: style can be found in dropdown.less-->
                     <li class="dropdown messages-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -293,6 +290,12 @@
                     <li>
                         <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
                     </li>
+                    <li>
+                        <button id="btn1" type="button" class="btn btn-block btn-sm">注册</button>
+                    </li>
+                    <li>
+                        <button id="btn2" type="button" class="btn btn-block btn-sm">登陆</button>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -333,7 +336,7 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li class="active"><a href="#"><i class="fa  fa-internet-explorer"></i>搜索功能</a></li>
+                        <li class="active"><a href="first_page/index.html"><i class="fa  fa-internet-explorer"></i>搜索功能</a></li>
                         <li calss="active"><a href="airline/map.html"><i class="fa fa-plane"></i>世界地图</a></li>
                         <!--解决点击之后tag未亮问题-->
                     </ul>
@@ -383,109 +386,108 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                ChartJS
-                <small>Preview sample</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="#">Charts</a></li>
-                <li class="active">ChartJS</li>
-            </ol>
-        </section>
 
-        <!-- Main content -->
-        <section class="content">
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- AREA CHART -->
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Area Chart</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body">
-                            <div class="chart">
-                                <canvas id="areaChart" style="height:250px"></canvas>
-                            </div>
-                        </div>
-                        <!-- /.box-body -->
+        <!--文本编辑-->
+        <div style="width:800px">
+            <h3><b>旅客注意事项</b></h3>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseOne">
+                                行李须知
+                            </a>
+                        </h4>
                     </div>
-                    <!-- /.box -->
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <p> 1、烟花、爆竹、打火机这些易燃物品是绝对不能随身携带的（也不能托运）。</p>
+                            <p>2、酒精是不能随身携带的，但是可以行李托运（最好不要带太多）。</p>
+                            <p>3、饮料是不能带的，你要是想在过安检之前买一些饮品进去候机室喝的话，还是省了吧，因为过安检时检查人员会让把东西扔掉或者喝掉它。</p>
+                            <p>4、化妆品是很多女生都会带的，但是不能带太多，要控制在100ml的范围内（是总容量在100ml以内），不是内里东西的容量，而是瓶子的体积容量，还要装在一个密封袋子里（药油也是一样），超过了就要托运。</p>
+                            <p> 5、手机、相机、手提电脑、便携式摄像机等个人自用电池可以随身携带，但不可以托运,小剪刀、水果刀、剃须刀、修眉刀、菜刀等生活用刀都必须托运。</p>
+                            <p>6、还有一些放射性物品、有毒物品、国家法律规定禁运的不能随身携带和托运的物品。</p>
+                            <p>7、香气清新剂、摩丝、杀虫剂等含有易燃物质的铁瓶装的不能带，也不能托运。</p>
 
-                    <!-- DONUT CHART -->
-                    <div class="box box-danger">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Donut Chart</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
+                            </p>
                         </div>
-                        <div class="box-body">
-                            <canvas id="pieChart" style="height:250px"></canvas>
-                        </div>
-                        <!-- /.box-body -->
                     </div>
-                    <!-- /.box -->
-
                 </div>
-                <!-- /.col (LEFT) -->
-                <div class="col-md-6">
-                    <!-- LINE CHART -->
-                    <div class="box box-info">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Line Chart</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body">
-                            <div class="chart">
-                                <canvas id="lineChart" style="height:250px"></canvas>
-                            </div>
-                        </div>
-                        <!-- /.box-body -->
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseTwo">
+                                注意事项
+                            </a>
+                        </h4>
                     </div>
-                    <!-- /.box -->
-
-                    <!-- BAR CHART -->
-                    <div class="box box-success">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Bar Chart</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>1、别进食过饱，少吃油腻食物。
+                                人在空中胃肠血液供给相对减少，消化功能减弱，乘机前吃得过饱或吃油腻食物过多，不仅容易消化不良，还会增加心脏和血液循环负担，引起头晕、恶心，严重者可致心脑血管意外。</p>
+                            <p> 2、别空腹乘机。
+                                高空飞行使血糖消耗增加，空腹易发生低血糖，出现头晕、心悸、出汗等不适。</p>
+                            <p>3、适当吃甜食。
+                                乘机时尤其初乘机者因精神紧张、缺氧，体内耗糖量会增加。乘机前适当吃糖果、巧克力、果酱等甜食，有助于维持体内血糖水平和能量供应，增强在空中的耐缺氧能力。
+                                糖尿病人在选择航空旅行前，一定要对自己的健康有一个较好的评价和估计。如果血糖没有得到很好的控制，最好暂时取消飞行。同时，如果出现了酮症酸中毒，频发心律失常或合并高血压、肾衰竭、甲亢，以及神经病变等并发症，或者出现了心脑血管意外处于手术恢复期，都不适宜航空旅行。
+                            </p>
                         </div>
-                        <div class="box-body">
-                            <div class="chart">
-                                <canvas id="barChart" style="height:230px"></canvas>
-                            </div>
-                        </div>
-                        <!-- /.box-body -->
                     </div>
-                    <!-- /.box -->
-
                 </div>
-                <!-- /.col (RIGHT) -->
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseThree">
+                                温馨提示-坐飞机适合带什么零食
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>1. 饼干面包</p>
+                                <p>有的人吃不惯飞机上的餐点，那么可以自己带一些能饱腹的食物，比如饼干、面包、蛋糕等零食，饿的时候吃一点，也是能撑到下机的时间的。
+                            </p>
+                            <p> 2. 口香糖</p>
+                                <p>  有的人会有晕机的现象，尤其是耳朵不适应气压，建议带上一些口香糖上飞机，觉得不舒服的时候嚼一下舒缓恶心感，转移注意力。可以吃薄荷味的口香糖，薄荷味清爽的味道有提神醒脑的作用，或者直接带一些薄荷糖也可以。
+                              </p>
+                            <p>3. 水果干</p>
+                                <p>   飞机上带新鲜的水果会不方便，每个人只能带5kg以内的水果，那么不妨用水果干来替代新鲜的水果，方便携带还不占位置。水果干的品类有多种，比如芒果干、草莓干、香蕉干、猕猴桃干等。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <!-- /.row -->
+            <script type="text/javascript">
+                $(function () { $('#collapseFour').collapse({
+                    toggle: false
+                })});
+                $(function () { $('#collapseTwo').collapse('show')});
+                $(function () { $('#collapseThree').collapse('toggle')});
+                $(function () { $('#collapseOne').collapse('hide')});
+            </script>
 
-        </section>
+
+
+
+
+
+        </div>
+        <div>
+            <div class="process_hd"><h3 class="t">出发</h3><span class="note">Departure</span></div>
+            <img src="tour1.png">
+            <img src="tour3.png">
+        </div>
+
+        <div>
+            <div class="process_hd"><h3 class="t">到达</h3><span class="note">Arriva</span></div>
+            <img src="tour2.png">
+            <img src="tour4.png">
+        </div>
+
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->

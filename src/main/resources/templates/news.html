@@ -45,12 +45,9 @@
                 <span class="sr-only">Toggle navigation</span>
             </a>
 
-            <div class="navbar-custom-menu">
+            <div class="navbar-custom-menu" id="menu1">
                 <ul class="nav navbar-nav">
-                    <li type="button" onclick="DoLogin()" style="cursor:pointer;color: #9c6f08">
-                        <button style="background-color: #532b07">您好,请登录
-                        </button>
-                    </li>
+
                     <!-- Messages: style can be found in dropdown.less-->
                     <li class="dropdown messages-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -294,6 +291,12 @@
                     <li>
                         <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
                     </li>
+                    <li>
+                        <button id="btn1" type="button" class="btn btn-block btn-sm">注册</button>
+                    </li>
+                    <li>
+                        <button id="btn2" type="button" class="btn btn-block btn-sm">登陆</button>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -334,7 +337,7 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li class="active"><a href="#"><i class="fa  fa-internet-explorer"></i>搜索功能</a></li>
+                        <li class="active"><a href="first_page/index.html"><i class="fa  fa-internet-explorer"></i>搜索功能</a></li>
                         <li calss="active"><a href="airline/map.html"><i class="fa fa-plane"></i>世界地图</a></li>
                         <!--解决点击之后tag未亮问题-->
                     </ul>
@@ -383,111 +386,503 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                ChartJS
-                <small>Preview sample</small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li><a href="#">Charts</a></li>
-                <li class="active">ChartJS</li>
-            </ol>
-        </section>
 
-        <!-- Main content -->
-        <section class="content">
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- AREA CHART -->
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Area Chart</h3>
+        <div class="header-logo" align="center">
+            <img src="can.jpg" alt="" >
+        </div>
 
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body">
-                            <div class="chart">
-                                <canvas id="areaChart" style="height:250px"></canvas>
-                            </div>
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
+        <main class="main" style="width: 500px">
+            <div class="main-news clearfix">
+                <!-- 区块 轮播图 -->
 
-                    <!-- DONUT CHART -->
-                    <div class="box box-danger">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Donut Chart</h3>
+                <!-- ID 4} -->
+                <div class="news-banner fl" id="newsBanner">
+                    <a href="http://www.cannews.com.cn/2020/07/24/99307982.html" target="_blank" title="组图">
+                        <img src="can.jpg" alt="">
+                        <p>组图</p>
+                    </a>
 
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body">
-                            <canvas id="pieChart" style="height:250px"></canvas>
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
 
                 </div>
-                <!-- /.col (LEFT) -->
-                <div class="col-md-6">
-                    <!-- LINE CHART -->
-                    <div class="box box-info">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Line Chart</h3>
+                <!--轮播图-->
 
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body">
-                            <div class="chart">
-                                <canvas id="lineChart" style="height:250px"></canvas>
-                            </div>
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-
-                    <!-- BAR CHART -->
-                    <div class="box box-success">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Bar Chart</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                </button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="box-body">
-                            <div class="chart">
-                                <canvas id="barChart" style="height:230px"></canvas>
-                            </div>
-                        </div>
-                        <!-- /.box-body -->
-                    </div>
-                    <!-- /.box -->
-
-                </div>
-                <!-- /.col (RIGHT) -->
             </div>
-            <!-- /.row -->
 
-        </section>
-        <!-- /.content -->
+
+            <!--photos-->
+            <!-- 区块 图集 -->
+
+            <!-- ID 8} -->
+            <script>
+                (function() {
+                    var s = "_" + Math.random().toString(36).slice(2);
+                    document.write('<div id="' + s + '"></div>');
+                    (window.slotbydup=window.slotbydup || []).push({
+                        id: '5894237',
+                        container: s,
+                        size: '1200,90',
+                        display: 'inlay-fix'
+                    });
+                })();
+            </script><div id="_y12suf5xek"></div>
+            <div class="main-module main-photos">
+                <h3 class="module-title">
+                    <a href="/photo.html">图集/Photos</a>
+                </h3>
+                <!-- 栏目列表-->
+
+
+
+                <ul>
+                    <li>
+                        <a href="http://www.cannews.com.cn/2020/07/24/99307934.html" target="_blank" title="" class="img-box">
+                            <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/8459ca7f52c321187b814ec799d75923.jpg" alt="" title="组图：航空工业哈飞AC352直升机转场石家庄栾城机场">
+                        </a>
+                        <p><a href="http://www.cannews.com.cn/2020/07/24/99307934.html" target="_blank" title="组图：航空工业哈飞AC352直升机转场石家庄栾城机场">组图：航空工业哈飞AC352直升机转场石家庄栾城机场</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://www.cannews.com.cn/2020/07/24/99307920.html" target="_blank" title="" class="img-box">
+                            <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/f1391e55d00004fe975b78f9c5d5777a.jpg" alt="" title="组图：空中加油！他们在云端“穿针引线”">
+                        </a>
+                        <p><a href="http://www.cannews.com.cn/2020/07/24/99307920.html" target="_blank" title="组图：空中加油！他们在云端“穿针引线”">组图：空中加油！他们在云端“穿针引线”</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://www.cannews.com.cn/2020/07/24/99307916.html" target="_blank" title="" class="img-box">
+                            <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/44796eb91149523d4cd1a0d5102ccab1.jpg" alt="" title="组图：海天猎鲨 训练热图新鲜出炉！">
+                        </a>
+                        <p><a href="http://www.cannews.com.cn/2020/07/24/99307916.html" target="_blank" title="组图：海天猎鲨 训练热图新鲜出炉！">组图：海天猎鲨 训练热图新鲜出炉！</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://www.cannews.com.cn/2020/07/24/99307904.html" target="_blank" title="" class="img-box">
+                            <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/65c4ed964f46da43b857db3b73d41f37.png" alt="" title="组图：连续多日！海军航空兵某轰炸机团开展昼夜间飞行训练">
+                        </a>
+                        <p><a href="http://www.cannews.com.cn/2020/07/24/99307904.html" target="_blank" title="组图：连续多日！海军航空兵某轰炸机团开展昼夜间飞行训练">组图：连续多日！海军航空兵某轰炸机团开展昼夜间飞行训练</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--图集-->
+            <!-- 区块 广告二 -->
+
+            <!-- ID 7} -->
+            <div class="adver">
+                <a href="javascript:;" target="_blank" title="">
+                    <img src="can.jpg" alt="">
+                </a>
+            </div>
+            <!--广告二-->
+            <!--video-->
+            <!-- 区块 视频 -->
+
+            <!-- ID 9} -->
+            <script>
+                (function() {
+                    var s = "_" + Math.random().toString(36).slice(2);
+                    document.write('<div id="' + s + '"></div>');
+                    (window.slotbydup=window.slotbydup || []).push({
+                        id: '5894238',
+                        container: s,
+                        size: '1200,90',
+                        display: 'inlay-fix'
+                    });
+                })();
+            </script><div id="_mx4lpqm7vva"></div>
+            <div class="main-module main-videos">
+                <h3 class="module-title">
+                    <a href="/video.html" target="_blank" title="">视频/Video</a>
+                </h3>
+                <ul>
+                    <!--
+
+
+                     -->
+                    <li>
+                        <a href="http://www.cannews.com.cn/2020/07/24/99308046.html" target="_blank" title="" class="img-box">
+                            <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/112504925cdefcabf3c8adcdf39bd918.jpg" alt="" title="视频：AG600丨大片来袭" 敬请期待！="" ""="">
+                            <i></i>
+                        </a>
+                        <p><a href="http://www.cannews.com.cn/2020/07/24/99308046.html" target="_blank" title="视频：AG600丨大片来袭 敬请期待！">视频：AG600丨大片来袭 敬请期待！</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://www.cannews.com.cn/2020/07/24/99307967.html" target="_blank" title="" class="img-box">
+                            <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/34d019b17d891165193590b126dda266.jpg" alt="" title="视频：一周航空热点" 全球航空公司已倒闭23家="" ""="">
+                            <i></i>
+                        </a>
+                        <p><a href="http://www.cannews.com.cn/2020/07/24/99307967.html" target="_blank" title="视频：一周航空热点 全球航空公司已倒闭23家">视频：一周航空热点 全球航空公司已倒闭23家</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="http://www.cannews.com.cn/2020/07/24/99307939.html" target="_blank" title="" class="img-box">
+                            <img src="http://59.110.165.78:81/Resource_online//video/2007/24/c4d158b1868b9062ea9051b6e53e9d7e.jpg" alt="" title="视频：首架退役的KC-10的最后一次飞行" ""="">
+                            <i></i>
+                        </a>
+                        <p><a href="http://www.cannews.com.cn/2020/07/24/99307939.html" target="_blank" title="视频：首架退役的KC-10的最后一次飞行">视频：首架退役的KC-10的最后一次飞行</a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+            <!--视频-->
+            <script>
+                (function() {
+                    var s = "_" + Math.random().toString(36).slice(2);
+                    document.write('<div id="' + s + '"></div>');
+                    (window.slotbydup=window.slotbydup || []).push({
+                        id: '5894239',
+                        container: s,
+                        size: '1200,90',
+                        display: 'inlay-fix'
+                    });
+                })();
+            </script><div id="_fhq7ht29vu"></div>
+            <div class="main-module scroll-news clearfix">
+                <!--scrollNews-->
+                <div class="scroll-con fl">
+                    <h3 class="module-title">
+                        <a href="javascript:;" target="_blank" title="">滚动新闻/News</a>
+                    </h3>
+                    <ul class="news-box clearfix" id="list">
+                        <!--                         <li>
+                            <div class="img-box">
+                                <a href="javascript:;" target="_blank" title="">
+                                    <img src="http://www.cannews.com.cn//Public/cannews/img/default.jpg" alt="">
+                                </a>
+                            </div>
+                            <p class="news-title">
+                                <a href="javascript:;" target="_blank" title="">以色列宣布组建第二支F-35战斗机中队</a>
+                            </p>
+                            <p class="news-des">以色列空军第二支F-35战斗机中队</p>
+                            <div class="news-label">
+                                <a href="javascript:;">F-35</a>
+                                <a href="javascript:;">以色列</a>
+                                <span class="time">1小时前</span>
+                                <span class="share"></span>
+                            </div>
+                        </li> -->
+                        <li>
+                            <div class="img-box">
+                                <a href="http://www.cannews.com.cn/2020/07/25/99308053.html" target="_blank" title="">
+                                    <img src="http://59.110.165.78:81/Resource_online/ht/images/20200725/3c7b8ae632003407ea65a30de6362dde.jpg" alt="">
+                                </a>
+                            </div>
+                            <p class="news-title">
+                                <a href="http://www.cannews.com.cn/2020/07/25/99308053.html" target="_blank" title="">“鲲龙”拍了拍你：合影吗？</a>
+                            </p>
+                            <p class="news-des">伏天，高温，热。欲往迢迢浪里，袅袅云中，清凉。不如，先与“鲲龙”AG600合个影？心诚，则清凉。有龙“加持”，逢浪能航，生风则飞，心向往，必能至！</p>
+                            <div class="news-label">
+                                <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">AG600</span><span style="margin-right: 4px">鲲龙</span></a>
+                                <span class="time">2020-07-25</span>
+                                <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F25%2F99308053.html&amp;title=&amp;desc=%E4%BC%8F%E5%A4%A9%EF%BC%8C%E9%AB%98%E6%B8%A9%EF%BC%8C%E7%83%AD%E3%80%82%E6%AC%B2%E5%BE%80%E8%BF%A2%E8%BF%A2%E6%B5%AA%E9%87%8C%EF%BC%8C%E8%A2%85%E8%A2%85%E4%BA%91%E4%B8%AD%EF%BC%8C%E6%B8%85%E5%87%89%E3%80%82%E4%B8%8D%E5%A6%82%EF%BC%8C%E5%85%88%E4%B8%8E%E2%80%9C%E9%B2%B2%E9%BE%99%E2%80%9DAG600%E5%90%88%E4%B8%AA%E5%BD%B1%EF%BC%9F%E5%BF%83%E8%AF%9A%EF%BC%8C%E5%88%99%E6%B8%85%E5%87%89%E3%80%82%E6%9C%89%E9%BE%99%E2%80%9C%E5%8A%A0%E6%8C%81%E2%80%9D%EF%BC%8C%E9%80%A2%E6%B5%AA%E8%83%BD%E8%88%AA%EF%BC%8C%E7%94%9F%E9%A3%8E%E5%88%99%E9%A3%9E%EF%BC%8C%E5%BF%83%E5%90%91%E5%BE%80%EF%BC%8C%E5%BF%85%E8%83%BD%E8%87%B3%EF%BC%81&amp;summary=%E4%BC%8F%E5%A4%A9%EF%BC%8C%E9%AB%98%E6%B8%A9%EF%BC%8C%E7%83%AD%E3%80%82%E6%AC%B2%E5%BE%80%E8%BF%A2%E8%BF%A2%E6%B5%AA%E9%87%8C%EF%BC%8C%E8%A2%85%E8%A2%85%E4%BA%91%E4%B8%AD%EF%BC%8C%E6%B8%85%E5%87%89%E3%80%82%E4%B8%8D%E5%A6%82%EF%BC%8C%E5%85%88%E4%B8%8E%E2%80%9C%E9%B2%B2%E9%BE%99%E2%80%9DAG600%E5%90%88%E4%B8%AA%E5%BD%B1%EF%BC%9F%E5%BF%83%E8%AF%9A%EF%BC%8C%E5%88%99%E6%B8%85%E5%87%89%E3%80%82%E6%9C%89%E9%BE%99%E2%80%9C%E5%8A%A0%E6%8C%81%E2%80%9D%EF%BC%8C%E9%80%A2%E6%B5%AA%E8%83%BD%E8%88%AA%EF%BC%8C%E7%94%9F%E9%A3%8E%E5%88%99%E9%A3%9E%EF%BC%8C%E5%BF%83%E5%90%91%E5%BE%80%EF%BC%8C%E5%BF%85%E8%83%BD%E8%87%B3%EF%BC%81&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200725%2F3c7b8ae632003407ea65a30de6362dde.jpg" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F25%2F99308053.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E4%BC%8F%E5%A4%A9%EF%BC%8C%E9%AB%98%E6%B8%A9%EF%BC%8C%E7%83%AD%E3%80%82%E6%AC%B2%E5%BE%80%E8%BF%A2%E8%BF%A2%E6%B5%AA%E9%87%8C%EF%BC%8C%E8%A2%85%E8%A2%85%E4%BA%91%E4%B8%AD%EF%BC%8C%E6%B8%85%E5%87%89%E3%80%82%E4%B8%8D%E5%A6%82%EF%BC%8C%E5%85%88%E4%B8%8E%E2%80%9C%E9%B2%B2%E9%BE%99%E2%80%9DAG600%E5%90%88%E4%B8%AA%E5%BD%B1%EF%BC%9F%E5%BF%83%E8%AF%9A%EF%BC%8C%E5%88%99%E6%B8%85%E5%87%89%E3%80%82%E6%9C%89%E9%BE%99%E2%80%9C%E5%8A%A0%E6%8C%81%E2%80%9D%EF%BC%8C%E9%80%A2%E6%B5%AA%E8%83%BD%E8%88%AA%EF%BC%8C%E7%94%9F%E9%A3%8E%E5%88%99%E9%A3%9E%EF%BC%8C%E5%BF%83%E5%90%91%E5%BE%80%EF%BC%8C%E5%BF%85%E8%83%BD%E8%87%B3%EF%BC%81&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200725%2F3c7b8ae632003407ea65a30de6362dde.jpg&amp;summary=&quot;%E4%BC%8F%E5%A4%A9%EF%BC%8C%E9%AB%98%E6%B8%A9%EF%BC%8C%E7%83%AD%E3%80%82%E6%AC%B2%E5%BE%80%E8%BF%A2%E8%BF%A2%E6%B5%AA%E9%87%8C%EF%BC%8C%E8%A2%85%E8%A2%85%E4%BA%91%E4%B8%AD%EF%BC%8C%E6%B8%85%E5%87%89%E3%80%82%E4%B8%8D%E5%A6%82%EF%BC%8C%E5%85%88%E4%B8%8E%E2%80%9C%E9%B2%B2%E9%BE%99%E2%80%9DAG600%E5%90%88%E4%B8%AA%E5%BD%B1%EF%BC%9F%E5%BF%83%E8%AF%9A%EF%BC%8C%E5%88%99%E6%B8%85%E5%87%89%E3%80%82%E6%9C%89%E9%BE%99%E2%80%9C%E5%8A%A0%E6%8C%81%E2%80%9D%EF%BC%8C%E9%80%A2%E6%B5%AA%E8%83%BD%E8%88%AA%EF%BC%8C%E7%94%9F%E9%A3%8E%E5%88%99%E9%A3%9E%EF%BC%8C%E5%BF%83%E5%90%91%E5%BE%80%EF%BC%8C%E5%BF%85%E8%83%BD%E8%87%B3%EF%BC%81&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F25%2F99308053.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200725%2F3c7b8ae632003407ea65a30de6362dde.jpg&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/25/99308053.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                            </div>
+                        </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/25/99308051.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/ht/images/20200725/b1d5bde7efe0fc9970da75f1c3153cd3.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/25/99308051.html" target="_blank" title="">来，带你看龙虎山的这个“国内第一飞”</a>
+                        </p>
+                        <p class="news-des">“监测时间2020年7月21日下午3时01分，被测试人李大爷，性别男，年龄57周岁，测试血压90-130MMHG，心跳75次/分。AC311直升机已地面开车，马上开始起飞。”“收到，净空良好，同意起飞</p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">航空工业</span><span style="margin-right: 4px">昌飞</span></a>
+                            <span class="time">2020-07-25</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F25%2F99308051.html&amp;title=&amp;desc=%E2%80%9C%E7%9B%91%E6%B5%8B%E6%97%B6%E9%97%B42020%E5%B9%B47%E6%9C%8821%E6%97%A5%E4%B8%8B%E5%8D%883%E6%97%B601%E5%88%86%EF%BC%8C%E8%A2%AB%E6%B5%8B%E8%AF%95%E4%BA%BA%E6%9D%8E%E5%A4%A7%E7%88%B7%EF%BC%8C%E6%80%A7%E5%88%AB%E7%94%B7%EF%BC%8C%E5%B9%B4%E9%BE%8457%E5%91%A8%E5%B2%81%EF%BC%8C%E6%B5%8B%E8%AF%95%E8%A1%80%E5%8E%8B90-130MMHG%EF%BC%8C%E5%BF%83%E8%B7%B375%E6%AC%A1%2F%E5%88%86%E3%80%82AC311%E7%9B%B4%E5%8D%87%E6%9C%BA%E5%B7%B2%E5%9C%B0%E9%9D%A2%E5%BC%80%E8%BD%A6%EF%BC%8C%E9%A9%AC%E4%B8%8A%E5%BC%80%E5%A7%8B%E8%B5%B7%E9%A3%9E%E3%80%82%E2%80%9D%E2%80%9C%E6%94%B6%E5%88%B0%EF%BC%8C%E5%87%80%E7%A9%BA%E8%89%AF%E5%A5%BD%EF%BC%8C%E5%90%8C%E6%84%8F%E8%B5%B7%E9%A3%9E&amp;summary=%E2%80%9C%E7%9B%91%E6%B5%8B%E6%97%B6%E9%97%B42020%E5%B9%B47%E6%9C%8821%E6%97%A5%E4%B8%8B%E5%8D%883%E6%97%B601%E5%88%86%EF%BC%8C%E8%A2%AB%E6%B5%8B%E8%AF%95%E4%BA%BA%E6%9D%8E%E5%A4%A7%E7%88%B7%EF%BC%8C%E6%80%A7%E5%88%AB%E7%94%B7%EF%BC%8C%E5%B9%B4%E9%BE%8457%E5%91%A8%E5%B2%81%EF%BC%8C%E6%B5%8B%E8%AF%95%E8%A1%80%E5%8E%8B90-130MMHG%EF%BC%8C%E5%BF%83%E8%B7%B375%E6%AC%A1%2F%E5%88%86%E3%80%82AC311%E7%9B%B4%E5%8D%87%E6%9C%BA%E5%B7%B2%E5%9C%B0%E9%9D%A2%E5%BC%80%E8%BD%A6%EF%BC%8C%E9%A9%AC%E4%B8%8A%E5%BC%80%E5%A7%8B%E8%B5%B7%E9%A3%9E%E3%80%82%E2%80%9D%E2%80%9C%E6%94%B6%E5%88%B0%EF%BC%8C%E5%87%80%E7%A9%BA%E8%89%AF%E5%A5%BD%EF%BC%8C%E5%90%8C%E6%84%8F%E8%B5%B7%E9%A3%9E&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200725%2Fb1d5bde7efe0fc9970da75f1c3153cd3.jpg" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F25%2F99308051.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E2%80%9C%E7%9B%91%E6%B5%8B%E6%97%B6%E9%97%B42020%E5%B9%B47%E6%9C%8821%E6%97%A5%E4%B8%8B%E5%8D%883%E6%97%B601%E5%88%86%EF%BC%8C%E8%A2%AB%E6%B5%8B%E8%AF%95%E4%BA%BA%E6%9D%8E%E5%A4%A7%E7%88%B7%EF%BC%8C%E6%80%A7%E5%88%AB%E7%94%B7%EF%BC%8C%E5%B9%B4%E9%BE%8457%E5%91%A8%E5%B2%81%EF%BC%8C%E6%B5%8B%E8%AF%95%E8%A1%80%E5%8E%8B90-130MMHG%EF%BC%8C%E5%BF%83%E8%B7%B375%E6%AC%A1%2F%E5%88%86%E3%80%82AC311%E7%9B%B4%E5%8D%87%E6%9C%BA%E5%B7%B2%E5%9C%B0%E9%9D%A2%E5%BC%80%E8%BD%A6%EF%BC%8C%E9%A9%AC%E4%B8%8A%E5%BC%80%E5%A7%8B%E8%B5%B7%E9%A3%9E%E3%80%82%E2%80%9D%E2%80%9C%E6%94%B6%E5%88%B0%EF%BC%8C%E5%87%80%E7%A9%BA%E8%89%AF%E5%A5%BD%EF%BC%8C%E5%90%8C%E6%84%8F%E8%B5%B7%E9%A3%9E&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200725%2Fb1d5bde7efe0fc9970da75f1c3153cd3.jpg&amp;summary=&quot;%E2%80%9C%E7%9B%91%E6%B5%8B%E6%97%B6%E9%97%B42020%E5%B9%B47%E6%9C%8821%E6%97%A5%E4%B8%8B%E5%8D%883%E6%97%B601%E5%88%86%EF%BC%8C%E8%A2%AB%E6%B5%8B%E8%AF%95%E4%BA%BA%E6%9D%8E%E5%A4%A7%E7%88%B7%EF%BC%8C%E6%80%A7%E5%88%AB%E7%94%B7%EF%BC%8C%E5%B9%B4%E9%BE%8457%E5%91%A8%E5%B2%81%EF%BC%8C%E6%B5%8B%E8%AF%95%E8%A1%80%E5%8E%8B90-130MMHG%EF%BC%8C%E5%BF%83%E8%B7%B375%E6%AC%A1%2F%E5%88%86%E3%80%82AC311%E7%9B%B4%E5%8D%87%E6%9C%BA%E5%B7%B2%E5%9C%B0%E9%9D%A2%E5%BC%80%E8%BD%A6%EF%BC%8C%E9%A9%AC%E4%B8%8A%E5%BC%80%E5%A7%8B%E8%B5%B7%E9%A3%9E%E3%80%82%E2%80%9D%E2%80%9C%E6%94%B6%E5%88%B0%EF%BC%8C%E5%87%80%E7%A9%BA%E8%89%AF%E5%A5%BD%EF%BC%8C%E5%90%8C%E6%84%8F%E8%B5%B7%E9%A3%9E&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F25%2F99308051.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200725%2Fb1d5bde7efe0fc9970da75f1c3153cd3.jpg&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/25/99308051.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAHCElEQVR4Xu2d0XbiMAxEy/9/dPdQoMcR8syVY5buVn0sIXY00mhGCXD5+Pj4/Dj59/l5O8Xlcnk6U/ba43/Zstk5Hsep943nGs8R18/Ooda8nrd6fWfCeY1gA5Ik0hjUtwBCs++x0SwLVWZUj59lvKoWVaFq325vpGrdOWhsviukAbmFrEppVUp2NP0EyAqfxoug2eLWItVQTSTH76Qaxn6pAHHXl723AQkINSAuZQ2NdIUkEpeokKxJu2A+spXSgtpHhvvq8a4P0PO+nLKIysn4d1YkDcjE3DlNTpq6AysG3zGZa5hREFDTmgkJt/doin9MhVCtry7a0Vi2hgKP0KkLuHu9AQGV/N9UiKMK4tQpnTgqrPoQQktjBZLMj9k/2xP1Xk4QvMSpNyC18eAYr5cMF7Ms3PE/NcUdxx502psJidX/rSRhWi2vmPbuCP7KeIL4lb+xN0r7DUhw/avV4JLlFCCfVGeeWSW8tzovot6AuHHa1F3Dr/omGr5LA3IMFfEtWYXQgLvjngBxjbOahU7mKWnrNj+TpGqP42uKspwkj8A5olEVdVBZsUIakNpzAZS6yoBQ2abuqNEZjsp8p4IyYxrPp7LVGbhqf6tSnKv6b8pqQG6hakBCyvz6CnkYQ9eUYqk5WaioRdGeK+koAlzPU82X8roSHtTLZPFAN6hoQBqQI8WtVLYEpGq+lMFaqQBSoa7PkdFJVc5mx1Mf4gREagniLMs5WQJcA/IsEEjCfQHdgByVVVXGnpHYqEJcDyFew1UIvQi3l+vrLvOojK2KkOrxVECU74c0IMc0qYobl6wSENUkx23FTe1SHIQ+qOwlDn/WwKlkVfI4pafkqfsGZMKLLpNJsjjKzaqrAflpgDymvdWppdPzxN1WKCLGzWVwhT5cH6CxURWh1kjH73RReuIGhDf/LfdDVIa6pu4y0nHv6JRdlZGspWa4ygrOqadzsNUbVA3I+Q+6NiChXNSk1lUpUVlLFaLG726Yt7PRVoNTdft08EgCTT2Fo+7M38hHSRuQY+hXk2DseU4dyuFidV5DM6eqwBR9uAuMGe9mX9Vr3jErG6+vAZmgTZXg2wGhXByrgM6cqM+hXF+ds6leRilrdW9f1Kbuh2Tl24DkJeUSLqNpNMuqcvJ1IZIRbsM7zkEu2imft1dInGU5N0oN4Q6HHNdaAXXHORTQJJFmKiutkAZkzy1cJwKoz0I+hNKYkozU+R4k4P0GTrUqq/7JzcOq56P7TUEiTr0BeX4Ae9Ub2R7WgHg3/tYKcYvTcoz0ZTMjoSe3l1HhjY3TCRM1Kdjh1KlfSScbsUJcEBqQYxhdM49Bd/FFH2lzclO5ciIZZ7LQCYHK63TEUQ1w1TxnouXwP/IZwwbEfxGAi5ETRt/ANiDHpx9/XIWsbCjT09WmTkufNGTlZej1Oa6vyt60gWcPyql76vTiGxAvncuA7Gh6O7LPyWMlS1+Vtdl5yYyMio4xbuhDn1mQzmj9Kvi0If4XgCgfQm937uwXShZSYGiVKRpx1x5pmrKDoy75vb1uUzPTQwOSScUG5P5l/OpOYJULG5BbxGhCH3oIGZ1QqlCqrFoNrpGeoQiSYG6/O2m6AQGIvA0Q4tTB/r8OqZopR23xfK5S3eurNLLzvC6WaLjoTrLDG2TmsgGhkZ8c1xVyMoBXlql+HIE+ZTGTxCu0oRSg43pVZWTk40JM1SlhgC/ab0Dqv6rjphT0Jl7GKHJ0Uq0GmgXVW5zVLMwCpjKd3svYMfKxTr36XBbxGnT25TYX16rSE6XHBuT+ozANyC0C0hi6JkaUlPMXVCZHqnLnVU3aXZcSIeS9Z/bWgIAIk8Sb9SrVS53JRE0d7P+p9Mh76PCNVpRa0wVC9ausb+4Yvy+rLBLcyIXkPQ3I8yOqXSEhc6jUf1mFkPG7y3bVfKn+V7SgpLbbG+kFlM7cWuR1t1b5lz6zRRsQAsXtGAvIq8fvVVdOAB8vrGoWnTzN1qcOnUhnZ5pfPn5vQI4wWUB2/uSRyi6amYTzXYWcub2r3ktfo9PpNF4NyDEsNOjKtzQg9+hQybqq/ChYWwA5Y9J2BIK4cUd71eZbpbbdx6dOfcevIzQgec05ABEgrqlWy5GCRW9uKZNIzlFlghm9uTjN3mervOrUG5BbqBuQkHLK8Sqt/6sqJGvM1cC5klbNX9HjmXkYUWVuJEInEOVZlqKsBsR7mvGILJZbASFNNdvQSuOkYoFUlJtf7VzLPVDRgEyywQWOqD1XDV0hQBgo2nW+glSjA1p+PRNpZtdjiHI5czHVhlxdy01gCWXRNceYphS/06lTAKvl/isBUcF0r8UKcdmimj/1EHRuFddaMXRVOV3d26FqXjF+b0DmX3jm6LH8o2DK4JCmNo4dnAmMwLqLyajtX6uQP2K8xHyvikVhAAAAAElFTkSuQmCC" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/25/99308049.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/ht/images/20200725/e25fa4bbc7678fde36578346231295b4.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/25/99308049.html" target="_blank" title="">AG600：2020年 勇敢地破浪前行吧！</a>
+                        </p>
+                        <p class="news-des">今天我们共同回顾那些年AG600大型灭火/水上救援水陆两栖飞机的高光瞬间，感受关怀与温暖2020，乘风破浪！</p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">AG600</span><span style="margin-right: 4px">航空工业</span></a>
+                            <span class="time">2020-07-25</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F25%2F99308049.html&amp;title=&amp;desc=%E4%BB%8A%E5%A4%A9%E6%88%91%E4%BB%AC%E5%85%B1%E5%90%8C%E5%9B%9E%E9%A1%BE%E9%82%A3%E4%BA%9B%E5%B9%B4AG600%E5%A4%A7%E5%9E%8B%E7%81%AD%E7%81%AB%2F%E6%B0%B4%E4%B8%8A%E6%95%91%E6%8F%B4%E6%B0%B4%E9%99%86%E4%B8%A4%E6%A0%96%E9%A3%9E%E6%9C%BA%E7%9A%84%E9%AB%98%E5%85%89%E7%9E%AC%E9%97%B4%EF%BC%8C%E6%84%9F%E5%8F%97%E5%85%B3%E6%80%80%E4%B8%8E%E6%B8%A9%E6%9A%962020%EF%BC%8C%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%EF%BC%81&amp;summary=%E4%BB%8A%E5%A4%A9%E6%88%91%E4%BB%AC%E5%85%B1%E5%90%8C%E5%9B%9E%E9%A1%BE%E9%82%A3%E4%BA%9B%E5%B9%B4AG600%E5%A4%A7%E5%9E%8B%E7%81%AD%E7%81%AB%2F%E6%B0%B4%E4%B8%8A%E6%95%91%E6%8F%B4%E6%B0%B4%E9%99%86%E4%B8%A4%E6%A0%96%E9%A3%9E%E6%9C%BA%E7%9A%84%E9%AB%98%E5%85%89%E7%9E%AC%E9%97%B4%EF%BC%8C%E6%84%9F%E5%8F%97%E5%85%B3%E6%80%80%E4%B8%8E%E6%B8%A9%E6%9A%962020%EF%BC%8C%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%EF%BC%81&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200725%2Fe25fa4bbc7678fde36578346231295b4.jpg" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F25%2F99308049.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E4%BB%8A%E5%A4%A9%E6%88%91%E4%BB%AC%E5%85%B1%E5%90%8C%E5%9B%9E%E9%A1%BE%E9%82%A3%E4%BA%9B%E5%B9%B4AG600%E5%A4%A7%E5%9E%8B%E7%81%AD%E7%81%AB%2F%E6%B0%B4%E4%B8%8A%E6%95%91%E6%8F%B4%E6%B0%B4%E9%99%86%E4%B8%A4%E6%A0%96%E9%A3%9E%E6%9C%BA%E7%9A%84%E9%AB%98%E5%85%89%E7%9E%AC%E9%97%B4%EF%BC%8C%E6%84%9F%E5%8F%97%E5%85%B3%E6%80%80%E4%B8%8E%E6%B8%A9%E6%9A%962020%EF%BC%8C%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%EF%BC%81&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200725%2Fe25fa4bbc7678fde36578346231295b4.jpg&amp;summary=&quot;%E4%BB%8A%E5%A4%A9%E6%88%91%E4%BB%AC%E5%85%B1%E5%90%8C%E5%9B%9E%E9%A1%BE%E9%82%A3%E4%BA%9B%E5%B9%B4AG600%E5%A4%A7%E5%9E%8B%E7%81%AD%E7%81%AB%2F%E6%B0%B4%E4%B8%8A%E6%95%91%E6%8F%B4%E6%B0%B4%E9%99%86%E4%B8%A4%E6%A0%96%E9%A3%9E%E6%9C%BA%E7%9A%84%E9%AB%98%E5%85%89%E7%9E%AC%E9%97%B4%EF%BC%8C%E6%84%9F%E5%8F%97%E5%85%B3%E6%80%80%E4%B8%8E%E6%B8%A9%E6%9A%962020%EF%BC%8C%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%EF%BC%81&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F25%2F99308049.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200725%2Fe25fa4bbc7678fde36578346231295b4.jpg&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/25/99308049.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAHH0lEQVR4Xu2d3XbyOgxEy/s/dM8qhW85RpnZsgW0PeplcfyjkUYjJYHLx8fH58fm3+fn9xSXy+Vhpuiz+/+iZdUcdJvjHPP60drRmuNa2fPRfYbnb0BiR3o7IMprnSfP1654HIkauscoQu5nUNHzNSYbQVkGcLb84pgr39DDqoNFn0UbyB7ibkS6xz8FyCu92611B5NwuMthlNfVnkaHmJ3ERR51zIcIcUaq9G63VgNyopRcglvl/wbkUZ2WRgiVrDQnEPpYoQoSeYpiXGJWFOucuwEBrDAD+GsAodIyOiCJGkpxzgtJhEQJPJo3e2a3t9IIyW5OqRbnhVQ1EYXmqNZ9Piu8H0NZDci3BUoBoZ5Hiy86H/Hkca6I4kgvLUtFtL5R9nA2GK99S6VOiySVTP88IA5F9bnqqCrDuRySrYZV0Vq5jzFqKD1R+/6LEHoB8e6soaMDukMT40d8/oq97diyAZkaq6uRtCLJQyX5SVuoO7BP15IKPEqmLiGvRq+rDaJcRuqmFZNdGpCj2ajaexkgK70hldTDsBS3erNeRalC3XhykUfylSMaBeBB9s4R0oDkngugkZIGhPK68vgKCehU0H391f26Ao7OqyS5yjmOAf7lELqRBuTbAg3IolKbHejXRYhKfi7c6LV0XKY7EBWBK4WhosSsMHDnjCj+gbLcJMRI4xjSuo5qDgq+EyHZts6PBiSrIKJkRpLw6MkKCCdxiTx1RWBlHeLoMczHd9lLWwakrliJMqfjSRQ1IDd0Zs9tQI5KjDLA1elUYRhFA6k1KCBuHFkroqAoh6noWcl5FblGUlaW67N1y0py/18CMj/bS1WL8qqd3pDzVqLyFPhOGFBhQpN/VqTIp05Ww7wBYa/cRM7RgJy48E5+I4rxTDWiwtDRCAlfSoVu3Gw/F41qPE3MtB7L0tNypd6AfLfkqeeTWm2cr+R+SLavo7zn7LDEM1eq4TkyslF2ZsxZELi9hcX46g2qBmT/RdcGZApT1S6iEU0lNnZg9Y4h1exUu5NxlD4Un2eNRIXE6pqjonLqTT5K2oAc4+SlgBDvHbdHFUdli6Wi/bKzb+fdqxL7oGLnLw6gi+4cbBX8BuRmOcexFYVhtke12taJ1onylvvfPI+zUeSEsnVCvVYZYieZNiDfFnh42NpRVgMSu05ZhMy3cKPEvVJxKo9XFbhbS1GFoyNyLaHfSMa6/EZrHvmgXJans4meRiMB92zMqlTNGjg7fgQ1VFm0krxfXOHJDkBSB1XM4eQ82Qedw4kFVBg+y5MrjFkxBzWmilQ6RwMSvPpAFN2BRgrn2AIkS0+kXR4lRPc/peHdAaMzzIA4BqAlgRpH9nGQvTT5kXGURpwxZ+6m46mBKwztkjlRdodoVK+0ZQs95QU7xqTcvarGor25nKAMnVWnDchkzQbkliRd1FREBuHuXweIywnzoZ2hs5V6lqcjhUQrcAKgc5SsvdKUlV2gAdl4UE71spTcjJIe9WR604pGkvPYr8+zTuXmnOfLdi6iKL7K3gbkaHraJnk6IBF3Uq/K5hC6lqpDdiQ2kcfu7HP0UnaI1h6vle+HuE2daXGXQxqQ86hsQCavWm3/vCRCovBS8jESAavRoNa+Jr/C70txNJJtF1ExEtnyLa+0ZXtNWbXnFBL5nKomdSfQnRMBQjZ7NoYqFGVgVTXTA55JylX569bNzBvt7XDmyu/LakBy7hxGVwMSG9FRFpHkDp4QkOxLn2oRkvxWw3tO5FSSkwRLKOns3NlWu2tkpt8xbECOFigHJPtcFpG2tDDMhnREIy5vzQZz0aAMXNGDcxI7/VxWAxK70Y4Thq0Teru2AXkyINlfaXMUMSdtMt5RV7Zu2fHW+1rZfbs1ibi4CpcGxMte4jBlgJCkTjY0y1JyDU2wq17rJPYOTVe036P1UVInxm1Azr/v98x+DchkmR8ZIapSp5FRofVV4qZJ3Wl8V22Pn2eTetZWZ2ulfxQsWrgBoXD4Hz8u/XWEnZtGpAp2lboTCWeS3PXFyN5odNpe1rO7ve6wREHRdsafAKTyB+5p4GaTKaFJt3a2CTjOF1075zUavS43lf7kkTOKigZ16AaEWvY2jtJSAxI/nHFQXNnWSWRUpbJUDyebCKloqB5HHCl7lrNCOt3LakCOpqd3SUmddQUpWxgSxeOknWJE16RT14b3qMULm1mqrSgc3fkakGS+JDJ9x+EakL8MiMovUbjb8J1efXMa/lmFYZYmaRRF9F8aIQ3IETrqQId76u9M6i6pkh7SKyQuqdRdwidi6O0qqwF5/O7fUsqqlp0dIQnFETXTSPIbx5Ak7MavVMhzrnN1E6EsSp1W3FS2ThoQXsWPrZODQzyj/e68RVGb8lbnyao9ke0mR5FJKPSsR5VunSTY6mHoTD0NyOMTKA3IzQLk+SnnjCS6dqJ3XP8/wBbTdhI780QAAAAASUVORK5CYII=" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308043.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/428a91f382175267df07317e4ca81347.png" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308043.html" target="_blank" title="">航空工业昌飞夏永勤：生产管理模式的创新者 </a>
+                        </p>
+                        <p class="news-des">他建立了冗余条码生产计划清理模式，降低库存及生产成本，使生产资源得到合理化利用；建立了非条码生产计划管理机制，完善生产计划考核体系；建立了基于GO站位的整机齐套率考核方案，实现了按GO站位零部件交付齐套率的信息化统计……他就是航空工业昌飞2019年度明星职工、生产调度部生产管控室副室主任夏永勤，这些生产管理模式的更新换代，就是夏永勤2019年为公司降本增效、完善生产计划考核体系所作出的努力。</p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">航空工业</span><span style="margin-right: 4px">昌飞</span><span style="margin-right: 4px">员工风采</span></a>
+                            <span class="time">2020-07-24</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308043.html&amp;title=&amp;desc=%E4%BB%96%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%86%97%E4%BD%99%E6%9D%A1%E7%A0%81%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E6%B8%85%E7%90%86%E6%A8%A1%E5%BC%8F%EF%BC%8C%E9%99%8D%E4%BD%8E%E5%BA%93%E5%AD%98%E5%8F%8A%E7%94%9F%E4%BA%A7%E6%88%90%E6%9C%AC%EF%BC%8C%E4%BD%BF%E7%94%9F%E4%BA%A7%E8%B5%84%E6%BA%90%E5%BE%97%E5%88%B0%E5%90%88%E7%90%86%E5%8C%96%E5%88%A9%E7%94%A8%EF%BC%9B%E5%BB%BA%E7%AB%8B%E4%BA%86%E9%9D%9E%E6%9D%A1%E7%A0%81%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%EF%BC%8C%E5%AE%8C%E5%96%84%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E8%80%83%E6%A0%B8%E4%BD%93%E7%B3%BB%EF%BC%9B%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%9F%BA%E4%BA%8EGO%E7%AB%99%E4%BD%8D%E7%9A%84%E6%95%B4%E6%9C%BA%E9%BD%90%E5%A5%97%E7%8E%87%E8%80%83%E6%A0%B8%E6%96%B9%E6%A1%88%EF%BC%8C%E5%AE%9E%E7%8E%B0%E4%BA%86%E6%8C%89GO%E7%AB%99%E4%BD%8D%E9%9B%B6%E9%83%A8%E4%BB%B6%E4%BA%A4%E4%BB%98%E9%BD%90%E5%A5%97%E7%8E%87%E7%9A%84%E4%BF%A1%E6%81%AF%E5%8C%96%E7%BB%9F%E8%AE%A1%E2%80%A6%E2%80%A6%E4%BB%96%E5%B0%B1%E6%98%AF%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%98%8C%E9%A3%9E2019%E5%B9%B4%E5%BA%A6%E6%98%8E%E6%98%9F%E8%81%8C%E5%B7%A5%E3%80%81%E7%94%9F%E4%BA%A7%E8%B0%83%E5%BA%A6%E9%83%A8%E7%94%9F%E4%BA%A7%E7%AE%A1%E6%8E%A7%E5%AE%A4%E5%89%AF%E5%AE%A4%E4%B8%BB%E4%BB%BB%E5%A4%8F%E6%B0%B8%E5%8B%A4%EF%BC%8C%E8%BF%99%E4%BA%9B%E7%94%9F%E4%BA%A7%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%9B%B4%E6%96%B0%E6%8D%A2%E4%BB%A3%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%A4%8F%E6%B0%B8%E5%8B%A42019%E5%B9%B4%E4%B8%BA%E5%85%AC%E5%8F%B8%E9%99%8D%E6%9C%AC%E5%A2%9E%E6%95%88%E3%80%81%E5%AE%8C%E5%96%84%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E8%80%83%E6%A0%B8%E4%BD%93%E7%B3%BB%E6%89%80%E4%BD%9C%E5%87%BA%E7%9A%84%E5%8A%AA%E5%8A%9B%E3%80%82&amp;summary=%E4%BB%96%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%86%97%E4%BD%99%E6%9D%A1%E7%A0%81%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E6%B8%85%E7%90%86%E6%A8%A1%E5%BC%8F%EF%BC%8C%E9%99%8D%E4%BD%8E%E5%BA%93%E5%AD%98%E5%8F%8A%E7%94%9F%E4%BA%A7%E6%88%90%E6%9C%AC%EF%BC%8C%E4%BD%BF%E7%94%9F%E4%BA%A7%E8%B5%84%E6%BA%90%E5%BE%97%E5%88%B0%E5%90%88%E7%90%86%E5%8C%96%E5%88%A9%E7%94%A8%EF%BC%9B%E5%BB%BA%E7%AB%8B%E4%BA%86%E9%9D%9E%E6%9D%A1%E7%A0%81%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%EF%BC%8C%E5%AE%8C%E5%96%84%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E8%80%83%E6%A0%B8%E4%BD%93%E7%B3%BB%EF%BC%9B%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%9F%BA%E4%BA%8EGO%E7%AB%99%E4%BD%8D%E7%9A%84%E6%95%B4%E6%9C%BA%E9%BD%90%E5%A5%97%E7%8E%87%E8%80%83%E6%A0%B8%E6%96%B9%E6%A1%88%EF%BC%8C%E5%AE%9E%E7%8E%B0%E4%BA%86%E6%8C%89GO%E7%AB%99%E4%BD%8D%E9%9B%B6%E9%83%A8%E4%BB%B6%E4%BA%A4%E4%BB%98%E9%BD%90%E5%A5%97%E7%8E%87%E7%9A%84%E4%BF%A1%E6%81%AF%E5%8C%96%E7%BB%9F%E8%AE%A1%E2%80%A6%E2%80%A6%E4%BB%96%E5%B0%B1%E6%98%AF%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%98%8C%E9%A3%9E2019%E5%B9%B4%E5%BA%A6%E6%98%8E%E6%98%9F%E8%81%8C%E5%B7%A5%E3%80%81%E7%94%9F%E4%BA%A7%E8%B0%83%E5%BA%A6%E9%83%A8%E7%94%9F%E4%BA%A7%E7%AE%A1%E6%8E%A7%E5%AE%A4%E5%89%AF%E5%AE%A4%E4%B8%BB%E4%BB%BB%E5%A4%8F%E6%B0%B8%E5%8B%A4%EF%BC%8C%E8%BF%99%E4%BA%9B%E7%94%9F%E4%BA%A7%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%9B%B4%E6%96%B0%E6%8D%A2%E4%BB%A3%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%A4%8F%E6%B0%B8%E5%8B%A42019%E5%B9%B4%E4%B8%BA%E5%85%AC%E5%8F%B8%E9%99%8D%E6%9C%AC%E5%A2%9E%E6%95%88%E3%80%81%E5%AE%8C%E5%96%84%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E8%80%83%E6%A0%B8%E4%BD%93%E7%B3%BB%E6%89%80%E4%BD%9C%E5%87%BA%E7%9A%84%E5%8A%AA%E5%8A%9B%E3%80%82&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F428a91f382175267df07317e4ca81347.png" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308043.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E4%BB%96%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%86%97%E4%BD%99%E6%9D%A1%E7%A0%81%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E6%B8%85%E7%90%86%E6%A8%A1%E5%BC%8F%EF%BC%8C%E9%99%8D%E4%BD%8E%E5%BA%93%E5%AD%98%E5%8F%8A%E7%94%9F%E4%BA%A7%E6%88%90%E6%9C%AC%EF%BC%8C%E4%BD%BF%E7%94%9F%E4%BA%A7%E8%B5%84%E6%BA%90%E5%BE%97%E5%88%B0%E5%90%88%E7%90%86%E5%8C%96%E5%88%A9%E7%94%A8%EF%BC%9B%E5%BB%BA%E7%AB%8B%E4%BA%86%E9%9D%9E%E6%9D%A1%E7%A0%81%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%EF%BC%8C%E5%AE%8C%E5%96%84%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E8%80%83%E6%A0%B8%E4%BD%93%E7%B3%BB%EF%BC%9B%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%9F%BA%E4%BA%8EGO%E7%AB%99%E4%BD%8D%E7%9A%84%E6%95%B4%E6%9C%BA%E9%BD%90%E5%A5%97%E7%8E%87%E8%80%83%E6%A0%B8%E6%96%B9%E6%A1%88%EF%BC%8C%E5%AE%9E%E7%8E%B0%E4%BA%86%E6%8C%89GO%E7%AB%99%E4%BD%8D%E9%9B%B6%E9%83%A8%E4%BB%B6%E4%BA%A4%E4%BB%98%E9%BD%90%E5%A5%97%E7%8E%87%E7%9A%84%E4%BF%A1%E6%81%AF%E5%8C%96%E7%BB%9F%E8%AE%A1%E2%80%A6%E2%80%A6%E4%BB%96%E5%B0%B1%E6%98%AF%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%98%8C%E9%A3%9E2019%E5%B9%B4%E5%BA%A6%E6%98%8E%E6%98%9F%E8%81%8C%E5%B7%A5%E3%80%81%E7%94%9F%E4%BA%A7%E8%B0%83%E5%BA%A6%E9%83%A8%E7%94%9F%E4%BA%A7%E7%AE%A1%E6%8E%A7%E5%AE%A4%E5%89%AF%E5%AE%A4%E4%B8%BB%E4%BB%BB%E5%A4%8F%E6%B0%B8%E5%8B%A4%EF%BC%8C%E8%BF%99%E4%BA%9B%E7%94%9F%E4%BA%A7%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%9B%B4%E6%96%B0%E6%8D%A2%E4%BB%A3%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%A4%8F%E6%B0%B8%E5%8B%A42019%E5%B9%B4%E4%B8%BA%E5%85%AC%E5%8F%B8%E9%99%8D%E6%9C%AC%E5%A2%9E%E6%95%88%E3%80%81%E5%AE%8C%E5%96%84%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E8%80%83%E6%A0%B8%E4%BD%93%E7%B3%BB%E6%89%80%E4%BD%9C%E5%87%BA%E7%9A%84%E5%8A%AA%E5%8A%9B%E3%80%82&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F428a91f382175267df07317e4ca81347.png&amp;summary=&quot;%E4%BB%96%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%86%97%E4%BD%99%E6%9D%A1%E7%A0%81%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E6%B8%85%E7%90%86%E6%A8%A1%E5%BC%8F%EF%BC%8C%E9%99%8D%E4%BD%8E%E5%BA%93%E5%AD%98%E5%8F%8A%E7%94%9F%E4%BA%A7%E6%88%90%E6%9C%AC%EF%BC%8C%E4%BD%BF%E7%94%9F%E4%BA%A7%E8%B5%84%E6%BA%90%E5%BE%97%E5%88%B0%E5%90%88%E7%90%86%E5%8C%96%E5%88%A9%E7%94%A8%EF%BC%9B%E5%BB%BA%E7%AB%8B%E4%BA%86%E9%9D%9E%E6%9D%A1%E7%A0%81%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%EF%BC%8C%E5%AE%8C%E5%96%84%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E8%80%83%E6%A0%B8%E4%BD%93%E7%B3%BB%EF%BC%9B%E5%BB%BA%E7%AB%8B%E4%BA%86%E5%9F%BA%E4%BA%8EGO%E7%AB%99%E4%BD%8D%E7%9A%84%E6%95%B4%E6%9C%BA%E9%BD%90%E5%A5%97%E7%8E%87%E8%80%83%E6%A0%B8%E6%96%B9%E6%A1%88%EF%BC%8C%E5%AE%9E%E7%8E%B0%E4%BA%86%E6%8C%89GO%E7%AB%99%E4%BD%8D%E9%9B%B6%E9%83%A8%E4%BB%B6%E4%BA%A4%E4%BB%98%E9%BD%90%E5%A5%97%E7%8E%87%E7%9A%84%E4%BF%A1%E6%81%AF%E5%8C%96%E7%BB%9F%E8%AE%A1%E2%80%A6%E2%80%A6%E4%BB%96%E5%B0%B1%E6%98%AF%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%98%8C%E9%A3%9E2019%E5%B9%B4%E5%BA%A6%E6%98%8E%E6%98%9F%E8%81%8C%E5%B7%A5%E3%80%81%E7%94%9F%E4%BA%A7%E8%B0%83%E5%BA%A6%E9%83%A8%E7%94%9F%E4%BA%A7%E7%AE%A1%E6%8E%A7%E5%AE%A4%E5%89%AF%E5%AE%A4%E4%B8%BB%E4%BB%BB%E5%A4%8F%E6%B0%B8%E5%8B%A4%EF%BC%8C%E8%BF%99%E4%BA%9B%E7%94%9F%E4%BA%A7%E7%AE%A1%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%9B%B4%E6%96%B0%E6%8D%A2%E4%BB%A3%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%A4%8F%E6%B0%B8%E5%8B%A42019%E5%B9%B4%E4%B8%BA%E5%85%AC%E5%8F%B8%E9%99%8D%E6%9C%AC%E5%A2%9E%E6%95%88%E3%80%81%E5%AE%8C%E5%96%84%E7%94%9F%E4%BA%A7%E8%AE%A1%E5%88%92%E8%80%83%E6%A0%B8%E4%BD%93%E7%B3%BB%E6%89%80%E4%BD%9C%E5%87%BA%E7%9A%84%E5%8A%AA%E5%8A%9B%E3%80%82&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308043.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F428a91f382175267df07317e4ca81347.png&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/24/99308043.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308042.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/1e9abc0c9b96eb95f1b709a8c98ba960.png" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308042.html" target="_blank" title="">航空工业制造院王明涛：十年蜕变 逐梦蓝天</a>
+                        </p>
+                        <p class="news-des">眼神笃定而淡然，张弛有度又从不懈怠地工作，这就是大家眼中的王明涛。为人低调，不张扬，也不妥协，沉下心来，默默耕耘在他所爱的航空事业里。</p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">航空工业</span><span style="margin-right: 4px">制造院</span><span style="margin-right: 4px">员工风采</span></a>
+                            <span class="time">2020-07-24</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308042.html&amp;title=&amp;desc=%E7%9C%BC%E7%A5%9E%E7%AC%83%E5%AE%9A%E8%80%8C%E6%B7%A1%E7%84%B6%EF%BC%8C%E5%BC%A0%E5%BC%9B%E6%9C%89%E5%BA%A6%E5%8F%88%E4%BB%8E%E4%B8%8D%E6%87%88%E6%80%A0%E5%9C%B0%E5%B7%A5%E4%BD%9C%EF%BC%8C%E8%BF%99%E5%B0%B1%E6%98%AF%E5%A4%A7%E5%AE%B6%E7%9C%BC%E4%B8%AD%E7%9A%84%E7%8E%8B%E6%98%8E%E6%B6%9B%E3%80%82%E4%B8%BA%E4%BA%BA%E4%BD%8E%E8%B0%83%EF%BC%8C%E4%B8%8D%E5%BC%A0%E6%89%AC%EF%BC%8C%E4%B9%9F%E4%B8%8D%E5%A6%A5%E5%8D%8F%EF%BC%8C%E6%B2%89%E4%B8%8B%E5%BF%83%E6%9D%A5%EF%BC%8C%E9%BB%98%E9%BB%98%E8%80%95%E8%80%98%E5%9C%A8%E4%BB%96%E6%89%80%E7%88%B1%E7%9A%84%E8%88%AA%E7%A9%BA%E4%BA%8B%E4%B8%9A%E9%87%8C%E3%80%82&amp;summary=%E7%9C%BC%E7%A5%9E%E7%AC%83%E5%AE%9A%E8%80%8C%E6%B7%A1%E7%84%B6%EF%BC%8C%E5%BC%A0%E5%BC%9B%E6%9C%89%E5%BA%A6%E5%8F%88%E4%BB%8E%E4%B8%8D%E6%87%88%E6%80%A0%E5%9C%B0%E5%B7%A5%E4%BD%9C%EF%BC%8C%E8%BF%99%E5%B0%B1%E6%98%AF%E5%A4%A7%E5%AE%B6%E7%9C%BC%E4%B8%AD%E7%9A%84%E7%8E%8B%E6%98%8E%E6%B6%9B%E3%80%82%E4%B8%BA%E4%BA%BA%E4%BD%8E%E8%B0%83%EF%BC%8C%E4%B8%8D%E5%BC%A0%E6%89%AC%EF%BC%8C%E4%B9%9F%E4%B8%8D%E5%A6%A5%E5%8D%8F%EF%BC%8C%E6%B2%89%E4%B8%8B%E5%BF%83%E6%9D%A5%EF%BC%8C%E9%BB%98%E9%BB%98%E8%80%95%E8%80%98%E5%9C%A8%E4%BB%96%E6%89%80%E7%88%B1%E7%9A%84%E8%88%AA%E7%A9%BA%E4%BA%8B%E4%B8%9A%E9%87%8C%E3%80%82&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F1e9abc0c9b96eb95f1b709a8c98ba960.png" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308042.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E7%9C%BC%E7%A5%9E%E7%AC%83%E5%AE%9A%E8%80%8C%E6%B7%A1%E7%84%B6%EF%BC%8C%E5%BC%A0%E5%BC%9B%E6%9C%89%E5%BA%A6%E5%8F%88%E4%BB%8E%E4%B8%8D%E6%87%88%E6%80%A0%E5%9C%B0%E5%B7%A5%E4%BD%9C%EF%BC%8C%E8%BF%99%E5%B0%B1%E6%98%AF%E5%A4%A7%E5%AE%B6%E7%9C%BC%E4%B8%AD%E7%9A%84%E7%8E%8B%E6%98%8E%E6%B6%9B%E3%80%82%E4%B8%BA%E4%BA%BA%E4%BD%8E%E8%B0%83%EF%BC%8C%E4%B8%8D%E5%BC%A0%E6%89%AC%EF%BC%8C%E4%B9%9F%E4%B8%8D%E5%A6%A5%E5%8D%8F%EF%BC%8C%E6%B2%89%E4%B8%8B%E5%BF%83%E6%9D%A5%EF%BC%8C%E9%BB%98%E9%BB%98%E8%80%95%E8%80%98%E5%9C%A8%E4%BB%96%E6%89%80%E7%88%B1%E7%9A%84%E8%88%AA%E7%A9%BA%E4%BA%8B%E4%B8%9A%E9%87%8C%E3%80%82&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F1e9abc0c9b96eb95f1b709a8c98ba960.png&amp;summary=&quot;%E7%9C%BC%E7%A5%9E%E7%AC%83%E5%AE%9A%E8%80%8C%E6%B7%A1%E7%84%B6%EF%BC%8C%E5%BC%A0%E5%BC%9B%E6%9C%89%E5%BA%A6%E5%8F%88%E4%BB%8E%E4%B8%8D%E6%87%88%E6%80%A0%E5%9C%B0%E5%B7%A5%E4%BD%9C%EF%BC%8C%E8%BF%99%E5%B0%B1%E6%98%AF%E5%A4%A7%E5%AE%B6%E7%9C%BC%E4%B8%AD%E7%9A%84%E7%8E%8B%E6%98%8E%E6%B6%9B%E3%80%82%E4%B8%BA%E4%BA%BA%E4%BD%8E%E8%B0%83%EF%BC%8C%E4%B8%8D%E5%BC%A0%E6%89%AC%EF%BC%8C%E4%B9%9F%E4%B8%8D%E5%A6%A5%E5%8D%8F%EF%BC%8C%E6%B2%89%E4%B8%8B%E5%BF%83%E6%9D%A5%EF%BC%8C%E9%BB%98%E9%BB%98%E8%80%95%E8%80%98%E5%9C%A8%E4%BB%96%E6%89%80%E7%88%B1%E7%9A%84%E8%88%AA%E7%A9%BA%E4%BA%8B%E4%B8%9A%E9%87%8C%E3%80%82&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308042.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F1e9abc0c9b96eb95f1b709a8c98ba960.png&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/24/99308042.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAHGElEQVR4Xu2d23bjOgxDk///6M5KPM7IKgVsysqlHZ6Xs6axZZkgQJB22uvlcvm6nPzv62tb4nq93v+//3v0s+hy+7ntZ2pduuVo3f3cdp/7z6J7UPvt90j3NTruFsECpInOxwASZYtCu808cq47ngTCrdFnecQ2msHuWv1+3fE0lg+GkKC2i2Y34I4vQLbofgNEaW5bH6IAU71216BZ3NeriCEq0UjdoizLxmMUywKkQ18VaQouLfTRcQXIbwaEFq5sFpL6MqpvKywuMQsfKVkFyBaBj5Ms1XC5Irmi0Gaz1TlMYlay13xpUS9AjpOLkXK8rKgXIAsBoT2Aa/T6QuhkIboukQp63qyRGPU6/XVpPNx+n96pZx2Sc0vKNWXdEHFgbwOEMiM6LjvtpVNhMi9yxfQdezsTy7dMewuQMWQFCHh+QxJo1Xzu+jVTbQcA0x6CurBe47PyFPU8ao9Oas6c69Z+1L8C5PiEk04biLmgIByMTBYQkiXumCy9z5CYuLzVzIssNv1ZWrJcsG9ou2MKkI0TYae+M4Q2YSrjSDY6GrtsJVKRvZeo1rgGjryAMdMsPhiSvYkzb2xQnc5216oxjIB0TCbdOElQ2lze1aUYcgz77FNB5xxpHfzWh9CFs9IyQ18yCjk4lOC9sH4Nd3+Kve25aopAZLWttYd1+/ey3IapWyA9hKsn/yUgSrIozbKBm60hLllodtNEUDWk/0yxZ8SGKG6yhhQgx7CfMT60+BcgCbq8BJC9hsy6i1GDQwpbttBnjUS24Lt+RO03a6FbGTvsswDxk4VI6/sEXgYI6UMiVtPGkI5JlHujJiChPodDo4JM71kZGrpGGyPUGGYXpjcYScQZGStAughETqIYcgySs+7TDFEF0GU5HUKSbtgVYtJLOHufTbSsnB8UZbaGFCDb1/dWyDkencxmcrRJZ1nJZJfK3xnWOLb0RTzLBlc35XCxABnbBNJ5O3MTPqBSw8UC5I2A0D6AyMbMoE0VTudM9rBR+VCykx2PRNc+YwLkN6hoIPo8KkDG39d3JkC+5EDHAURPZ5u223mzieEKqAuOssxqdKIMittTAdJFPTtk7eWvTSAn77Kor8hClXHO9pI64Fj2rHug96X2R4GWX0dwCLsAjbKF9Bzt2nQfBQhARLm3bI1yl/uVgJzJRqWnLpgEnGfJXrY7d/dCW4goXulfHKC0vgDZIvBSQIgEUelw/YqynWcsKzEQdOzh2BIlaX/9wwOq/hGuk6wC5MiCAkREgFrLH8EQ6qFXdOWEZa0Wq9p0ptATOXH2m8ozqb23Y9B3DKnWO7lT2kkKoQt+tr/5sYC0WUIC53Q1y7KsFLn9nk2Meyb/fbGbyF/GeSGGuBukPr7PSEr3AgQUTvcig2JJMWTs1Ka/Y6jqiqslz5I9AvSq/qK/lrtnKm0FSEdlKr9vAYRkHO2Y3ayKZJirOYR5zqlFmbwiDvSxLnpA5QLRg0KPd/KRXfdXAKJGJ+QGIwvobC/VU2VPKTNJr0HYSe9pZHEV8w7NZwESfx0hA8CIyTMyjd46cRZ3NsOy0uauk+1XVGf/dkAopZRUuIApqcr2LbRIZkGiUkhclnNs4T2QNxddtmQzzW20v54KvjMGPx4QNybJ2kKS+aNC2AdzRpPJGo4V7rqzxiZKZDnLotNT5dMLkHEECpDBr476aIY4TX5WUVeGQPVDK4wEXUPJuauLRPbu0vcpRb0A2eBOvwZEe4dRs9QWQJpV1CnRyYJzjbMub3RexKyREShAADrUdhcgXZH+VQzJ9hfZMTY93jme/fNs1tIRupLkyPA42aW2/3FfpKi7ukH6lQLkOzSRkUE1xGUGsY0r7LRbg2Y3KBvhIeQ+R1OHSIF6tmOXVYD8taTdqz8jYIlitOe2QBdDEnR5C0Pc/mjHGdHRrT3qXWhBVobgzBrZfWePPygQ+QVmI3opXSxAOCwHQLK/jJ/YOOfKaIHLajHZGw/TvyNnzYJzluG6BYiH6KWArPwD95FM0UktmVfNuL3++o69dL89y2fYEKVC+mVrVTgLkC0CZ0Y4BUhiHqYc5nKGZGcyagNOWpQDc924UnwnRyNbHUpH0ATS+1JK4a619A9Lzg782k0WIJfL/Q+3KosZBSxiiEKfBlodl2Vx1D+5fWSLuvdox7rijkejkwKE/bHhrJxKl1UM8Q6JzrKIEx2B9zKGOJY5KreyGknR6Pxe5qgbys7snDwqI3M4d+VvcnAOYv+cspG4Ipe1BQjw9T0wt39Tjx+d2wPnWEDY6BidTSo6fnmKZNGAzDieAqRLJzIWKEC+c3CaIZTOqg+hBZEeRwuiYg+VRBq4fk/ZKUFrUuQj3AJk6zmyrmk5IBSI6LhsB00fp6rROV1DOTsy8h9lsnJvNJYhiM94HuI2RINZgLhIDj4vhsx9kzeK2x+PoXZJqDVNTgAAAABJRU5ErkJggg==" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308041.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/c1e3181645f6b859087391575cb17496.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308041.html" target="_blank" title="">纸飞机上的梦</a>
+                        </p>
+                        <p class="news-des">小时候一架纸飞机承载着我童年的梦想，我总是希望它可以飞过高山，飞过天空，飞到自己从未到达的地方，去替我看看未知的世界里，风是不是一样温柔，月是不是一样明亮？</p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">航空</span><span style="margin-right: 4px">守卫</span><span style="margin-right: 4px">战机</span></a>
+                            <span class="time">2020-07-24</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308041.html&amp;title=&amp;desc=%E5%B0%8F%E6%97%B6%E5%80%99%E4%B8%80%E6%9E%B6%E7%BA%B8%E9%A3%9E%E6%9C%BA%E6%89%BF%E8%BD%BD%E7%9D%80%E6%88%91%E7%AB%A5%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3%EF%BC%8C%E6%88%91%E6%80%BB%E6%98%AF%E5%B8%8C%E6%9C%9B%E5%AE%83%E5%8F%AF%E4%BB%A5%E9%A3%9E%E8%BF%87%E9%AB%98%E5%B1%B1%EF%BC%8C%E9%A3%9E%E8%BF%87%E5%A4%A9%E7%A9%BA%EF%BC%8C%E9%A3%9E%E5%88%B0%E8%87%AA%E5%B7%B1%E4%BB%8E%E6%9C%AA%E5%88%B0%E8%BE%BE%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E5%8E%BB%E6%9B%BF%E6%88%91%E7%9C%8B%E7%9C%8B%E6%9C%AA%E7%9F%A5%E7%9A%84%E4%B8%96%E7%95%8C%E9%87%8C%EF%BC%8C%E9%A3%8E%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%80%E6%A0%B7%E6%B8%A9%E6%9F%94%EF%BC%8C%E6%9C%88%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%80%E6%A0%B7%E6%98%8E%E4%BA%AE%EF%BC%9F&amp;summary=%E5%B0%8F%E6%97%B6%E5%80%99%E4%B8%80%E6%9E%B6%E7%BA%B8%E9%A3%9E%E6%9C%BA%E6%89%BF%E8%BD%BD%E7%9D%80%E6%88%91%E7%AB%A5%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3%EF%BC%8C%E6%88%91%E6%80%BB%E6%98%AF%E5%B8%8C%E6%9C%9B%E5%AE%83%E5%8F%AF%E4%BB%A5%E9%A3%9E%E8%BF%87%E9%AB%98%E5%B1%B1%EF%BC%8C%E9%A3%9E%E8%BF%87%E5%A4%A9%E7%A9%BA%EF%BC%8C%E9%A3%9E%E5%88%B0%E8%87%AA%E5%B7%B1%E4%BB%8E%E6%9C%AA%E5%88%B0%E8%BE%BE%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E5%8E%BB%E6%9B%BF%E6%88%91%E7%9C%8B%E7%9C%8B%E6%9C%AA%E7%9F%A5%E7%9A%84%E4%B8%96%E7%95%8C%E9%87%8C%EF%BC%8C%E9%A3%8E%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%80%E6%A0%B7%E6%B8%A9%E6%9F%94%EF%BC%8C%E6%9C%88%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%80%E6%A0%B7%E6%98%8E%E4%BA%AE%EF%BC%9F&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2Fc1e3181645f6b859087391575cb17496.jpg" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308041.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E5%B0%8F%E6%97%B6%E5%80%99%E4%B8%80%E6%9E%B6%E7%BA%B8%E9%A3%9E%E6%9C%BA%E6%89%BF%E8%BD%BD%E7%9D%80%E6%88%91%E7%AB%A5%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3%EF%BC%8C%E6%88%91%E6%80%BB%E6%98%AF%E5%B8%8C%E6%9C%9B%E5%AE%83%E5%8F%AF%E4%BB%A5%E9%A3%9E%E8%BF%87%E9%AB%98%E5%B1%B1%EF%BC%8C%E9%A3%9E%E8%BF%87%E5%A4%A9%E7%A9%BA%EF%BC%8C%E9%A3%9E%E5%88%B0%E8%87%AA%E5%B7%B1%E4%BB%8E%E6%9C%AA%E5%88%B0%E8%BE%BE%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E5%8E%BB%E6%9B%BF%E6%88%91%E7%9C%8B%E7%9C%8B%E6%9C%AA%E7%9F%A5%E7%9A%84%E4%B8%96%E7%95%8C%E9%87%8C%EF%BC%8C%E9%A3%8E%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%80%E6%A0%B7%E6%B8%A9%E6%9F%94%EF%BC%8C%E6%9C%88%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%80%E6%A0%B7%E6%98%8E%E4%BA%AE%EF%BC%9F&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2Fc1e3181645f6b859087391575cb17496.jpg&amp;summary=&quot;%E5%B0%8F%E6%97%B6%E5%80%99%E4%B8%80%E6%9E%B6%E7%BA%B8%E9%A3%9E%E6%9C%BA%E6%89%BF%E8%BD%BD%E7%9D%80%E6%88%91%E7%AB%A5%E5%B9%B4%E7%9A%84%E6%A2%A6%E6%83%B3%EF%BC%8C%E6%88%91%E6%80%BB%E6%98%AF%E5%B8%8C%E6%9C%9B%E5%AE%83%E5%8F%AF%E4%BB%A5%E9%A3%9E%E8%BF%87%E9%AB%98%E5%B1%B1%EF%BC%8C%E9%A3%9E%E8%BF%87%E5%A4%A9%E7%A9%BA%EF%BC%8C%E9%A3%9E%E5%88%B0%E8%87%AA%E5%B7%B1%E4%BB%8E%E6%9C%AA%E5%88%B0%E8%BE%BE%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E5%8E%BB%E6%9B%BF%E6%88%91%E7%9C%8B%E7%9C%8B%E6%9C%AA%E7%9F%A5%E7%9A%84%E4%B8%96%E7%95%8C%E9%87%8C%EF%BC%8C%E9%A3%8E%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%80%E6%A0%B7%E6%B8%A9%E6%9F%94%EF%BC%8C%E6%9C%88%E6%98%AF%E4%B8%8D%E6%98%AF%E4%B8%80%E6%A0%B7%E6%98%8E%E4%BA%AE%EF%BC%9F&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308041.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2Fc1e3181645f6b859087391575cb17496.jpg&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/24/99308041.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAHD0lEQVR4Xu2d23bzOgiEm/d/6P4rxy0TPPMhK2m6Sy8bWQcGhgE78enr6+v76+Df9/d2itPp9DRjHBMHzFxDtp3Ne78u29N9PN3vfZxah+zzPuZsuQZksNjHAOI8Qnk0uXb0IOVVymudp5F5aSS6/SpWIPYYzzKu9YiQI5OQa90BCY38SUAcF2ZeSDwz8wgXDXFeBzzxfnc+B/qe41CHG+fP7PYUIW7DDcjVpISyZmzZgNCQCON+PSAupB0dne2RzeHsqVQTVVQPSSrkvDtfts8fpSy34QbkCtlSynLeGj3NJXU6X0y0jruVolPRkCXkbDwtFl8eIdSAhEboXE61qHlUVDpQf0UOoUZsQLZK7WMKQwqgooUjc2TUVU30K/bWgAgJ+zGAVD1NcffIr9kBZ/9HlZoa9469HbHl0m7vrKHHGkMZrAGBUKue00qQ/gQg36Qig8BQTT7bDyPNwzHaVN1QPNLbhp8akLfZGi0kAVEeST9T1XiWL6hXV2uZalS6fVTVGI5uFSHU6Kp10YBcrVMGxLUKYrxRQ6M4HQa5xJ0Vc3ENdZYVUXlej9w8m+pO3yOkAdm2MzJHovXNker9kUMakA8DhErWzHNI59NRF0mSM3QWHc1RVkaJs3tzUZauFZM6PbRSIVPcebsbR1vi9MGKXweIelCuWjNS2qNGn03g1X2PzlVVloQxRpXlIlT2sqoHa0D285BqIW0coiNk6+MfEyGURqoVL71vTqKR5jcyF6WpvXFKyBCq3SsW0aOkzhA0wWZKjm4+HqC6plJ5uIoeHgN6GSDV1klVFlbb7zRJUkkZx7nooXkw2sFdR5ml3FxsQLYQq0jNSgPHNg1ICCHn6XsR566bjhDHp6Rx5+ZQXYEq1zsvVJS1gk4rOTDuJbPTU4Q4YzYgucu43ERz3lNhmFWSbjHS63EbIu38I86iPHl1q4cWgRmNNSBveqqeFpwNyKcC4miJJCRaldNEqDq1Kvln1TU9H030UZi4+em8qFJ3/E/5+WiR5g6t9kmvpYZ7GSCkUneJvprUnWbfq4Jd65oYna7t5DTt/alIThmlAfHkp4o6yh7ZuBSQe/u9yv9l5EVjzpvkOmLGu0lhSNd3UVO1SaS9yxkbkBk4nh8DcrNQimtAnCV3PqdNRaIox8hHdYjjP0IlLuGSwumIuKgKD4oT2ffeXNOVegOyD8/LAXHGzxIRSWYuiqqiYoXycVFbqTVoP8yNQ9+gqhprRo1U12hAQhg4j4/JzI1vQG7SPj4G5MJYJUdn9KMgZeHu/qdUDrm3M/qha/8TOrf2bUDyDEgjlo4j8ndTGGYXzHo83aTrTakqOzMj3S8RIVXZ687iIuMRXSpC6AFjgm1A6r/K2oCYCvzHIqT6dQTq/YQzrSYPPxhGK3VKSVUGyBI87VERe1xySAPiY0E54VsBeadkJN7qopMUizMyeVbqz0R0+bmsWa3tNHwDcisM47dwqTxTgU6M64nivxHE8918mZdX9+kiVBW+tF3/9C3cBmQf2gbkZps/FSHkFq6rQonMdMmUeJ+LXnITytGUAt/lwZhfp5J6A7J1px8HRP20hvNI5REuyV6KoORJFFUsOg91n8c1SWTvXRNt4yIvWysDX/60RgNyk6LgjUENSEj4qz3Z5c0fiZCsUp+lBZfgsoJTaXeq66utDXrmSEHufERwbHpZ9O5ZA5JnnmWAkJeC0cVU4iJJPo6J4DtpTHPebJdB2YHmEGvLBmQLT5UpKHUqKtyA1IB8OCAupGaTb0YTLswJBZGcNiqwGdpTjUmyxz2KzPaOnu2lh6DGyUCdzT90TXpPQ52VOivNl0sAIfLtiOer6v2INyonODKvcgjaiRjHlSOkAfE5h/bD0tYJeQyoGqodIdfXCy+PEMr1maRzNcX5cwe0qkOoPCVU5Qw3W72PNqDyWFJWA7J1K9ffUskcA7Ly7QhUyaiIyrxVSe2qopkxKlVeihVUXhmvW/q6igZkP+FjQEil7ryQhKOTlivUm9sn+bzaHT6iqNLIa0D280RFmDhh0BFCwiEZ8zER4iiFJCxlA+dBJNG7hEzpY3YtJ9OP2uhSu6inTqoGro4/0oc60rL4VYDQKvtIz4l2T1VhmIFPVN7qKKPMSBlo6eu7iVK6hGXyagr1P+XRGw0vXnlB5j/PVaW9BkRYoCPkZpzoVfT+iaKdGc+jOYkkX0fdK/PQJspjUncbISHdgFy/9OlUWWbrpTnkjrQDlXo/GYeTpchb4zq0gItndWIhi6gGZMdrGxDi+nDM/z5CoB3Su2GKslxeIdKWUmF1LdXy35PpirIodWf0+JJKnaodOo4ekCifGXqqymm6XwkIjYxsHKENZ3z3uZKqEQh6k4tE5UaSiq8lHOnVpbK3AfEWeFX/rAEJticRPuYSSnvVqD/P+w9qReYrrE8vywAAAABJRU5ErkJggg==" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308040.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/299640e3dd78187b9a9cab7bf1d742dc.png" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308040.html" target="_blank" title="">航空工业武仪：智慧“雷达”</a>
+                        </p>
+                        <p class="news-des">从2012年踏入航空工业武仪，徐弘炜就与航空就结下了不解之缘。“我能做的就是对科研工作的坚守、对技术创新的追求。”怀着这种理想抱负，徐弘炜在自己的工作中一直努力着，坚持着。</p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">航空工业</span><span style="margin-right: 4px">武仪</span><span style="margin-right: 4px">员工风采</span></a>
+                            <span class="time">2020-07-24</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308040.html&amp;title=&amp;desc=%E4%BB%8E2012%E5%B9%B4%E8%B8%8F%E5%85%A5%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%AD%A6%E4%BB%AA%EF%BC%8C%E5%BE%90%E5%BC%98%E7%82%9C%E5%B0%B1%E4%B8%8E%E8%88%AA%E7%A9%BA%E5%B0%B1%E7%BB%93%E4%B8%8B%E4%BA%86%E4%B8%8D%E8%A7%A3%E4%B9%8B%E7%BC%98%E3%80%82%E2%80%9C%E6%88%91%E8%83%BD%E5%81%9A%E7%9A%84%E5%B0%B1%E6%98%AF%E5%AF%B9%E7%A7%91%E7%A0%94%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9D%9A%E5%AE%88%E3%80%81%E5%AF%B9%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E7%9A%84%E8%BF%BD%E6%B1%82%E3%80%82%E2%80%9D%E6%80%80%E7%9D%80%E8%BF%99%E7%A7%8D%E7%90%86%E6%83%B3%E6%8A%B1%E8%B4%9F%EF%BC%8C%E5%BE%90%E5%BC%98%E7%82%9C%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E4%B8%AD%E4%B8%80%E7%9B%B4%E5%8A%AA%E5%8A%9B%E7%9D%80%EF%BC%8C%E5%9D%9A%E6%8C%81%E7%9D%80%E3%80%82&amp;summary=%E4%BB%8E2012%E5%B9%B4%E8%B8%8F%E5%85%A5%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%AD%A6%E4%BB%AA%EF%BC%8C%E5%BE%90%E5%BC%98%E7%82%9C%E5%B0%B1%E4%B8%8E%E8%88%AA%E7%A9%BA%E5%B0%B1%E7%BB%93%E4%B8%8B%E4%BA%86%E4%B8%8D%E8%A7%A3%E4%B9%8B%E7%BC%98%E3%80%82%E2%80%9C%E6%88%91%E8%83%BD%E5%81%9A%E7%9A%84%E5%B0%B1%E6%98%AF%E5%AF%B9%E7%A7%91%E7%A0%94%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9D%9A%E5%AE%88%E3%80%81%E5%AF%B9%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E7%9A%84%E8%BF%BD%E6%B1%82%E3%80%82%E2%80%9D%E6%80%80%E7%9D%80%E8%BF%99%E7%A7%8D%E7%90%86%E6%83%B3%E6%8A%B1%E8%B4%9F%EF%BC%8C%E5%BE%90%E5%BC%98%E7%82%9C%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E4%B8%AD%E4%B8%80%E7%9B%B4%E5%8A%AA%E5%8A%9B%E7%9D%80%EF%BC%8C%E5%9D%9A%E6%8C%81%E7%9D%80%E3%80%82&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F299640e3dd78187b9a9cab7bf1d742dc.png" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308040.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E4%BB%8E2012%E5%B9%B4%E8%B8%8F%E5%85%A5%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%AD%A6%E4%BB%AA%EF%BC%8C%E5%BE%90%E5%BC%98%E7%82%9C%E5%B0%B1%E4%B8%8E%E8%88%AA%E7%A9%BA%E5%B0%B1%E7%BB%93%E4%B8%8B%E4%BA%86%E4%B8%8D%E8%A7%A3%E4%B9%8B%E7%BC%98%E3%80%82%E2%80%9C%E6%88%91%E8%83%BD%E5%81%9A%E7%9A%84%E5%B0%B1%E6%98%AF%E5%AF%B9%E7%A7%91%E7%A0%94%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9D%9A%E5%AE%88%E3%80%81%E5%AF%B9%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E7%9A%84%E8%BF%BD%E6%B1%82%E3%80%82%E2%80%9D%E6%80%80%E7%9D%80%E8%BF%99%E7%A7%8D%E7%90%86%E6%83%B3%E6%8A%B1%E8%B4%9F%EF%BC%8C%E5%BE%90%E5%BC%98%E7%82%9C%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E4%B8%AD%E4%B8%80%E7%9B%B4%E5%8A%AA%E5%8A%9B%E7%9D%80%EF%BC%8C%E5%9D%9A%E6%8C%81%E7%9D%80%E3%80%82&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F299640e3dd78187b9a9cab7bf1d742dc.png&amp;summary=&quot;%E4%BB%8E2012%E5%B9%B4%E8%B8%8F%E5%85%A5%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%AD%A6%E4%BB%AA%EF%BC%8C%E5%BE%90%E5%BC%98%E7%82%9C%E5%B0%B1%E4%B8%8E%E8%88%AA%E7%A9%BA%E5%B0%B1%E7%BB%93%E4%B8%8B%E4%BA%86%E4%B8%8D%E8%A7%A3%E4%B9%8B%E7%BC%98%E3%80%82%E2%80%9C%E6%88%91%E8%83%BD%E5%81%9A%E7%9A%84%E5%B0%B1%E6%98%AF%E5%AF%B9%E7%A7%91%E7%A0%94%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9D%9A%E5%AE%88%E3%80%81%E5%AF%B9%E6%8A%80%E6%9C%AF%E5%88%9B%E6%96%B0%E7%9A%84%E8%BF%BD%E6%B1%82%E3%80%82%E2%80%9D%E6%80%80%E7%9D%80%E8%BF%99%E7%A7%8D%E7%90%86%E6%83%B3%E6%8A%B1%E8%B4%9F%EF%BC%8C%E5%BE%90%E5%BC%98%E7%82%9C%E5%9C%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E5%B7%A5%E4%BD%9C%E4%B8%AD%E4%B8%80%E7%9B%B4%E5%8A%AA%E5%8A%9B%E7%9D%80%EF%BC%8C%E5%9D%9A%E6%8C%81%E7%9D%80%E3%80%82&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308040.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F299640e3dd78187b9a9cab7bf1d742dc.png&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/24/99308040.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308039.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/094f4a1f8084a409121a36cc6971d428.png" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308039.html" target="_blank" title="">“老黄牛”和纵缝焊的故事</a>
+                        </p>
+                        <p class="news-des">02厂房焊接班的角落里，趴着一台尘封许久的机器，其貌不扬，却是目前公司里最先进的焊接设备之一，学名叫作“筒体自动纵缝焊机”，简称“纵缝焊”，价值120余万元。用它加工导管产品，焊接速度快、产品质量稳定、焊缝均匀美观。但这个家伙耗费的生产准备时间却太长了，工装安装、零件定位，一通折腾下来，算算时间，竟然比手工焊接来得还要慢些。不由地，我们感叹着：空有一身绝技，却无用武之地。久而久之，“纵缝焊”这个东西就无人问津，闲置了起来。</p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">航空工业</span><span style="margin-right: 4px">202厂</span><span style="margin-right: 4px">员工风采</span></a>
+                            <span class="time">2020-07-24</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308039.html&amp;title=&amp;desc=02%E5%8E%82%E6%88%BF%E7%84%8A%E6%8E%A5%E7%8F%AD%E7%9A%84%E8%A7%92%E8%90%BD%E9%87%8C%EF%BC%8C%E8%B6%B4%E7%9D%80%E4%B8%80%E5%8F%B0%E5%B0%98%E5%B0%81%E8%AE%B8%E4%B9%85%E7%9A%84%E6%9C%BA%E5%99%A8%EF%BC%8C%E5%85%B6%E8%B2%8C%E4%B8%8D%E6%89%AC%EF%BC%8C%E5%8D%B4%E6%98%AF%E7%9B%AE%E5%89%8D%E5%85%AC%E5%8F%B8%E9%87%8C%E6%9C%80%E5%85%88%E8%BF%9B%E7%9A%84%E7%84%8A%E6%8E%A5%E8%AE%BE%E5%A4%87%E4%B9%8B%E4%B8%80%EF%BC%8C%E5%AD%A6%E5%90%8D%E5%8F%AB%E4%BD%9C%E2%80%9C%E7%AD%92%E4%BD%93%E8%87%AA%E5%8A%A8%E7%BA%B5%E7%BC%9D%E7%84%8A%E6%9C%BA%E2%80%9D%EF%BC%8C%E7%AE%80%E7%A7%B0%E2%80%9C%E7%BA%B5%E7%BC%9D%E7%84%8A%E2%80%9D%EF%BC%8C%E4%BB%B7%E5%80%BC120%E4%BD%99%E4%B8%87%E5%85%83%E3%80%82%E7%94%A8%E5%AE%83%E5%8A%A0%E5%B7%A5%E5%AF%BC%E7%AE%A1%E4%BA%A7%E5%93%81%EF%BC%8C%E7%84%8A%E6%8E%A5%E9%80%9F%E5%BA%A6%E5%BF%AB%E3%80%81%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F%E7%A8%B3%E5%AE%9A%E3%80%81%E7%84%8A%E7%BC%9D%E5%9D%87%E5%8C%80%E7%BE%8E%E8%A7%82%E3%80%82%E4%BD%86%E8%BF%99%E4%B8%AA%E5%AE%B6%E4%BC%99%E8%80%97%E8%B4%B9%E7%9A%84%E7%94%9F%E4%BA%A7%E5%87%86%E5%A4%87%E6%97%B6%E9%97%B4%E5%8D%B4%E5%A4%AA%E9%95%BF%E4%BA%86%EF%BC%8C%E5%B7%A5%E8%A3%85%E5%AE%89%E8%A3%85%E3%80%81%E9%9B%B6%E4%BB%B6%E5%AE%9A%E4%BD%8D%EF%BC%8C%E4%B8%80%E9%80%9A%E6%8A%98%E8%85%BE%E4%B8%8B%E6%9D%A5%EF%BC%8C%E7%AE%97%E7%AE%97%E6%97%B6%E9%97%B4%EF%BC%8C%E7%AB%9F%E7%84%B6%E6%AF%94%E6%89%8B%E5%B7%A5%E7%84%8A%E6%8E%A5%E6%9D%A5%E5%BE%97%E8%BF%98%E8%A6%81%E6%85%A2%E4%BA%9B%E3%80%82%E4%B8%8D%E7%94%B1%E5%9C%B0%EF%BC%8C%E6%88%91%E4%BB%AC%E6%84%9F%E5%8F%B9%E7%9D%80%EF%BC%9A%E7%A9%BA%E6%9C%89%E4%B8%80%E8%BA%AB%E7%BB%9D%E6%8A%80%EF%BC%8C%E5%8D%B4%E6%97%A0%E7%94%A8%E6%AD%A6%E4%B9%8B%E5%9C%B0%E3%80%82%E4%B9%85%E8%80%8C%E4%B9%85%E4%B9%8B%EF%BC%8C%E2%80%9C%E7%BA%B5%E7%BC%9D%E7%84%8A%E2%80%9D%E8%BF%99%E4%B8%AA%E4%B8%9C%E8%A5%BF%E5%B0%B1%E6%97%A0%E4%BA%BA%E9%97%AE%E6%B4%A5%EF%BC%8C%E9%97%B2%E7%BD%AE%E4%BA%86%E8%B5%B7%E6%9D%A5%E3%80%82&amp;summary=02%E5%8E%82%E6%88%BF%E7%84%8A%E6%8E%A5%E7%8F%AD%E7%9A%84%E8%A7%92%E8%90%BD%E9%87%8C%EF%BC%8C%E8%B6%B4%E7%9D%80%E4%B8%80%E5%8F%B0%E5%B0%98%E5%B0%81%E8%AE%B8%E4%B9%85%E7%9A%84%E6%9C%BA%E5%99%A8%EF%BC%8C%E5%85%B6%E8%B2%8C%E4%B8%8D%E6%89%AC%EF%BC%8C%E5%8D%B4%E6%98%AF%E7%9B%AE%E5%89%8D%E5%85%AC%E5%8F%B8%E9%87%8C%E6%9C%80%E5%85%88%E8%BF%9B%E7%9A%84%E7%84%8A%E6%8E%A5%E8%AE%BE%E5%A4%87%E4%B9%8B%E4%B8%80%EF%BC%8C%E5%AD%A6%E5%90%8D%E5%8F%AB%E4%BD%9C%E2%80%9C%E7%AD%92%E4%BD%93%E8%87%AA%E5%8A%A8%E7%BA%B5%E7%BC%9D%E7%84%8A%E6%9C%BA%E2%80%9D%EF%BC%8C%E7%AE%80%E7%A7%B0%E2%80%9C%E7%BA%B5%E7%BC%9D%E7%84%8A%E2%80%9D%EF%BC%8C%E4%BB%B7%E5%80%BC120%E4%BD%99%E4%B8%87%E5%85%83%E3%80%82%E7%94%A8%E5%AE%83%E5%8A%A0%E5%B7%A5%E5%AF%BC%E7%AE%A1%E4%BA%A7%E5%93%81%EF%BC%8C%E7%84%8A%E6%8E%A5%E9%80%9F%E5%BA%A6%E5%BF%AB%E3%80%81%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F%E7%A8%B3%E5%AE%9A%E3%80%81%E7%84%8A%E7%BC%9D%E5%9D%87%E5%8C%80%E7%BE%8E%E8%A7%82%E3%80%82%E4%BD%86%E8%BF%99%E4%B8%AA%E5%AE%B6%E4%BC%99%E8%80%97%E8%B4%B9%E7%9A%84%E7%94%9F%E4%BA%A7%E5%87%86%E5%A4%87%E6%97%B6%E9%97%B4%E5%8D%B4%E5%A4%AA%E9%95%BF%E4%BA%86%EF%BC%8C%E5%B7%A5%E8%A3%85%E5%AE%89%E8%A3%85%E3%80%81%E9%9B%B6%E4%BB%B6%E5%AE%9A%E4%BD%8D%EF%BC%8C%E4%B8%80%E9%80%9A%E6%8A%98%E8%85%BE%E4%B8%8B%E6%9D%A5%EF%BC%8C%E7%AE%97%E7%AE%97%E6%97%B6%E9%97%B4%EF%BC%8C%E7%AB%9F%E7%84%B6%E6%AF%94%E6%89%8B%E5%B7%A5%E7%84%8A%E6%8E%A5%E6%9D%A5%E5%BE%97%E8%BF%98%E8%A6%81%E6%85%A2%E4%BA%9B%E3%80%82%E4%B8%8D%E7%94%B1%E5%9C%B0%EF%BC%8C%E6%88%91%E4%BB%AC%E6%84%9F%E5%8F%B9%E7%9D%80%EF%BC%9A%E7%A9%BA%E6%9C%89%E4%B8%80%E8%BA%AB%E7%BB%9D%E6%8A%80%EF%BC%8C%E5%8D%B4%E6%97%A0%E7%94%A8%E6%AD%A6%E4%B9%8B%E5%9C%B0%E3%80%82%E4%B9%85%E8%80%8C%E4%B9%85%E4%B9%8B%EF%BC%8C%E2%80%9C%E7%BA%B5%E7%BC%9D%E7%84%8A%E2%80%9D%E8%BF%99%E4%B8%AA%E4%B8%9C%E8%A5%BF%E5%B0%B1%E6%97%A0%E4%BA%BA%E9%97%AE%E6%B4%A5%EF%BC%8C%E9%97%B2%E7%BD%AE%E4%BA%86%E8%B5%B7%E6%9D%A5%E3%80%82&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F094f4a1f8084a409121a36cc6971d428.png" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308039.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=02%E5%8E%82%E6%88%BF%E7%84%8A%E6%8E%A5%E7%8F%AD%E7%9A%84%E8%A7%92%E8%90%BD%E9%87%8C%EF%BC%8C%E8%B6%B4%E7%9D%80%E4%B8%80%E5%8F%B0%E5%B0%98%E5%B0%81%E8%AE%B8%E4%B9%85%E7%9A%84%E6%9C%BA%E5%99%A8%EF%BC%8C%E5%85%B6%E8%B2%8C%E4%B8%8D%E6%89%AC%EF%BC%8C%E5%8D%B4%E6%98%AF%E7%9B%AE%E5%89%8D%E5%85%AC%E5%8F%B8%E9%87%8C%E6%9C%80%E5%85%88%E8%BF%9B%E7%9A%84%E7%84%8A%E6%8E%A5%E8%AE%BE%E5%A4%87%E4%B9%8B%E4%B8%80%EF%BC%8C%E5%AD%A6%E5%90%8D%E5%8F%AB%E4%BD%9C%E2%80%9C%E7%AD%92%E4%BD%93%E8%87%AA%E5%8A%A8%E7%BA%B5%E7%BC%9D%E7%84%8A%E6%9C%BA%E2%80%9D%EF%BC%8C%E7%AE%80%E7%A7%B0%E2%80%9C%E7%BA%B5%E7%BC%9D%E7%84%8A%E2%80%9D%EF%BC%8C%E4%BB%B7%E5%80%BC120%E4%BD%99%E4%B8%87%E5%85%83%E3%80%82%E7%94%A8%E5%AE%83%E5%8A%A0%E5%B7%A5%E5%AF%BC%E7%AE%A1%E4%BA%A7%E5%93%81%EF%BC%8C%E7%84%8A%E6%8E%A5%E9%80%9F%E5%BA%A6%E5%BF%AB%E3%80%81%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F%E7%A8%B3%E5%AE%9A%E3%80%81%E7%84%8A%E7%BC%9D%E5%9D%87%E5%8C%80%E7%BE%8E%E8%A7%82%E3%80%82%E4%BD%86%E8%BF%99%E4%B8%AA%E5%AE%B6%E4%BC%99%E8%80%97%E8%B4%B9%E7%9A%84%E7%94%9F%E4%BA%A7%E5%87%86%E5%A4%87%E6%97%B6%E9%97%B4%E5%8D%B4%E5%A4%AA%E9%95%BF%E4%BA%86%EF%BC%8C%E5%B7%A5%E8%A3%85%E5%AE%89%E8%A3%85%E3%80%81%E9%9B%B6%E4%BB%B6%E5%AE%9A%E4%BD%8D%EF%BC%8C%E4%B8%80%E9%80%9A%E6%8A%98%E8%85%BE%E4%B8%8B%E6%9D%A5%EF%BC%8C%E7%AE%97%E7%AE%97%E6%97%B6%E9%97%B4%EF%BC%8C%E7%AB%9F%E7%84%B6%E6%AF%94%E6%89%8B%E5%B7%A5%E7%84%8A%E6%8E%A5%E6%9D%A5%E5%BE%97%E8%BF%98%E8%A6%81%E6%85%A2%E4%BA%9B%E3%80%82%E4%B8%8D%E7%94%B1%E5%9C%B0%EF%BC%8C%E6%88%91%E4%BB%AC%E6%84%9F%E5%8F%B9%E7%9D%80%EF%BC%9A%E7%A9%BA%E6%9C%89%E4%B8%80%E8%BA%AB%E7%BB%9D%E6%8A%80%EF%BC%8C%E5%8D%B4%E6%97%A0%E7%94%A8%E6%AD%A6%E4%B9%8B%E5%9C%B0%E3%80%82%E4%B9%85%E8%80%8C%E4%B9%85%E4%B9%8B%EF%BC%8C%E2%80%9C%E7%BA%B5%E7%BC%9D%E7%84%8A%E2%80%9D%E8%BF%99%E4%B8%AA%E4%B8%9C%E8%A5%BF%E5%B0%B1%E6%97%A0%E4%BA%BA%E9%97%AE%E6%B4%A5%EF%BC%8C%E9%97%B2%E7%BD%AE%E4%BA%86%E8%B5%B7%E6%9D%A5%E3%80%82&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F094f4a1f8084a409121a36cc6971d428.png&amp;summary=&quot;02%E5%8E%82%E6%88%BF%E7%84%8A%E6%8E%A5%E7%8F%AD%E7%9A%84%E8%A7%92%E8%90%BD%E9%87%8C%EF%BC%8C%E8%B6%B4%E7%9D%80%E4%B8%80%E5%8F%B0%E5%B0%98%E5%B0%81%E8%AE%B8%E4%B9%85%E7%9A%84%E6%9C%BA%E5%99%A8%EF%BC%8C%E5%85%B6%E8%B2%8C%E4%B8%8D%E6%89%AC%EF%BC%8C%E5%8D%B4%E6%98%AF%E7%9B%AE%E5%89%8D%E5%85%AC%E5%8F%B8%E9%87%8C%E6%9C%80%E5%85%88%E8%BF%9B%E7%9A%84%E7%84%8A%E6%8E%A5%E8%AE%BE%E5%A4%87%E4%B9%8B%E4%B8%80%EF%BC%8C%E5%AD%A6%E5%90%8D%E5%8F%AB%E4%BD%9C%E2%80%9C%E7%AD%92%E4%BD%93%E8%87%AA%E5%8A%A8%E7%BA%B5%E7%BC%9D%E7%84%8A%E6%9C%BA%E2%80%9D%EF%BC%8C%E7%AE%80%E7%A7%B0%E2%80%9C%E7%BA%B5%E7%BC%9D%E7%84%8A%E2%80%9D%EF%BC%8C%E4%BB%B7%E5%80%BC120%E4%BD%99%E4%B8%87%E5%85%83%E3%80%82%E7%94%A8%E5%AE%83%E5%8A%A0%E5%B7%A5%E5%AF%BC%E7%AE%A1%E4%BA%A7%E5%93%81%EF%BC%8C%E7%84%8A%E6%8E%A5%E9%80%9F%E5%BA%A6%E5%BF%AB%E3%80%81%E4%BA%A7%E5%93%81%E8%B4%A8%E9%87%8F%E7%A8%B3%E5%AE%9A%E3%80%81%E7%84%8A%E7%BC%9D%E5%9D%87%E5%8C%80%E7%BE%8E%E8%A7%82%E3%80%82%E4%BD%86%E8%BF%99%E4%B8%AA%E5%AE%B6%E4%BC%99%E8%80%97%E8%B4%B9%E7%9A%84%E7%94%9F%E4%BA%A7%E5%87%86%E5%A4%87%E6%97%B6%E9%97%B4%E5%8D%B4%E5%A4%AA%E9%95%BF%E4%BA%86%EF%BC%8C%E5%B7%A5%E8%A3%85%E5%AE%89%E8%A3%85%E3%80%81%E9%9B%B6%E4%BB%B6%E5%AE%9A%E4%BD%8D%EF%BC%8C%E4%B8%80%E9%80%9A%E6%8A%98%E8%85%BE%E4%B8%8B%E6%9D%A5%EF%BC%8C%E7%AE%97%E7%AE%97%E6%97%B6%E9%97%B4%EF%BC%8C%E7%AB%9F%E7%84%B6%E6%AF%94%E6%89%8B%E5%B7%A5%E7%84%8A%E6%8E%A5%E6%9D%A5%E5%BE%97%E8%BF%98%E8%A6%81%E6%85%A2%E4%BA%9B%E3%80%82%E4%B8%8D%E7%94%B1%E5%9C%B0%EF%BC%8C%E6%88%91%E4%BB%AC%E6%84%9F%E5%8F%B9%E7%9D%80%EF%BC%9A%E7%A9%BA%E6%9C%89%E4%B8%80%E8%BA%AB%E7%BB%9D%E6%8A%80%EF%BC%8C%E5%8D%B4%E6%97%A0%E7%94%A8%E6%AD%A6%E4%B9%8B%E5%9C%B0%E3%80%82%E4%B9%85%E8%80%8C%E4%B9%85%E4%B9%8B%EF%BC%8C%E2%80%9C%E7%BA%B5%E7%BC%9D%E7%84%8A%E2%80%9D%E8%BF%99%E4%B8%AA%E4%B8%9C%E8%A5%BF%E5%B0%B1%E6%97%A0%E4%BA%BA%E9%97%AE%E6%B4%A5%EF%BC%8C%E9%97%B2%E7%BD%AE%E4%BA%86%E8%B5%B7%E6%9D%A5%E3%80%82&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308039.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F094f4a1f8084a409121a36cc6971d428.png&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/24/99308039.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308038.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/ht/images/20200724/45d37c01d69a09767ddb1012da027273.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308038.html" target="_blank" title="">新员工，十年的我对你说</a>
+                        </p>
+                        <p class="news-des">我是航空工业洪都胡冬冬，毕业于江西航空技术学院。初入职的时候，我还是个懵懂的青年，对什么都充满好奇和憧憬。入职后，我的世界打开了一扇窗，看到了各式各样的机器设备。</p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">航空工业</span><span style="margin-right: 4px">员工</span></a>
+                            <span class="time">2020-07-24</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308038.html&amp;title=&amp;desc=%E6%88%91%E6%98%AF%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%B4%AA%E9%83%BD%E8%83%A1%E5%86%AC%E5%86%AC%EF%BC%8C%E6%AF%95%E4%B8%9A%E4%BA%8E%E6%B1%9F%E8%A5%BF%E8%88%AA%E7%A9%BA%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E3%80%82%E5%88%9D%E5%85%A5%E8%81%8C%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E6%88%91%E8%BF%98%E6%98%AF%E4%B8%AA%E6%87%B5%E6%87%82%E7%9A%84%E9%9D%92%E5%B9%B4%EF%BC%8C%E5%AF%B9%E4%BB%80%E4%B9%88%E9%83%BD%E5%85%85%E6%BB%A1%E5%A5%BD%E5%A5%87%E5%92%8C%E6%86%A7%E6%86%AC%E3%80%82%E5%85%A5%E8%81%8C%E5%90%8E%EF%BC%8C%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%89%93%E5%BC%80%E4%BA%86%E4%B8%80%E6%89%87%E7%AA%97%EF%BC%8C%E7%9C%8B%E5%88%B0%E4%BA%86%E5%90%84%E5%BC%8F%E5%90%84%E6%A0%B7%E7%9A%84%E6%9C%BA%E5%99%A8%E8%AE%BE%E5%A4%87%E3%80%82&amp;summary=%E6%88%91%E6%98%AF%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%B4%AA%E9%83%BD%E8%83%A1%E5%86%AC%E5%86%AC%EF%BC%8C%E6%AF%95%E4%B8%9A%E4%BA%8E%E6%B1%9F%E8%A5%BF%E8%88%AA%E7%A9%BA%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E3%80%82%E5%88%9D%E5%85%A5%E8%81%8C%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E6%88%91%E8%BF%98%E6%98%AF%E4%B8%AA%E6%87%B5%E6%87%82%E7%9A%84%E9%9D%92%E5%B9%B4%EF%BC%8C%E5%AF%B9%E4%BB%80%E4%B9%88%E9%83%BD%E5%85%85%E6%BB%A1%E5%A5%BD%E5%A5%87%E5%92%8C%E6%86%A7%E6%86%AC%E3%80%82%E5%85%A5%E8%81%8C%E5%90%8E%EF%BC%8C%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%89%93%E5%BC%80%E4%BA%86%E4%B8%80%E6%89%87%E7%AA%97%EF%BC%8C%E7%9C%8B%E5%88%B0%E4%BA%86%E5%90%84%E5%BC%8F%E5%90%84%E6%A0%B7%E7%9A%84%E6%9C%BA%E5%99%A8%E8%AE%BE%E5%A4%87%E3%80%82&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F45d37c01d69a09767ddb1012da027273.jpg" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308038.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E6%88%91%E6%98%AF%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%B4%AA%E9%83%BD%E8%83%A1%E5%86%AC%E5%86%AC%EF%BC%8C%E6%AF%95%E4%B8%9A%E4%BA%8E%E6%B1%9F%E8%A5%BF%E8%88%AA%E7%A9%BA%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E3%80%82%E5%88%9D%E5%85%A5%E8%81%8C%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E6%88%91%E8%BF%98%E6%98%AF%E4%B8%AA%E6%87%B5%E6%87%82%E7%9A%84%E9%9D%92%E5%B9%B4%EF%BC%8C%E5%AF%B9%E4%BB%80%E4%B9%88%E9%83%BD%E5%85%85%E6%BB%A1%E5%A5%BD%E5%A5%87%E5%92%8C%E6%86%A7%E6%86%AC%E3%80%82%E5%85%A5%E8%81%8C%E5%90%8E%EF%BC%8C%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%89%93%E5%BC%80%E4%BA%86%E4%B8%80%E6%89%87%E7%AA%97%EF%BC%8C%E7%9C%8B%E5%88%B0%E4%BA%86%E5%90%84%E5%BC%8F%E5%90%84%E6%A0%B7%E7%9A%84%E6%9C%BA%E5%99%A8%E8%AE%BE%E5%A4%87%E3%80%82&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F45d37c01d69a09767ddb1012da027273.jpg&amp;summary=&quot;%E6%88%91%E6%98%AF%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E6%B4%AA%E9%83%BD%E8%83%A1%E5%86%AC%E5%86%AC%EF%BC%8C%E6%AF%95%E4%B8%9A%E4%BA%8E%E6%B1%9F%E8%A5%BF%E8%88%AA%E7%A9%BA%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E3%80%82%E5%88%9D%E5%85%A5%E8%81%8C%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E6%88%91%E8%BF%98%E6%98%AF%E4%B8%AA%E6%87%B5%E6%87%82%E7%9A%84%E9%9D%92%E5%B9%B4%EF%BC%8C%E5%AF%B9%E4%BB%80%E4%B9%88%E9%83%BD%E5%85%85%E6%BB%A1%E5%A5%BD%E5%A5%87%E5%92%8C%E6%86%A7%E6%86%AC%E3%80%82%E5%85%A5%E8%81%8C%E5%90%8E%EF%BC%8C%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E6%89%93%E5%BC%80%E4%BA%86%E4%B8%80%E6%89%87%E7%AA%97%EF%BC%8C%E7%9C%8B%E5%88%B0%E4%BA%86%E5%90%84%E5%BC%8F%E5%90%84%E6%A0%B7%E7%9A%84%E6%9C%BA%E5%99%A8%E8%AE%BE%E5%A4%87%E3%80%82&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308038.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F20200724%2F45d37c01d69a09767ddb1012da027273.jpg&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/24/99308038.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAHOklEQVR4Xu2d65ajQAiEk/d/6NljbkcJXfXRajK7y/ycaF8oKAramOvlcvm57Pz7+RkPcb1eb6Nn1zw/G02vxs3uyeZSc6g1ubnjXG4v1MSLtRqQlbWUA62NejogziMiwmuPeN5b9dDMa6rrUJGyZ/zM49drU4BU97Ce6xUhewZpQC6XzEExTT1ofbn+DRDHhdH46/ygvMqNS7xZReXMOrK9PNeRRYNao1sbvbcBWbxy5aENiIjrSKPOC4nHuzH+SUCq4X7jzkQek8RZpUKXK6kwqTrLVymrAblXEs5Zsog+JYdQL1x7DRELrrh0n48K1Ky+ICJjdJ+iTrfnBiRYvlrZP2+nuakBCQpqJnqzRF8plEe6BVHWTDFDCkNV5Y7mjN7qjJl5K9kPoTpHd6cVhmQDMWE1ICdU6hQIIt9cNBCJm0lhx9NVYTC7Dre2PbY8tNt75Abdponx1zTzybU1IA8LEJA+Eb27APmhmbIwi6OWTLV8Um7GrTgTzK6tYLLXpdcGJD/NPKJYPAQQJ99cO2Dkfa6jSgos15JRlFWVxC5q4nhubQqczb0xQhqQu+m+Bkg8U59Jegr9qrqhnqQiKqMbZWAXvbOskO3F5dc32duAvEdIAzIIE9fiUJ//NRHyzCEqbKmHqLazM6aSwrSdPaNqiAR2lEbmpTZ8yd4GZJzMPwqIelDuaI9XUpHI3rUnzkYNVU+0DjmyyF3Gkr2sBuRubkI3tA5xDtGAgATwVUBo8qX0QdWN85zoqVVFldVDqnp3doifz+SZtEZThSFtN1SpjRZ10XlpF2EWrMzJRrnkdECqSZJumoQ7bVW4KhewT3qJ4/9q9BIJPwK6/NRJNplSTw3IVhg4KmxAQiNxJheMlJhrQ2XULc9DqomQUkY151SNVL2+WnOsKZY2T2k+bkCCF1Up9jRAqgtRXuWSJI0kla+qkjWbU+2Z0g31fLKXG/Wp5mK2CZeUomKiQCuQaC1DN02M2IAIRP4rQKqFYZaQiU53iVONq8QFpaI96652wqk9snHliWEW2ns2RnhfFX97Nrpn3V8BhOSGmB9UQVg1PskhLh9Vuw2zOTKzA23rrOfM1iu/Fk31fLVeqRqOXk+vI+BTilUsQsdY27kMCJGsTvZS6lFzVZ1FKTAXeSqS6L1UmDQg8AAqglKNxgbkYcHowTRXOiY4DRD15GKVa0kiv1Wj8A1BcdPOmFUlReU0paVqYZrZ662XRSenIZgtsgHZunqa1KnhSP+HSkDXniBzOWohlFUtLrMopyLDrnf22V6qPBTNNCDvVpx+trcB2b4p77AIid1elzhJ4lLtDxeye4BWokJRclY906KuKmSyuTY5pAHZusCsQ7oIof2w8hvlyMCuUqdRomRvptTU/2iE0Iq+WofQcRuQgXe4SGlABk+HVJUajd5fAwjlQrdgSktEJFQTJ21eur3GeRX4bixaDKPnspwXEnXjACJG3LPpmeLvK4CQXpaLhmrPqZpgaUIkvSwqyY9wQjdG5mCol9WAzL0ufQqQZ+uEeNeIdmhDkuQLR0s0n5C1UqVEryOR7ESFzCGE15dFNCC8uGxAQqjQHOJaHEqkVBuqmzZN9clFshDXfqe0Qw6QHMXFMRwgihXovqiiS69rQPjr+b4CCM0bmzATb/4k/aWZGqV6eEV6cMs6aITMJnCbQ0i31xlMnco1IHfrUTu8Pf3eEeJ/vilL+BljTNUhpFJ3ERLD13FtlT4oPdF+EREm1MDVsRTV3yKpATmuhojgOLaRrRNa3Lk2yshjXPgSKewiLxvDGYVGf7yOSPKZKDvlG1TZJhuQ935YR8hsOCT3nRYh1eeyFC3QZL0nESpqq9YGlOKUZN1DiWmENCC+Uv8oIERlOf4ngmBWDDiW2eOhbmwSjS5fxjGcHZDsbUDuCZn+0W5vBngDAqxMGGA9zC5Aqu9cJKdnjkaoQqHXVWmhKipoH2p23E290oBszUi9+8io2QBy5K8jUE9yiW3kae4+8lwAPaBSEn5ZH4nemc7CoT9X0YBsXWkKkCN/4L6q192C1TmLkqTuEAjkcfvrCHGvLvKUPF7f+5XfoKpWyKQCH6mcKteruTZcH7642oA8rEO5nkSFk64fBcRJ1bihqkfQ4tJdp6gq826VfMlny5hUeREbZY6RUlYDUkvIp6ks9SgpTUQRTJqsnROQpE6pSFGbi3ZSDLt1uL2+Ir8Bybu9DiQHQPy8AQkW+a8jJFMjzqMILbhKnVJsTP4uGqh3k9rIyXD0DapMDro8QdSQG5eEvdugAlq1Wuj+nGpS4Kf3HplDlHFc9Vw1nIoGFaEuymg0EMHhnKUBMTXFqOYgUeCAdpR9isrqCBnXMtOA4BtXT7zP1iFZDsnohlbKro2yjE1pxFEXdb6YS+24MYc0IHcLWMOFr2Dsca6NEx7ZfidcSwF3G8xUnDNinLt6XECjt7q209rvDcg4hyhnaUAedvuNEfIHCMoKeasb+M0AAAAASUVORK5CYII=" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308035.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/ht/images/2007/24/20200724201015691994.png" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308035.html" target="_blank" title="">航空工业中航国际陈顺林：稳健掌舵 乘风破浪的哥哥</a>
+                        </p>
+                        <p class="news-des">稳健掌舵 乘风破浪的哥哥，记航空工业中航国际矿产资源有限公司总经理助理陈顺林</p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">航空工业</span><span style="margin-right: 4px">中航国际</span><span style="margin-right: 4px">优秀员工</span></a>
+                            <span class="time">2020-07-24</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308035.html&amp;title=&amp;desc=%E7%A8%B3%E5%81%A5%E6%8E%8C%E8%88%B5%20%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%E7%9A%84%E5%93%A5%E5%93%A5%EF%BC%8C%E8%AE%B0%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E4%B8%AD%E8%88%AA%E5%9B%BD%E9%99%85%E7%9F%BF%E4%BA%A7%E8%B5%84%E6%BA%90%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%80%BB%E7%BB%8F%E7%90%86%E5%8A%A9%E7%90%86%E9%99%88%E9%A1%BA%E6%9E%97&amp;summary=%E7%A8%B3%E5%81%A5%E6%8E%8C%E8%88%B5%20%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%E7%9A%84%E5%93%A5%E5%93%A5%EF%BC%8C%E8%AE%B0%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E4%B8%AD%E8%88%AA%E5%9B%BD%E9%99%85%E7%9F%BF%E4%BA%A7%E8%B5%84%E6%BA%90%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%80%BB%E7%BB%8F%E7%90%86%E5%8A%A9%E7%90%86%E9%99%88%E9%A1%BA%E6%9E%97&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F2007%2F24%2F20200724201015691994.png" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308035.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E7%A8%B3%E5%81%A5%E6%8E%8C%E8%88%B5%20%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%E7%9A%84%E5%93%A5%E5%93%A5%EF%BC%8C%E8%AE%B0%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E4%B8%AD%E8%88%AA%E5%9B%BD%E9%99%85%E7%9F%BF%E4%BA%A7%E8%B5%84%E6%BA%90%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%80%BB%E7%BB%8F%E7%90%86%E5%8A%A9%E7%90%86%E9%99%88%E9%A1%BA%E6%9E%97&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F2007%2F24%2F20200724201015691994.png&amp;summary=&quot;%E7%A8%B3%E5%81%A5%E6%8E%8C%E8%88%B5%20%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%E7%9A%84%E5%93%A5%E5%93%A5%EF%BC%8C%E8%AE%B0%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E4%B8%AD%E8%88%AA%E5%9B%BD%E9%99%85%E7%9F%BF%E4%BA%A7%E8%B5%84%E6%BA%90%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E6%80%BB%E7%BB%8F%E7%90%86%E5%8A%A9%E7%90%86%E9%99%88%E9%A1%BA%E6%9E%97&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308035.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F2007%2F24%2F20200724201015691994.png&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/24/99308035.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308033.html" target="_blank" title="">
+                                <img src="http://59.110.165.78/Public/cannews/img/hkkx.jpg" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308033.html" target="_blank" title="">航空小镇的清晨</a>
+                        </p>
+                        <p class="news-des">转眼之间，夏天就来了。曾经以为夏天到来，怕高温的病毒就会胆怯而消失，可是新冠病毒依旧顽命挣扎，让人们无法掉以轻心，依旧重在防护。在我生活和工作的地方，中国版图中心地带的一个航空小镇，人们在抵抗疫情的氛围中有条不紊地进行着平淡简单的生活。</p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">航空小镇</span><span style="margin-right: 4px">航空人</span><span style="margin-right: 4px">航空工业</span></a>
+                            <span class="time">2020-07-24</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308033.html&amp;title=&amp;desc=%E8%BD%AC%E7%9C%BC%E4%B9%8B%E9%97%B4%EF%BC%8C%E5%A4%8F%E5%A4%A9%E5%B0%B1%E6%9D%A5%E4%BA%86%E3%80%82%E6%9B%BE%E7%BB%8F%E4%BB%A5%E4%B8%BA%E5%A4%8F%E5%A4%A9%E5%88%B0%E6%9D%A5%EF%BC%8C%E6%80%95%E9%AB%98%E6%B8%A9%E7%9A%84%E7%97%85%E6%AF%92%E5%B0%B1%E4%BC%9A%E8%83%86%E6%80%AF%E8%80%8C%E6%B6%88%E5%A4%B1%EF%BC%8C%E5%8F%AF%E6%98%AF%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E4%BE%9D%E6%97%A7%E9%A1%BD%E5%91%BD%E6%8C%A3%E6%89%8E%EF%BC%8C%E8%AE%A9%E4%BA%BA%E4%BB%AC%E6%97%A0%E6%B3%95%E6%8E%89%E4%BB%A5%E8%BD%BB%E5%BF%83%EF%BC%8C%E4%BE%9D%E6%97%A7%E9%87%8D%E5%9C%A8%E9%98%B2%E6%8A%A4%E3%80%82%E5%9C%A8%E6%88%91%E7%94%9F%E6%B4%BB%E5%92%8C%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E4%B8%AD%E5%9B%BD%E7%89%88%E5%9B%BE%E4%B8%AD%E5%BF%83%E5%9C%B0%E5%B8%A6%E7%9A%84%E4%B8%80%E4%B8%AA%E8%88%AA%E7%A9%BA%E5%B0%8F%E9%95%87%EF%BC%8C%E4%BA%BA%E4%BB%AC%E5%9C%A8%E6%8A%B5%E6%8A%97%E7%96%AB%E6%83%85%E7%9A%84%E6%B0%9B%E5%9B%B4%E4%B8%AD%E6%9C%89%E6%9D%A1%E4%B8%8D%E7%B4%8A%E5%9C%B0%E8%BF%9B%E8%A1%8C%E7%9D%80%E5%B9%B3%E6%B7%A1%E7%AE%80%E5%8D%95%E7%9A%84%E7%94%9F%E6%B4%BB%E3%80%82&amp;summary=%E8%BD%AC%E7%9C%BC%E4%B9%8B%E9%97%B4%EF%BC%8C%E5%A4%8F%E5%A4%A9%E5%B0%B1%E6%9D%A5%E4%BA%86%E3%80%82%E6%9B%BE%E7%BB%8F%E4%BB%A5%E4%B8%BA%E5%A4%8F%E5%A4%A9%E5%88%B0%E6%9D%A5%EF%BC%8C%E6%80%95%E9%AB%98%E6%B8%A9%E7%9A%84%E7%97%85%E6%AF%92%E5%B0%B1%E4%BC%9A%E8%83%86%E6%80%AF%E8%80%8C%E6%B6%88%E5%A4%B1%EF%BC%8C%E5%8F%AF%E6%98%AF%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E4%BE%9D%E6%97%A7%E9%A1%BD%E5%91%BD%E6%8C%A3%E6%89%8E%EF%BC%8C%E8%AE%A9%E4%BA%BA%E4%BB%AC%E6%97%A0%E6%B3%95%E6%8E%89%E4%BB%A5%E8%BD%BB%E5%BF%83%EF%BC%8C%E4%BE%9D%E6%97%A7%E9%87%8D%E5%9C%A8%E9%98%B2%E6%8A%A4%E3%80%82%E5%9C%A8%E6%88%91%E7%94%9F%E6%B4%BB%E5%92%8C%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E4%B8%AD%E5%9B%BD%E7%89%88%E5%9B%BE%E4%B8%AD%E5%BF%83%E5%9C%B0%E5%B8%A6%E7%9A%84%E4%B8%80%E4%B8%AA%E8%88%AA%E7%A9%BA%E5%B0%8F%E9%95%87%EF%BC%8C%E4%BA%BA%E4%BB%AC%E5%9C%A8%E6%8A%B5%E6%8A%97%E7%96%AB%E6%83%85%E7%9A%84%E6%B0%9B%E5%9B%B4%E4%B8%AD%E6%9C%89%E6%9D%A1%E4%B8%8D%E7%B4%8A%E5%9C%B0%E8%BF%9B%E8%A1%8C%E7%9D%80%E5%B9%B3%E6%B7%A1%E7%AE%80%E5%8D%95%E7%9A%84%E7%94%9F%E6%B4%BB%E3%80%82&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%2FPublic%2Fcannews%2Fimg%2Fhkkx.jpg" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308033.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E8%BD%AC%E7%9C%BC%E4%B9%8B%E9%97%B4%EF%BC%8C%E5%A4%8F%E5%A4%A9%E5%B0%B1%E6%9D%A5%E4%BA%86%E3%80%82%E6%9B%BE%E7%BB%8F%E4%BB%A5%E4%B8%BA%E5%A4%8F%E5%A4%A9%E5%88%B0%E6%9D%A5%EF%BC%8C%E6%80%95%E9%AB%98%E6%B8%A9%E7%9A%84%E7%97%85%E6%AF%92%E5%B0%B1%E4%BC%9A%E8%83%86%E6%80%AF%E8%80%8C%E6%B6%88%E5%A4%B1%EF%BC%8C%E5%8F%AF%E6%98%AF%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E4%BE%9D%E6%97%A7%E9%A1%BD%E5%91%BD%E6%8C%A3%E6%89%8E%EF%BC%8C%E8%AE%A9%E4%BA%BA%E4%BB%AC%E6%97%A0%E6%B3%95%E6%8E%89%E4%BB%A5%E8%BD%BB%E5%BF%83%EF%BC%8C%E4%BE%9D%E6%97%A7%E9%87%8D%E5%9C%A8%E9%98%B2%E6%8A%A4%E3%80%82%E5%9C%A8%E6%88%91%E7%94%9F%E6%B4%BB%E5%92%8C%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E4%B8%AD%E5%9B%BD%E7%89%88%E5%9B%BE%E4%B8%AD%E5%BF%83%E5%9C%B0%E5%B8%A6%E7%9A%84%E4%B8%80%E4%B8%AA%E8%88%AA%E7%A9%BA%E5%B0%8F%E9%95%87%EF%BC%8C%E4%BA%BA%E4%BB%AC%E5%9C%A8%E6%8A%B5%E6%8A%97%E7%96%AB%E6%83%85%E7%9A%84%E6%B0%9B%E5%9B%B4%E4%B8%AD%E6%9C%89%E6%9D%A1%E4%B8%8D%E7%B4%8A%E5%9C%B0%E8%BF%9B%E8%A1%8C%E7%9D%80%E5%B9%B3%E6%B7%A1%E7%AE%80%E5%8D%95%E7%9A%84%E7%94%9F%E6%B4%BB%E3%80%82&amp;pics=http%3A%2F%2F59.110.165.78%2FPublic%2Fcannews%2Fimg%2Fhkkx.jpg&amp;summary=&quot;%E8%BD%AC%E7%9C%BC%E4%B9%8B%E9%97%B4%EF%BC%8C%E5%A4%8F%E5%A4%A9%E5%B0%B1%E6%9D%A5%E4%BA%86%E3%80%82%E6%9B%BE%E7%BB%8F%E4%BB%A5%E4%B8%BA%E5%A4%8F%E5%A4%A9%E5%88%B0%E6%9D%A5%EF%BC%8C%E6%80%95%E9%AB%98%E6%B8%A9%E7%9A%84%E7%97%85%E6%AF%92%E5%B0%B1%E4%BC%9A%E8%83%86%E6%80%AF%E8%80%8C%E6%B6%88%E5%A4%B1%EF%BC%8C%E5%8F%AF%E6%98%AF%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E4%BE%9D%E6%97%A7%E9%A1%BD%E5%91%BD%E6%8C%A3%E6%89%8E%EF%BC%8C%E8%AE%A9%E4%BA%BA%E4%BB%AC%E6%97%A0%E6%B3%95%E6%8E%89%E4%BB%A5%E8%BD%BB%E5%BF%83%EF%BC%8C%E4%BE%9D%E6%97%A7%E9%87%8D%E5%9C%A8%E9%98%B2%E6%8A%A4%E3%80%82%E5%9C%A8%E6%88%91%E7%94%9F%E6%B4%BB%E5%92%8C%E5%B7%A5%E4%BD%9C%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E4%B8%AD%E5%9B%BD%E7%89%88%E5%9B%BE%E4%B8%AD%E5%BF%83%E5%9C%B0%E5%B8%A6%E7%9A%84%E4%B8%80%E4%B8%AA%E8%88%AA%E7%A9%BA%E5%B0%8F%E9%95%87%EF%BC%8C%E4%BA%BA%E4%BB%AC%E5%9C%A8%E6%8A%B5%E6%8A%97%E7%96%AB%E6%83%85%E7%9A%84%E6%B0%9B%E5%9B%B4%E4%B8%AD%E6%9C%89%E6%9D%A1%E4%B8%8D%E7%B4%8A%E5%9C%B0%E8%BF%9B%E8%A1%8C%E7%9D%80%E5%B9%B3%E6%B7%A1%E7%AE%80%E5%8D%95%E7%9A%84%E7%94%9F%E6%B4%BB%E3%80%82&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308033.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%2FPublic%2Fcannews%2Fimg%2Fhkkx.jpg&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/24/99308033.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li><li>
+                        <div class="img-box">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308032.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/ht/images/2007/24/20200724200348216196.png" alt="">
+                            </a>
+                        </div>
+                        <p class="news-title">
+                            <a href="http://www.cannews.com.cn/2020/07/24/99308032.html" target="_blank" title="">空工业宝成采供部：帮助他人就是成就自己</a>
+                        </p>
+                        <p class="news-des">近日，航空工业宝成收到一份来自供应商的感谢信。信中，供应商伙伴感谢宝成采供部部长王华带领宝成采购团队想方设法，帮助他们解决了一项采购难题。
+
+                        </p>
+                        <div class="news-label">
+                            <a href="javascript:;" title="" class="tags"><span style="margin-right: 4px">航空工业</span><span style="margin-right: 4px">宝成</span><span style="margin-right: 4px">员工风采</span></a>
+                            <span class="time">2020-07-24</span>
+                            <div class="share"><div class="social-shares share-component social-share"><a class="social-share-icon icon-qzone" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308032.html&amp;title=&amp;desc=%E8%BF%91%E6%97%A5%EF%BC%8C%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E5%AE%9D%E6%88%90%E6%94%B6%E5%88%B0%E4%B8%80%E4%BB%BD%E6%9D%A5%E8%87%AA%E4%BE%9B%E5%BA%94%E5%95%86%E7%9A%84%E6%84%9F%E8%B0%A2%E4%BF%A1%E3%80%82%E4%BF%A1%E4%B8%AD%EF%BC%8C%E4%BE%9B%E5%BA%94%E5%95%86%E4%BC%99%E4%BC%B4%E6%84%9F%E8%B0%A2%E5%AE%9D%E6%88%90%E9%87%87%E4%BE%9B%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%8D%8E%E5%B8%A6%E9%A2%86%E5%AE%9D%E6%88%90%E9%87%87%E8%B4%AD%E5%9B%A2%E9%98%9F%E6%83%B3%E6%96%B9%E8%AE%BE%E6%B3%95%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BB%96%E4%BB%AC%E8%A7%A3%E5%86%B3%E4%BA%86%E4%B8%80%E9%A1%B9%E9%87%87%E8%B4%AD%E9%9A%BE%E9%A2%98%E3%80%82%0A%0A&amp;summary=%E8%BF%91%E6%97%A5%EF%BC%8C%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E5%AE%9D%E6%88%90%E6%94%B6%E5%88%B0%E4%B8%80%E4%BB%BD%E6%9D%A5%E8%87%AA%E4%BE%9B%E5%BA%94%E5%95%86%E7%9A%84%E6%84%9F%E8%B0%A2%E4%BF%A1%E3%80%82%E4%BF%A1%E4%B8%AD%EF%BC%8C%E4%BE%9B%E5%BA%94%E5%95%86%E4%BC%99%E4%BC%B4%E6%84%9F%E8%B0%A2%E5%AE%9D%E6%88%90%E9%87%87%E4%BE%9B%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%8D%8E%E5%B8%A6%E9%A2%86%E5%AE%9D%E6%88%90%E9%87%87%E8%B4%AD%E5%9B%A2%E9%98%9F%E6%83%B3%E6%96%B9%E8%AE%BE%E6%B3%95%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BB%96%E4%BB%AC%E8%A7%A3%E5%86%B3%E4%BA%86%E4%B8%80%E9%A1%B9%E9%87%87%E8%B4%AD%E9%9A%BE%E9%A2%98%E3%80%82%0A%0A&amp;site=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F2007%2F24%2F20200724200348216196.png" target="_blank"></a><a class="social-share-icon icon-qq" href="http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308032.html&amp;title=&amp;source=%E9%A6%96%E9%A1%B5%20%7C%20%E4%B8%AD%E5%9B%BD%E8%88%AA%E7%A9%BA%E6%96%B0%E9%97%BB%E7%BD%91&amp;desc=%E8%BF%91%E6%97%A5%EF%BC%8C%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E5%AE%9D%E6%88%90%E6%94%B6%E5%88%B0%E4%B8%80%E4%BB%BD%E6%9D%A5%E8%87%AA%E4%BE%9B%E5%BA%94%E5%95%86%E7%9A%84%E6%84%9F%E8%B0%A2%E4%BF%A1%E3%80%82%E4%BF%A1%E4%B8%AD%EF%BC%8C%E4%BE%9B%E5%BA%94%E5%95%86%E4%BC%99%E4%BC%B4%E6%84%9F%E8%B0%A2%E5%AE%9D%E6%88%90%E9%87%87%E4%BE%9B%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%8D%8E%E5%B8%A6%E9%A2%86%E5%AE%9D%E6%88%90%E9%87%87%E8%B4%AD%E5%9B%A2%E9%98%9F%E6%83%B3%E6%96%B9%E8%AE%BE%E6%B3%95%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BB%96%E4%BB%AC%E8%A7%A3%E5%86%B3%E4%BA%86%E4%B8%80%E9%A1%B9%E9%87%87%E8%B4%AD%E9%9A%BE%E9%A2%98%E3%80%82%0A%0A&amp;pics=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F2007%2F24%2F20200724200348216196.png&amp;summary=&quot;%E8%BF%91%E6%97%A5%EF%BC%8C%E8%88%AA%E7%A9%BA%E5%B7%A5%E4%B8%9A%E5%AE%9D%E6%88%90%E6%94%B6%E5%88%B0%E4%B8%80%E4%BB%BD%E6%9D%A5%E8%87%AA%E4%BE%9B%E5%BA%94%E5%95%86%E7%9A%84%E6%84%9F%E8%B0%A2%E4%BF%A1%E3%80%82%E4%BF%A1%E4%B8%AD%EF%BC%8C%E4%BE%9B%E5%BA%94%E5%95%86%E4%BC%99%E4%BC%B4%E6%84%9F%E8%B0%A2%E5%AE%9D%E6%88%90%E9%87%87%E4%BE%9B%E9%83%A8%E9%83%A8%E9%95%BF%E7%8E%8B%E5%8D%8E%E5%B8%A6%E9%A2%86%E5%AE%9D%E6%88%90%E9%87%87%E8%B4%AD%E5%9B%A2%E9%98%9F%E6%83%B3%E6%96%B9%E8%AE%BE%E6%B3%95%EF%BC%8C%E5%B8%AE%E5%8A%A9%E4%BB%96%E4%BB%AC%E8%A7%A3%E5%86%B3%E4%BA%86%E4%B8%80%E9%A1%B9%E9%87%87%E8%B4%AD%E9%9A%BE%E9%A2%98%E3%80%82%0A%0A&quot;" target="_blank"></a><a class="social-share-icon icon-weibo" href="https://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.cannews.com.cn%2F2020%2F07%2F24%2F99308032.html&amp;title=&amp;pic=http%3A%2F%2F59.110.165.78%3A81%2FResource_online%2Fht%2Fimages%2F2007%2F24%2F20200724200348216196.png&amp;appkey=" target="_blank"></a><a class="social-share-icon icon-wechat" href="javascript:"><div class="wechat-qrcode"><h4>微信扫一扫：分享</h4><div class="qrcode" title="http://www.cannews.com.cn/2020/07/24/99308032.html"><canvas width="100" height="100" style="display: none;"></canvas><img alt="Scan me!" src="data:image/png;base64,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" style="display: block;"></div><div class="help">立即下载专属二维码,邀请朋友加入</div></div></a></div></div>
+                        </div>
+                    </li></ul>
+                    <div class="load-more">
+                        <div class="add-more" style="display: flex">
+                            <i></i>
+                            <span>加载更多</span>
+                        </div>
+                        <div class="add-ing" style="display: none">
+                            <i></i>
+                            <span>加载中...</span>
+                        </div>
+                    </div>
+                </div>
+                <!--scollAside-->
+                <!-- 区块 侧边栏 -->
+
+                <!-- ID 10} -->
+                <div class="scroll-aside fr">
+                    <!-- 区块 广告位 -->
+
+                    <!-- ID 68} -->
+                    <div class="aside-adver">
+                        <a href="http://59.110.165.78/2020/07/11/99253414.html" target="_blank" title="">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+
+                    <!--广告位-->
+                    <script>
+                        (function() {
+                            var s = "_" + Math.random().toString(36).slice(2);
+                            document.write('<div id="' + s + '"></div>');
+                            (window.slotbydup=window.slotbydup || []).push({
+                                id: '5894236',
+                                container: s,
+                                size: '300,250',
+                                display: 'inlay-fix'
+                            });
+                        })();
+                    </script><div id="_v5ojenzrvi"></div>
+                    <!-- 区块 专栏 -->
+
+                    <!-- ID 12} -->
+                    <div class="aside-module" style="margin-top: 20px;">
+                        <h3 class="aside-title">
+                            <a href="http://www.cannews.com.cn/wangzhanlanmu/zhuanlan/index.shtml">专栏/Column</a>
+
+                        </h3>
+                        <!-- 区块 专栏推送 -->
+
+                        <!-- ID 69} -->
+                        <div class="img-box">
+                            <a href="http://59.110.165.78/2020/02/21/99208986.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/attachement/2020/0217/1581932350464.jpg" alt="" title="海航660余架飞机1400余条航线全力支持防控疫情">
+                            </a>
+                        </div>
+
+                        <!--专栏推送-->
+
+                        <ul class="video-list-column">
+                            <li><a href="http://www.cannews.com.cn/2020/02/21/99208987.html" target="_blank" title="海南航空：回家的路 我们来守护">海南航空：回家的路 我们来守护</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2020/02/21/99208986.html" target="_blank" title="海航660余架飞机1400余条航线全力支持防控疫情">海航660余架飞机1400余条航线全力支持防控疫情</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2020/02/21/99208984.html" target="_blank" title="在平凡岗位履行党员职责 致敬桂航地面“摆渡人”">在平凡岗位履行党员职责 致敬桂航地面“摆渡人”</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2020/02/21/99208983.html" target="_blank" title="新冠肺炎疫情对我国民航业的影响">新冠肺炎疫情对我国民航业的影响</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2020/02/21/99208980.html" target="_blank" title="疫情大考 航空应急救援体系有成长但更需大进步">疫情大考 航空应急救援体系有成长但更需大进步</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2020/02/21/99208977.html" target="_blank" title="民航局：争分夺秒 为战“疫”抢时间">民航局：争分夺秒 为战“疫”抢时间</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2020/02/21/99208976.html" target="_blank" title="打响空中战疫 德盛通航直升机空中巡查助力疫情防控">打响空中战疫 德盛通航直升机空中巡查助力疫情防控</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--专栏-->
+                    <script>
+                        (function() {
+                            var s = "_" + Math.random().toString(36).slice(2);
+                            document.write('<div id="' + s + '"></div>');
+                            (window.slotbydup=window.slotbydup || []).push({
+                                id: '5894243',
+                                container: s,
+                                size: '300,250',
+                                display: 'inlay-fix'
+                            });
+                        })();
+                    </script><div id="_7hhjf75ifgt"></div>
+                    <!-- 区块 专题 -->
+
+                    <!-- ID 13} -->
+                    <div class="aside-module">
+                        <h3 class="aside-title">
+
+                            <a href="/topic.html">专题/Topic</a>
+
+
+
+
+
+                        </h3>
+                        <!-- 区块 专题推送 -->
+
+                        <!-- ID 70} -->
+                        <div class="img-box">
+                            <a href="http://59.110.165.78/2020/02/12/99251998.html" target="_blank" title="">
+                                <img src="http://59.110.165.78:81/Resource_online/attachement/2020/0212/1581486613828.jpg" alt="" title="专题：2020新加坡国际航展">
+                            </a>
+                        </div>
+                        <!--专题推送-->
+
+                        <ul>
+                            <li><a href="http://www.cannews.com.cn/2020/01/27/99251995.html" target="_blank" title="专题：对抗疫情 我们在行动！">专题：对抗疫情 我们在行动！</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2020/01/08/99251990.html" target="_blank" title="策划：2019年度国际航空热词">策划：2019年度国际航空热词</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2020/01/08/99251988.html" target="_blank" title="突发：乌克兰一架载180人客机在德黑兰坠毁">突发：乌克兰一架载180人客机在德黑兰坠毁</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2020/01/03/99251987.html" target="_blank" title="策划：2019“沈飞杯”CAN年度图片优秀作品撷英">策划：2019“沈飞杯”CAN年度图片优秀作品撷英</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2020/01/06/99251986.html" target="_blank" title="策划：2019年度国内航空热词">策划：2019年度国内航空热词</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2019/12/27/99251985.html" target="_blank" title="策划：2019年度民航客机“时装秀”大赏">策划：2019年度民航客机“时装秀”大赏</a>
+                            </li>
+                            <li><a href="http://www.cannews.com.cn/2019/12/12/99251984.html" target="_blank" title="策划：【2019航空周刊年度图片】 获奖作品">策划：【2019航空周刊年度图片】 获奖作品</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--专题-->
+                </div>
+                <!--侧边栏-->
+
+            </div>
+        </main>
+
+
+
+
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
