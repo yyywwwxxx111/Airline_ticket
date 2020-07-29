@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Dashboard</title>
+    <title>查看地图</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -37,28 +37,33 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
 
-    <style>
-        .content-wrapper{
-            background-image: url('../bg2.jpg');
-            background-size:100% 100%;
-            background-repeat:no-repeat;
-        }
-    </style>
+            $("#btn1").click(function () {
+                window.location.href="../register.html";
+            })
+            $("#btn2").click(function () {
+                window.location.href="../login.html";
+            })
+        })
+
+    </script>
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
     <header class="main-header">
         <!-- Logo -->
-        <a class="logo" style="background-color: #6699cc">
+        <a class="logo" style="background-color: #001a35">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>智能</b></span>
             <!-- logo for regular state and mobile devices -->
             <span class="logo-lg"><b>智能</b>航班</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top" style="background-color: #006699">
+        <nav class="navbar navbar-static-top" style="background-color: #001f3f">
             <!-- Sidebar toggle button-->
             <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                 <span class="sr-only">Toggle navigation</span>
@@ -266,8 +271,8 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="../../static/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">Alexander Pierce</span>
+                            <img src="../bg4.jpg" class="user-image" alt="User Image">
+                            <span class="hidden-xs">Chandler Yu</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
@@ -327,10 +332,10 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="../../static/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <img src="../bg4.jpg" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Alexander Pierce</p>
+                    <p>Chandler Yu</p>
                     <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
@@ -357,7 +362,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li class="active"><a href="../first_page/index.html"><i class="fa  fa-internet-explorer"></i>搜索功能</a></li>
-                        <li calss="active"><a href="#"><i class="fa fa-plane"></i>世界地图</a></li>
+                        <li calss="active"><a href="../airline/map.html"><i class="fa fa-plane"></i>世界地图</a></li>
                         <!--解决点击之后tag未亮问题-->
                     </ul>
                 </li>
@@ -370,7 +375,7 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="../tour/pretour.html"><i class="fa fa-circle-o"></i>待出发行程</a></li>
+                        <li><a href="../tour/pasttour.html"><i class="fa fa-circle-o"></i>待出发行程</a></li>
                         <li><a href="../tour/pasttour.html"><i class="fa fa-circle-o"></i>历史订单</a></li>
                     </ul>
                 </li>
@@ -406,92 +411,93 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
+        <div style="background-color: #357ca5">
 
+            <h1 style="color: antiquewhite">
+                <i> <b>Intelligent</b> airline</i>
+
+            </h1>
+            <font style="color: antiquewhite">旅客注意事项</font>
+
+
+
+        </div>
         <!-- Main content -->
-        <div class="container">
-            <div class="row clearfix">
-                <div class="col-md-12 column" style="top:100px;left:160px" >
-                    <h3>
-                        您可以使用地图查看机票：
-                    </h3>
+        <div class="box box-default"  >
+            <div class="box-header with-border">
+                <h3 class="box-title">查看地图</h3>
+            </div>
+            <div class="box-body" style="background-image: url('../bg2.jpg');
+            background-size:100% 100%;
+            background-repeat:no-repeat;height: 800px">
+
+
+                        <div class="MAP" style="width: 650px">
+
+                            <!-- Map box -->
+                            <div class="box box-solid bg-light-blue-gradient" style="left:200px;top:100px">
+                                <div class="box-header">
+                                    <!-- tools box -->
+                                    <div class="pull-right box-tools">
+                                        <button type="button" class="btn btn-primary btn-sm pull-right" data-widget="collapse"
+                                                data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
+                                            <i class="fa fa-minus"></i></button>
+                                    </div>
+                                    <!-- /. tools -->
+
+                                    <i class="fa fa-map-marker"></i>
+
+                                    <h3 class="box-title">
+                                        世界地图
+                                    </h3>
+                                </div>
+                                <div class="box-body">
+                                    <div id="world-map" style="height: 250px; width: 90%;"></div>
+                                </div>
+                                <!-- /.box-body-->
+                                <div class="box-footer no-border">
+                                    <div class="row">
+                                        <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
+                                            <div id="sparkline-1"></div>
+                                            <div class="knob-label">Visitors</div>
+                                        </div>
+                                        <!-- ./col -->
+                                        <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
+                                            <div id="sparkline-2"></div>
+                                            <div class="knob-label">Online</div>
+                                        </div>
+                                        <!-- ./col -->
+                                        <div class="col-xs-4 text-center">
+                                            <div id="sparkline-3"></div>
+                                            <div class="knob-label">Exists</div>
+                                        </div>
+                                        <!-- ./col -->
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
+                            </div>
+                            <!-- /.box -->
+
+                        </div>
+                        <!-- right col -->
+
+                    <!-- /.row (main row) -->
+
                 </div>
             </div>
         </div>
-        <div class="content" >
-            <!-- Small boxes (Stat box) -->
 
-            <!-- /.row -->
-            <!-- Main row -->
-            <div class="row" >
-                <!-- Left col -->
-                <!-- /.Left col -->
-                <!-- right col (We are only adding the ID to make the widgets sortable)-->
-                <div class="MAP" style="width: 650px">
-
-                    <!-- Map box -->
-                    <div class="box box-solid bg-light-blue-gradient" style="left:200px;top:100px">
-                        <div class="box-header">
-                            <!-- tools box -->
-                            <div class="pull-right box-tools">
-                                <button type="button" class="btn btn-primary btn-sm daterange pull-right" data-toggle="tooltip"
-                                        title="Date range">
-                                    <i class="fa fa-calendar"></i></button>
-                                <button type="button" class="btn btn-primary btn-sm pull-right" data-widget="collapse"
-                                        data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
-                                    <i class="fa fa-minus"></i></button>
-                            </div>
-                            <!-- /. tools -->
-
-                            <i class="fa fa-map-marker"></i>
-
-                            <h3 class="box-title">
-                                Visitors
-                            </h3>
-                        </div>
-                        <div class="box-body">
-                            <div id="world-map" style="height: 250px; width: 90%;"></div>
-                        </div>
-                        <!-- /.box-body-->
-                        <div class="box-footer no-border">
-                            <div class="row">
-                                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                                    <div id="sparkline-1"></div>
-                                    <div class="knob-label">Visitors</div>
-                                </div>
-                                <!-- ./col -->
-                                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-                                    <div id="sparkline-2"></div>
-                                    <div class="knob-label">Online</div>
-                                </div>
-                                <!-- ./col -->
-                                <div class="col-xs-4 text-center">
-                                    <div id="sparkline-3"></div>
-                                    <div class="knob-label">Exists</div>
-                                </div>
-                                <!-- ./col -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                    </div>
-                    <!-- /.box -->
-
-                </div>
-                <!-- right col -->
-            </div>
-            <!-- /.row (main row) -->
-
-        </div>
         <!-- /.content -->
 
     </div>
     <!-- /.content-wrapper -->
-    <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-            <b>Version</b> 1.0.0
-        </div>
-        <strong>Copyright &copy; 2020 <a href="https://adminlte.io">Intelligence Studio of UESTC</a>.</strong> All rights
-        reserved.
-    </footer>
+<footer class="main-footer">
+    <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0.0
+    </div>
+    <strong>Copyright &copy; 2020 <a href=#>Intelligent Studio of UESTC</a>.</strong> All rights
+    reserved.
+</footer>
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">

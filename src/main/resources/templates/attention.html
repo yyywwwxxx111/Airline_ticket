@@ -25,28 +25,44 @@
     <!-- Google Font -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <script src="../static/jquery/dist/jquery.js"></script>
+    <script>
+        $(function () {
+
+            $("#btn1").click(function () {
+                window.location.href="register.html";
+            })
+            $("#btn2").click(function () {
+                window.location.href="/page/login.html";
+            })
+        })
+
+    </script>
+
+
+
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
     <header class="main-header">
         <!-- Logo -->
-        <a class="logo" style="background-color: #6699cc">
+        <a class="logo" style="background-color: #001a35">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>智能</b></span>
             <!-- logo for regular state and mobile devices -->
             <span class="logo-lg"><b>智能</b>航班</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
-        <nav class="navbar navbar-static-top" style="background-color: #006699">
+        <nav class="navbar navbar-static-top" style="background-color: #001f3f">
             <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" >
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
                 <span class="sr-only">Toggle navigation</span>
             </a>
 
-            <div class="navbar-custom-menu" id="menu1">
-                <ul class="nav navbar-nav">
-
+            <div class="navbar-custom-menu" id="menu1" >
+                <ul class="nav navbar-nav" >
                     <!-- Messages: style can be found in dropdown.less-->
                     <li class="dropdown messages-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -247,13 +263,13 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="../../static/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">Alexander Pierce</span>
+                            <img src="bg4.jpg" class="user-image" alt="User Image">
+                            <span class="hidden-xs">Chandler Yu</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="../../static/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                <img src="../static/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                                 <p>
                                     Alexander Pierce - Web Developer
@@ -291,13 +307,14 @@
                         <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
                     </li>
                     <li>
-                        <button id="btn1" type="button" class="btn btn-block btn-sm">注册</button>
+                        <button id="btn1" type="button" class="btn btn-block btn-sm" href="register.html">注册</button>
                     </li>
                     <li>
-                        <button id="btn2" type="button" class="btn btn-block btn-sm">登陆</button>
+                        <button id="btn2" type="button" class="btn btn-block btn-sm" href="login.html">登陆</button>
                     </li>
                 </ul>
             </div>
+
         </nav>
     </header>
     <!-- Left side column. contains the logo and sidebar -->
@@ -307,10 +324,10 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="../static/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <img src="bg4.jpg" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
-                    <p>Alexander Pierce</p>
+                    <p>Chandler Yu</p>
                     <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                 </div>
             </div>
@@ -344,13 +361,13 @@
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-pie-chart"></i>
-                        <span>我的航班</span>
+                        <span>我的行程</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="tour/pretour.html"><i class="fa fa-circle-o"></i>待出发行程</a></li>
+                        <li><a href="tour/pasttour.html"><i class="fa fa-circle-o"></i>待出发行程</a></li>
                         <li><a href="tour/pasttour.html"><i class="fa fa-circle-o"></i>历史订单</a></li>
                     </ul>
                 </li>
@@ -364,7 +381,7 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a href="#">
+                    <a href="attention.html">
                         <i class="fa fa-calendar"></i> <span>乘机事项</span>
                         <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
@@ -375,7 +392,7 @@
 
                 <!----------------------分隔------------------------------->
                 <li class="header">其他功能</li>
-                <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span></span></a></li>
+                <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>帮助中心</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>客服中心</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>退出登陆</span></a></li>
             </ul>
@@ -386,116 +403,142 @@
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
+        <div style="background-color: #357ca5">
 
+            <h1 style="color: antiquewhite">
+                <i> <b>Intelligent</b> airline</i>
+
+            </h1>
+            <font style="color: antiquewhite">旅客注意事项</font>
+
+
+
+        </div>
         <!--文本编辑-->
-        <div style="width:800px">
-            <h3><b>旅客注意事项</b></h3>
-            <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion"
-                               href="#collapseOne">
-                                行李须知
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <p> 1、烟花、爆竹、打火机这些易燃物品是绝对不能随身携带的（也不能托运）。</p>
-                            <p>2、酒精是不能随身携带的，但是可以行李托运（最好不要带太多）。</p>
-                            <p>3、饮料是不能带的，你要是想在过安检之前买一些饮品进去候机室喝的话，还是省了吧，因为过安检时检查人员会让把东西扔掉或者喝掉它。</p>
-                            <p>4、化妆品是很多女生都会带的，但是不能带太多，要控制在100ml的范围内（是总容量在100ml以内），不是内里东西的容量，而是瓶子的体积容量，还要装在一个密封袋子里（药油也是一样），超过了就要托运。</p>
-                            <p> 5、手机、相机、手提电脑、便携式摄像机等个人自用电池可以随身携带，但不可以托运,小剪刀、水果刀、剃须刀、修眉刀、菜刀等生活用刀都必须托运。</p>
-                            <p>6、还有一些放射性物品、有毒物品、国家法律规定禁运的不能随身携带和托运的物品。</p>
-                            <p>7、香气清新剂、摩丝、杀虫剂等含有易燃物质的铁瓶装的不能带，也不能托运。</p>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion"
-                               href="#collapseTwo">
-                                注意事项
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p>1、别进食过饱，少吃油腻食物。
-                                人在空中胃肠血液供给相对减少，消化功能减弱，乘机前吃得过饱或吃油腻食物过多，不仅容易消化不良，还会增加心脏和血液循环负担，引起头晕、恶心，严重者可致心脑血管意外。</p>
-                            <p> 2、别空腹乘机。
-                                高空飞行使血糖消耗增加，空腹易发生低血糖，出现头晕、心悸、出汗等不适。</p>
-                            <p>3、适当吃甜食。
-                                乘机时尤其初乘机者因精神紧张、缺氧，体内耗糖量会增加。乘机前适当吃糖果、巧克力、果酱等甜食，有助于维持体内血糖水平和能量供应，增强在空中的耐缺氧能力。
-                                糖尿病人在选择航空旅行前，一定要对自己的健康有一个较好的评价和估计。如果血糖没有得到很好的控制，最好暂时取消飞行。同时，如果出现了酮症酸中毒，频发心律失常或合并高血压、肾衰竭、甲亢，以及神经病变等并发症，或者出现了心脑血管意外处于手术恢复期，都不适宜航空旅行。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion"
-                               href="#collapseThree">
-                                温馨提示-坐飞机适合带什么零食
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p>1. 饼干面包</p>
-                                <p>有的人吃不惯飞机上的餐点，那么可以自己带一些能饱腹的食物，比如饼干、面包、蛋糕等零食，饿的时候吃一点，也是能撑到下机的时间的。
-                            </p>
-                            <p> 2. 口香糖</p>
-                                <p>  有的人会有晕机的现象，尤其是耳朵不适应气压，建议带上一些口香糖上飞机，觉得不舒服的时候嚼一下舒缓恶心感，转移注意力。可以吃薄荷味的口香糖，薄荷味清爽的味道有提神醒脑的作用，或者直接带一些薄荷糖也可以。
-                              </p>
-                            <p>3. 水果干</p>
-                                <p>   飞机上带新鲜的水果会不方便，每个人只能带5kg以内的水果，那么不妨用水果干来替代新鲜的水果，方便携带还不占位置。水果干的品类有多种，比如芒果干、草莓干、香蕉干、猕猴桃干等。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title">乘机须知</h3>
             </div>
-            <script type="text/javascript">
-                $(function () { $('#collapseFour').collapse({
-                    toggle: false
-                })});
-                $(function () { $('#collapseTwo').collapse('show')});
-                $(function () { $('#collapseThree').collapse('toggle')});
-                $(function () { $('#collapseOne').collapse('hide')});
-            </script>
+            <div class="box-body">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseOne">
+                                    行李须知
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p> 1、烟花、爆竹、打火机这些易燃物品是绝对不能随身携带的（也不能托运）。</p>
+                                <p>2、酒精是不能随身携带的，但是可以行李托运（最好不要带太多）。</p>
+                                <p>3、饮料是不能带的，你要是想在过安检之前买一些饮品进去候机室喝的话，还是省了吧，因为过安检时检查人员会让把东西扔掉或者喝掉它。</p>
+                                <p>4、化妆品是很多女生都会带的，但是不能带太多，要控制在100ml的范围内（是总容量在100ml以内），不是内里东西的容量，而是瓶子的体积容量，还要装在一个密封袋子里（药油也是一样），超过了就要托运。</p>
+                                <p> 5、手机、相机、手提电脑、便携式摄像机等个人自用电池可以随身携带，但不可以托运,小剪刀、水果刀、剃须刀、修眉刀、菜刀等生活用刀都必须托运。</p>
+                                <p>6、还有一些放射性物品、有毒物品、国家法律规定禁运的不能随身携带和托运的物品。</p>
+                                <p>7、香气清新剂、摩丝、杀虫剂等含有易燃物质的铁瓶装的不能带，也不能托运。</p>
 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseTwo">
+                                    注意事项
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>1、别进食过饱，少吃油腻食物。
+                                    人在空中胃肠血液供给相对减少，消化功能减弱，乘机前吃得过饱或吃油腻食物过多，不仅容易消化不良，还会增加心脏和血液循环负担，引起头晕、恶心，严重者可致心脑血管意外。</p>
+                                <p> 2、别空腹乘机。
+                                    高空飞行使血糖消耗增加，空腹易发生低血糖，出现头晕、心悸、出汗等不适。</p>
+                                <p>3、适当吃甜食。
+                                    乘机时尤其初乘机者因精神紧张、缺氧，体内耗糖量会增加。乘机前适当吃糖果、巧克力、果酱等甜食，有助于维持体内血糖水平和能量供应，增强在空中的耐缺氧能力。
+                                    糖尿病人在选择航空旅行前，一定要对自己的健康有一个较好的评价和估计。如果血糖没有得到很好的控制，最好暂时取消飞行。同时，如果出现了酮症酸中毒，频发心律失常或合并高血压、肾衰竭、甲亢，以及神经病变等并发症，或者出现了心脑血管意外处于手术恢复期，都不适宜航空旅行。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseThree">坐飞机适合带什么零食
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>1. 饼干面包</p>
+                                <p>有的人吃不惯飞机上的餐点，那么可以自己带一些能饱腹的食物，比如饼干、面包、蛋糕等零食，饿的时候吃一点，也是能撑到下机的时间的。
+                                </p>
+                                <p> 2. 口香糖</p>
+                                <p>  有的人会有晕机的现象，尤其是耳朵不适应气压，建议带上一些口香糖上飞机，觉得不舒服的时候嚼一下舒缓恶心感，转移注意力。可以吃薄荷味的口香糖，薄荷味清爽的味道有提神醒脑的作用，或者直接带一些薄荷糖也可以。
+                                </p>
+                                <p>3. 水果干</p>
+                                <p>   飞机上带新鲜的水果会不方便，每个人只能带5kg以内的水果，那么不妨用水果干来替代新鲜的水果，方便携带还不占位置。水果干的品类有多种，比如芒果干、草莓干、香蕉干、猕猴桃干等。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-
-
-
-
+                </div>
+                <script type="text/javascript">
+                    $(function () { $('#collapseFour').collapse({
+                        toggle: false
+                    })});
+                    $(function () { $('#collapseTwo').collapse('show')});
+                    $(function () { $('#collapseThree').collapse('toggle')});
+                    $(function () { $('#collapseOne').collapse('hide')});
+                </script>
+            </div>
         </div>
-        <div>
-            <div class="process_hd"><h3 class="t">出发</h3><span class="note">Departure</span></div>
-            <img src="tour1.png">
-            <img src="tour3.png">
+
+
+        <div class="box box-default">
+            <div class="box-header with-border">
+                <h3 class="box-title">乘机流程</h3>
+            </div>
+            <div class="box-body">
+                <div>
+                    <div class="callout callout-info">
+                        <h4>出发</h4>
+
+                        <p>Departure</p>
+                    </div>
+                    <img src="tour1.png">
+                    <img src="tour3.png">
+                </div>
+
+                <div>
+                    <div class="callout callout-success">
+                        <h4>到达</h4>
+
+                        <p>Arrival</p>
+                    </div>
+                    <img src="tour2.png">
+                    <img src="tour4.png">
+                </div>
+            </div>
         </div>
 
-        <div>
-            <div class="process_hd"><h3 class="t">到达</h3><span class="note">Arriva</span></div>
-            <img src="tour2.png">
-            <img src="tour4.png">
-        </div>
+
 
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
-            <b>Version</b> 2.4.0
+            <b>Version</b> 1.0.0
         </div>
-        <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+        <strong>Copyright &copy; 2020 <a href=#>Intelligent Studio of UESTC</a>.</strong> All rights
         reserved.
     </footer>
 
