@@ -26,18 +26,6 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <script src="../static/jquery/dist/jquery.js"></script>
-    <script>
-        $(function () {
-
-            $("#btn1").click(function () {
-                window.location.href="register.html";
-            })
-            $("#btn2").click(function () {
-                window.location.href="/page/login.html";
-            })
-        })
-
-    </script>
 
 
 
@@ -307,10 +295,11 @@
                         <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
                     </li>
                     <li>
-                        <button id="btn1" type="button" class="btn btn-block btn-sm" href="register.html">注册</button>
+                        <button id="btn1" type="button" class="btn btn-block btn-sm"> <a href="register.html">注册</a></button>
                     </li>
                     <li>
-                        <button id="btn2" type="button" class="btn btn-block btn-sm" href="login.html">登陆</button>
+
+                        <button id="btn2" type="button" class="btn btn-block btn-sm" ><a href="login.html">登陆</a></button>
                     </li>
                 </ul>
             </div>
@@ -353,7 +342,7 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li class="active"><a href="first_page/index.html"><i class="fa  fa-internet-explorer"></i>搜索功能</a></li>
+                        <li class="active"><a href="index.html"><i class="fa  fa-internet-explorer"></i>搜索功能</a></li>
                         <li calss="active"><a href="airline/map.html"><i class="fa fa-plane"></i>世界地图</a></li>
                         <!--解决点击之后tag未亮问题-->
                     </ul>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.demo.springboot.helloworld.mapper.BookMapper">
-  <resultMap id="BaseResultMap" type="com.demo.springboot.helloworld.common.domain.Book">
-    <id column="id" jdbcType="INTEGER" property="id" />
+<mapper namespace="com.demo.springboot.helloworld.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.demo.springboot.helloworld.common.domain.User">
+    <id column="uid_pk" jdbcType="BIGINT" property="uidPk" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="price" jdbcType="DOUBLE" property="price" />
-    <result column="author" jdbcType="VARCHAR" property="author" />
-    <result column="creatorId" jdbcType="INTEGER" property="creatorid" />
-    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="gender" jdbcType="CHAR" property="gender" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -68,15 +67,15 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, name, price, author, creatorId, remark
+    uid_pk, name, password, gender, email
   </sql>
-  <select id="selectByExample" parameterType="com.demo.springboot.helloworld.common.domain.BookExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.demo.springboot.helloworld.common.domain.UserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from book
+    from USER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -84,99 +83,88 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from book
-    where id = #{id,jdbcType=INTEGER}
+    from USER
+    where uid_pk = #{uidPk,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from book
-    where id = #{id,jdbcType=INTEGER}
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from USER
+    where uid_pk = #{uidPk,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.demo.springboot.helloworld.common.domain.BookExample">
-    delete from book
+  <delete id="deleteByExample" parameterType="com.demo.springboot.helloworld.common.domain.UserExample">
+    delete from USER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.demo.springboot.helloworld.common.domain.Book">
-    insert into book (id, name, price, 
-      author, creatorId, remark
-      )
-    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE}, 
-      #{author,jdbcType=VARCHAR}, #{creatorid,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR}
-      )
+  <insert id="insert" parameterType="com.demo.springboot.helloworld.common.domain.User">
+    insert into USER (uid_pk, name, password, 
+      gender, email)
+    values (#{uidPk,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{gender,jdbcType=CHAR}, #{email,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.demo.springboot.helloworld.common.domain.Book">
-    insert into book
+  <insert id="insertSelective" parameterType="com.demo.springboot.helloworld.common.domain.User">
+    insert into USER
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
+      <if test="uidPk != null">
+        uid_pk,
       </if>
       <if test="name != null">
         name,
       </if>
-      <if test="price != null">
-        price,
+      <if test="password != null">
+        password,
       </if>
-      <if test="author != null">
-        author,
+      <if test="gender != null">
+        gender,
       </if>
-      <if test="creatorid != null">
-        creatorId,
-      </if>
-      <if test="remark != null">
-        remark,
+      <if test="email != null">
+        email,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
+      <if test="uidPk != null">
+        #{uidPk,jdbcType=BIGINT},
       </if>
       <if test="name != null">
         #{name,jdbcType=VARCHAR},
       </if>
-      <if test="price != null">
-        #{price,jdbcType=DOUBLE},
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
       </if>
-      <if test="author != null">
-        #{author,jdbcType=VARCHAR},
+      <if test="gender != null">
+        #{gender,jdbcType=CHAR},
       </if>
-      <if test="creatorid != null">
-        #{creatorid,jdbcType=INTEGER},
-      </if>
-      <if test="remark != null">
-        #{remark,jdbcType=VARCHAR},
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.demo.springboot.helloworld.common.domain.BookExample" resultType="java.lang.Long">
-    select count(*) from book
+  <select id="countByExample" parameterType="com.demo.springboot.helloworld.common.domain.UserExample" resultType="java.lang.Long">
+    select count(*) from USER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update book
+    update USER
     <set>
-      <if test="record.id != null">
-        id = #{record.id,jdbcType=INTEGER},
+      <if test="record.uidPk != null">
+        uid_pk = #{record.uidPk,jdbcType=BIGINT},
       </if>
       <if test="record.name != null">
         name = #{record.name,jdbcType=VARCHAR},
       </if>
-      <if test="record.price != null">
-        price = #{record.price,jdbcType=DOUBLE},
+      <if test="record.password != null">
+        password = #{record.password,jdbcType=VARCHAR},
       </if>
-      <if test="record.author != null">
-        author = #{record.author,jdbcType=VARCHAR},
+      <if test="record.gender != null">
+        gender = #{record.gender,jdbcType=CHAR},
       </if>
-      <if test="record.creatorid != null">
-        creatorId = #{record.creatorid,jdbcType=INTEGER},
-      </if>
-      <if test="record.remark != null">
-        remark = #{record.remark,jdbcType=VARCHAR},
+      <if test="record.email != null">
+        email = #{record.email,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -184,54 +172,40 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update book
-    set id = #{record.id,jdbcType=INTEGER},
+    update USER
+    set uid_pk = #{record.uidPk,jdbcType=BIGINT},
       name = #{record.name,jdbcType=VARCHAR},
-      price = #{record.price,jdbcType=DOUBLE},
-      author = #{record.author,jdbcType=VARCHAR},
-      creatorId = #{record.creatorid,jdbcType=INTEGER},
-      remark = #{record.remark,jdbcType=VARCHAR}
+      password = #{record.password,jdbcType=VARCHAR},
+      gender = #{record.gender,jdbcType=CHAR},
+      email = #{record.email,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.demo.springboot.helloworld.common.domain.Book">
-    update book
+  <update id="updateByPrimaryKeySelective" parameterType="com.demo.springboot.helloworld.common.domain.User">
+    update USER
     <set>
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
       </if>
-      <if test="price != null">
-        price = #{price,jdbcType=DOUBLE},
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
       </if>
-      <if test="author != null">
-        author = #{author,jdbcType=VARCHAR},
+      <if test="gender != null">
+        gender = #{gender,jdbcType=CHAR},
       </if>
-      <if test="creatorid != null">
-        creatorId = #{creatorid,jdbcType=INTEGER},
-      </if>
-      <if test="remark != null">
-        remark = #{remark,jdbcType=VARCHAR},
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
       </if>
     </set>
-    where id = #{id,jdbcType=INTEGER}
+    where uid_pk = #{uidPk,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.demo.springboot.helloworld.common.domain.Book">
-    update book
+  <update id="updateByPrimaryKey" parameterType="com.demo.springboot.helloworld.common.domain.User">
+    update USER
     set name = #{name,jdbcType=VARCHAR},
-      price = #{price,jdbcType=DOUBLE},
-      author = #{author,jdbcType=VARCHAR},
-      creatorId = #{creatorid,jdbcType=INTEGER},
-      remark = #{remark,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=INTEGER}
+      password = #{password,jdbcType=VARCHAR},
+      gender = #{gender,jdbcType=CHAR},
+      email = #{email,jdbcType=VARCHAR}
+    where uid_pk = #{uidPk,jdbcType=BIGINT}
   </update>
-
-  <!-- 不是生成的代码 -->
-  <delete id="deleteBooksByIds">
-    delete from book where id in
-    <foreach collection="ids" item="id" open="(" close=")" separator=",">
-      #{id}
-    </foreach>
-
-  </delete>
 </mapper>
