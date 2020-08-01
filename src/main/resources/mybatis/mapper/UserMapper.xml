@@ -208,4 +208,5 @@
       email = #{email,jdbcType=VARCHAR}
     where uid_pk = #{uidPk,jdbcType=BIGINT}
   </update>
+
 </mapper>

@@ -1,6 +1,8 @@
 package com.demo.springboot.helloworld.common.domain;
 
-public class User {
+import com.demo.springboot.helloworld.common.domain.extend.UserExtend;
+
+public class User extends UserExtend {
     private Long uidPk;
 
     private String name;
@@ -46,6 +48,18 @@ public class User {
     public String getEmail() {
         return email;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "uidPk=" + uidPk +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", gender='" + gender + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
 
     public void setEmail(String email) {
         this.email = email == null ? null : email.trim();
