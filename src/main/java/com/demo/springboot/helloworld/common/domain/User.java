@@ -11,6 +11,10 @@ public class User {
 
     private String email;
 
+    private String phone;
+
+    private String password2;
+
     public Long getUidPk() {
         return uidPk;
     }
@@ -49,5 +53,21 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email == null ? null : email.trim();
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone == null ? null : phone.trim();
+    }
+
+    public String getPassword2() {
+        return password2;
+    }
+
+    public void setPassword2(String password2) {
+        this.password2 = password2 == null ? null : password2.trim();
     }
 }

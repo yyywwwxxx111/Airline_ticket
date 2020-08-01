@@ -7,6 +7,8 @@
     <result column="password" jdbcType="VARCHAR" property="password" />
     <result column="gender" jdbcType="CHAR" property="gender" />
     <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="password2" jdbcType="VARCHAR" property="password2" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -67,7 +69,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    uid_pk, name, password, gender, email
+    uid_pk, name, password, gender, email, phone, password2
   </sql>
   <select id="selectByExample" parameterType="com.demo.springboot.helloworld.common.domain.UserExample" resultMap="BaseResultMap">
     select
@@ -101,9 +103,11 @@
   </delete>
   <insert id="insert" parameterType="com.demo.springboot.helloworld.common.domain.User">
     insert into USER (uid_pk, name, password, 
-      gender, email)
+      gender, email, phone, 
+      password2)
     values (#{uidPk,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
-      #{gender,jdbcType=CHAR}, #{email,jdbcType=VARCHAR})
+      #{gender,jdbcType=CHAR}, #{email,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
+      #{password2,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.demo.springboot.helloworld.common.domain.User">
     insert into USER
@@ -123,6 +127,12 @@
       <if test="email != null">
         email,
       </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="password2 != null">
+        password2,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="uidPk != null">
@@ -139,6 +149,12 @@
       </if>
       <if test="email != null">
         #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="password2 != null">
+        #{password2,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -166,6 +182,12 @@
       <if test="record.email != null">
         email = #{record.email,jdbcType=VARCHAR},
       </if>
+      <if test="record.phone != null">
+        phone = #{record.phone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.password2 != null">
+        password2 = #{record.password2,jdbcType=VARCHAR},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -177,7 +199,9 @@
       name = #{record.name,jdbcType=VARCHAR},
       password = #{record.password,jdbcType=VARCHAR},
       gender = #{record.gender,jdbcType=CHAR},
-      email = #{record.email,jdbcType=VARCHAR}
+      email = #{record.email,jdbcType=VARCHAR},
+      phone = #{record.phone,jdbcType=VARCHAR},
+      password2 = #{record.password2,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -197,6 +221,12 @@
       <if test="email != null">
         email = #{email,jdbcType=VARCHAR},
       </if>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="password2 != null">
+        password2 = #{password2,jdbcType=VARCHAR},
+      </if>
     </set>
     where uid_pk = #{uidPk,jdbcType=BIGINT}
   </update>
@@ -205,7 +235,9 @@
     set name = #{name,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
       gender = #{gender,jdbcType=CHAR},
-      email = #{email,jdbcType=VARCHAR}
+      email = #{email,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      password2 = #{password2,jdbcType=VARCHAR}
     where uid_pk = #{uidPk,jdbcType=BIGINT}
   </update>
 </mapper>
