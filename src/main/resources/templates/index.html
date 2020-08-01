@@ -361,7 +361,7 @@
 
           </li>
           <li >
-            <button id="btn2" type="button" class="btn btn-block btn-sm" ><a href="/page/login">登陆</a></button>
+            <button id="btn2" type="button" class="btn btn-block btn-sm" ><a href="/login">登陆</a></button>
           </li>
         </ul>
       </div>
@@ -473,146 +473,148 @@
     <div class="box box-primary" style="width:500px;top:150px;left:300px">
 
         <div class="nav-tabs-custom">
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="#timeline" data-toggle="tab">单程</a></li>
-            <li><a href="#settings" data-toggle="tab">往返</a></li>
-            <li><a href="#year" data-toggle="tab">出行预测</a></li>
-            <li><a href="#want" data-toggle="tab">飞去哪</a></li>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#timeline" data-toggle="tab">单程</a></li>
+                  <li><a href="#settings" data-toggle="tab">往返</a></li>
+                  <li><a href="#year" data-toggle="tab">出行预测</a></li>
+                  <li><a href="#want" data-toggle="tab">飞去哪</a></li>
 
-          </ul>
-          <div class="tab-content">
-            <!-- /.tab-pane -->
-            <div class="active tab-pane" id="timeline" >
-              <!-- The timeline -->
-              <div class="box-header">
-                <h3 class="box-title">请搜索您的航班：</h3>
-              </div>
-              <div class="box-body">
-                <!-- Date -->
-
-                <div class="form-group" data-select2-id="54">
-                  <label>出发地</label>
-                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                    <option selected="selected" data-select2-id="3" >北京</option>
-                    <option data-select2-id="35">成都</option>
-                    <option data-select2-id="36">上海</option>
-                    <option data-select2-id="37">天津</option>
-                    <option data-select2-id="38">南京</option>
-                    <option data-select2-id="39">武汉</option>
-                    <option data-select2-id="40">深圳</option>
-                  </select>
-                </div>
-                <!-- /.form-group -->
-
-                <div class="form-group" data-select2-id="54">
-                  <label>目的地</label>
-                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                    <option selected="selected" data-select2-id="3">上海</option>
-                    <option data-select2-id="35">成都</option>
-                    <option data-select2-id="36">北京</option>
-                    <option data-select2-id="37">天津</option>
-                    <option data-select2-id="38">南京</option>
-                    <option data-select2-id="39">武汉</option>
-                    <option data-select2-id="40">深圳</option>
-                  </select>
-                </div>
-                <!-- /.form-group -->
-                <!-- /.form group -->
-
-                <!-- Date range -->
-                <div class="form-group">
-                  <label>您的出发时间与到达时间:</label>
-
-                  <div class="input-group">
-                    <div class="input-group-addon">
-                      <i class="fa fa-calendar"></i>
+                </ul>
+                <div class="tab-content">
+                  <!-- /.tab-pane -->
+                  <div class="active tab-pane" id="timeline" >
+                    <!-- The timeline -->
+                    <div class="box-header">
+                      <h3 class="box-title">请搜索您的航班：</h3>
                     </div>
-                    <input type="text" class="form-control pull-right" id="reservation">
-                  </div>
-                  <!-- /.input group -->
-                </div>
-                <!-- /.form group -->
+                    <div class="box-body">
+                      <!-- Date -->
 
-                <!-- Date and time range -->
+                      <div class="form-group" data-select2-id="54">
+                        <label>出发地</label>
+                        <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                          <option selected="selected" data-select2-id="3" >北京</option>
+                          <option data-select2-id="35">成都</option>
+                          <option data-select2-id="36">上海</option>
+                          <option data-select2-id="37">天津</option>
+                          <option data-select2-id="38">南京</option>
+                          <option data-select2-id="39">武汉</option>
+                          <option data-select2-id="40">深圳</option>
+                        </select>
+                      </div>
+                      <!-- /.form-group -->
 
-                <!-- /.form group -->
+                      <div class="form-group" data-select2-id="54">
+                        <label>目的地</label>
+                        <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                          <option selected="selected" data-select2-id="3">上海</option>
+                          <option data-select2-id="35">成都</option>
+                          <option data-select2-id="36">北京</option>
+                          <option data-select2-id="37">天津</option>
+                          <option data-select2-id="38">南京</option>
+                          <option data-select2-id="39">武汉</option>
+                          <option data-select2-id="40">深圳</option>
+                        </select>
+                      </div>
+                      <!-- /.form-group -->
+                      <!-- /.form group -->
 
-                <!-- Date and time range -->
+                      <!-- Date range -->
+                      <div class="form-group">
+                        <label>您的出发时间与到达时间:</label>
 
-                <!-- /.form group -->
+                        <div class="input-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                          </div>
+                          <input type="text" class="form-control pull-right" id="reservation">
+                        </div>
+                        <!-- /.input group -->
+                      </div>
+                      <!-- /.form group -->
 
-              </div>
-              <!-- /.box-body -->
-              <div class="box-footer">
-                <button type="submit" class="btn btn-primary">搜索</button>
-              </div>
+                      <!-- Date and time range -->
 
-            </div>
-            <!-- /.tab-pane -->
+                      <!-- /.form group -->
 
-            <div class="tab-pane" id="settings">
-              <div class="box-header">
-                <h3 class="box-title">请搜索您的航班：</h3>
-              </div>
-              <div class="box-body">
-                <!-- Date -->
+                      <!-- Date and time range -->
 
-                <div class="form-group" data-select2-id="54">
-                  <label>出发地</label>
-                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                    <option selected="selected" data-select2-id="3" >北京</option>
-                    <option data-select2-id="35">成都</option>
-                    <option data-select2-id="36">上海</option>
-                    <option data-select2-id="37">天津</option>
-                    <option data-select2-id="38">南京</option>
-                    <option data-select2-id="39">武汉</option>
-                    <option data-select2-id="40">深圳</option>
-                  </select>
-                </div>
-                <!-- /.form-group -->
+                      <!-- /.form group -->
 
-                <div class="form-group" data-select2-id="54">
-                  <label>目的地</label>
-                  <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                    <option selected="selected" data-select2-id="3">上海</option>
-                    <option data-select2-id="35">成都</option>
-                    <option data-select2-id="36">北京</option>
-                    <option data-select2-id="37">天津</option>
-                    <option data-select2-id="38">南京</option>
-                    <option data-select2-id="39">武汉</option>
-                    <option data-select2-id="40">深圳</option>
-                  </select>
-                </div>
-                <!-- /.form-group -->
-                <!-- /.form group -->
-
-                <!-- Date range -->
-                <div class="form-group">
-                  <label>您的出发时间与到达时间:</label>
-
-                  <div class="input-group">
-                    <div class="input-group-addon">
-                      <i class="fa fa-calendar"></i>
                     </div>
-                    <input type="text" class="form-control pull-right" id="reservation2">
+                    <!-- /.box-body -->
+                    <div class="box-footer">
+                      <button type="submit" class="btn btn-primary">搜索</button>
+                    </div>
+
                   </div>
-                  <!-- /.input group -->
-                </div>
-                <!-- /.form group -->
+                  <!-- /.tab-pane -->
 
-                <!-- Date and time range -->
+                  <div class="tab-pane" id="settings">
+                    <div class="box-header">
+                      <h3 class="box-title">请搜索您的航班：</h3>
+                    </div>
 
-                <!-- /.form group -->
+                      <!-- Date -->
 
-                <!-- Date and time range -->
+                      <form action="/getTickets"  method="post">
+                        <div class="box-body">
+                          <div class="form-group" data-select2-id="54">
+                            <label>出发地</label>
+                            <select class="form-control select2 select2-hidden-accessible" name="fromcity" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                              <option selected="selected" data-select2-id="3" >北京</option>
+                              <option data-select2-id="35">成都</option>
+                              <option data-select2-id="36">上海</option>
+                              <option data-select2-id="37">天津</option>
+                              <option data-select2-id="38">南京</option>
+                              <option data-select2-id="39">武汉</option>
+                              <option data-select2-id="40">深圳</option>
+                            </select>
+                          </div>
+                          <!-- /.form-group -->
 
-                <!-- /.form group -->
+                          <div class="form-group" data-select2-id="54">
+                            <label>目的地</label>
+                            <select class="form-control select2 select2-hidden-accessible" name="tocity" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                              <option selected="selected" data-select2-id="3">上海</option>
+                              <option data-select2-id="35">成都</option>
+                              <option data-select2-id="36">北京</option>
+                              <option data-select2-id="37">天津</option>
+                              <option data-select2-id="38">南京</option>
+                              <option data-select2-id="39">武汉</option>
+                              <option data-select2-id="40">深圳</option>
+                            </select>
+                          </div>
+                          <!-- /.form-group -->
+                          <!-- /.form group -->
 
-              </div>
-              <!-- /.box-body -->
-              <div class="box-footer">
-                <button type="submit" class="btn btn-primary">搜索</button>
-              </div>
+                          <!-- Date range -->
+                          <div class="form-group">
+                            <label>您的出发时间与返回时间:</label>
+
+                            <div class="input-group">
+                              <div class="input-group-addon">
+                                <i class="fa fa-calendar"></i>
+                              </div>
+                              <input type="text" class="form-control pull-right" id="reservation2" name="date">
+                            </div>
+                            <!-- /.input group -->
+                          </div>
+                          <!-- /.form group -->
+
+                          <!-- Date and time range -->
+
+                          <!-- /.form group -->
+
+                          <!-- Date and time range -->
+
+                          <!-- /.form group -->
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer">
+                          <button type="submit" class="btn btn-primary">搜索</button>
+                        </div>
+                      </form>
             </div>
 
 
