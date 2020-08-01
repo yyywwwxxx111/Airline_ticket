@@ -7,4 +7,10 @@
     <select id="selectByAll" resultMap="BaseResultMap" >
     select * from User where name = #{user.name} and password = #{user.password} and uid_pk=#{i}
   </select>
+    <select id="selectByEmail" resultMap="BaseResultMap">
+       select * from User where email = #{email}
+    </select>
+    <select id="selectByPhone" resultMap="BaseResultMap">
+    select * from User where phone = #{phone}
+    </select>
 </mapper>

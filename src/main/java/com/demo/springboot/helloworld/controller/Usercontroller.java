@@ -62,9 +62,38 @@ public class Usercontroller {
 
         }
 
+    }
+
+
+    @RequestMapping("/register")
+    public String register(ModelMap model,String phone,String email,String password,String password2,@RequestParam(defaultValue = "张三") String name
+    ,@RequestParam(defaultValue = "男") String gender ){
+        User user=new User();
+        user.setPhone(phone);
+        user.setEmail(email);
+        user.setPassword(password);
+        user.setPassword2(password2);
+        user.setName(name);
+        user.setGender(gender);
+
+        if (userService.register(user)){
+            System.out.println("ok!");
+            return "login_success";
+        }else {
+            System.out.println("no!");
+            String msg="注册失败";//回显到视图层
+            //model.addAttribute("err_msg",msg);//回显
+            model.put("err_msg",msg);
+            return "register";
+
+        }
 
     }
 }
+
+
+
+
 //    public String login(ModelMap model , @RequestParam("email") String Email, String password,
 //                        @RequestParam(defaultValue = "0") int age, User user){
 //

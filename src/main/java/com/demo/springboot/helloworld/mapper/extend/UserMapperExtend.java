@@ -1,6 +1,7 @@
 package com.demo.springboot.helloworld.mapper.extend;
 
 import com.demo.springboot.helloworld.common.domain.User;
+import com.demo.springboot.helloworld.common.domain.UserExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -11,4 +12,7 @@ public interface UserMapperExtend {
 
     List<User> selectByAll(@Param("i") int i,@Param("user") User user);
 
+    List<User> selectByEmail(String email);
+
+    List<User> selectByPhone(String phone);
 }

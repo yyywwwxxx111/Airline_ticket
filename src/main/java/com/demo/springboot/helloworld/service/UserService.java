@@ -8,4 +8,5 @@ public interface UserService {
 
      boolean match(User user);
 
+     boolean register(User user);
 }

@@ -6,10 +6,8 @@ import java.util.List;
 
 import com.demo.springboot.helloworld.mapper.extend.UserMapperExtend;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public interface UserMapper extends UserMapperExtend {//接口 集合了接口
+public interface UserMapper extends UserMapperExtend {
     long countByExample(UserExample example);
 
     int deleteByExample(UserExample example);
@@ -33,4 +31,4 @@ public interface UserMapper extends UserMapperExtend {//接口 集合了接口
     int updateByPrimaryKey(User record);
 
 
-   }
+}
