@@ -1,0 +1,19 @@
+USE Project;
+CREATE TABLE IF NOT EXISTS flight_info(
+date_day VARCHAR(64),
+company VARCHAR(64),
+depart_city VARCHAR(64),
+destination VARCHAR(64),
+flight_number VARCHAR(64),
+depart_time VARCHAR(64),
+depart_airport VARCHAR(64),
+depart_terminal VARCHAR(64),
+duration VARCHAR(64),
+arrival_time VARCHAR(64),
+arrival_airport VARCHAR(64),
+arrival_terminal VARCHAR(64),
+price VARCHAR(64),
+annotation VARCHAR(64),
+isdeleted INT,
+id INT PRIMARY KEY AUTO_INCREMENT
+)
