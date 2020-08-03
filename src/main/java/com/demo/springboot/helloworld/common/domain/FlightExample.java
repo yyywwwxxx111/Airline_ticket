@@ -104,1113 +104,1173 @@ public class FlightExample {
             criteria.add(new Criterion(condition, value1, value2));
         }
 
-        public Criteria andTableidIsNull() {
-            addCriterion("TableID is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidIsNotNull() {
-            addCriterion("TableID is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidEqualTo(Integer value) {
-            addCriterion("TableID =", value, "tableid");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidNotEqualTo(Integer value) {
-            addCriterion("TableID <>", value, "tableid");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidGreaterThan(Integer value) {
-            addCriterion("TableID >", value, "tableid");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidGreaterThanOrEqualTo(Integer value) {
-            addCriterion("TableID >=", value, "tableid");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidLessThan(Integer value) {
-            addCriterion("TableID <", value, "tableid");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidLessThanOrEqualTo(Integer value) {
-            addCriterion("TableID <=", value, "tableid");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidIn(List<Integer> values) {
-            addCriterion("TableID in", values, "tableid");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidNotIn(List<Integer> values) {
-            addCriterion("TableID not in", values, "tableid");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidBetween(Integer value1, Integer value2) {
-            addCriterion("TableID between", value1, value2, "tableid");
-            return (Criteria) this;
-        }
-
-        public Criteria andTableidNotBetween(Integer value1, Integer value2) {
-            addCriterion("TableID not between", value1, value2, "tableid");
-            return (Criteria) this;
-        }
-
         public Criteria andIdIsNull() {
-            addCriterion("ID is null");
+            addCriterion("id is null");
             return (Criteria) this;
         }
 
         public Criteria andIdIsNotNull() {
-            addCriterion("ID is not null");
+            addCriterion("id is not null");
             return (Criteria) this;
         }
 
-        public Criteria andIdEqualTo(String value) {
-            addCriterion("ID =", value, "id");
+        public Criteria andIdEqualTo(Long value) {
+            addCriterion("id =", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdNotEqualTo(String value) {
-            addCriterion("ID <>", value, "id");
+        public Criteria andIdNotEqualTo(Long value) {
+            addCriterion("id <>", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdGreaterThan(String value) {
-            addCriterion("ID >", value, "id");
+        public Criteria andIdGreaterThan(Long value) {
+            addCriterion("id >", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdGreaterThanOrEqualTo(String value) {
-            addCriterion("ID >=", value, "id");
+        public Criteria andIdGreaterThanOrEqualTo(Long value) {
+            addCriterion("id >=", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdLessThan(String value) {
-            addCriterion("ID <", value, "id");
+        public Criteria andIdLessThan(Long value) {
+            addCriterion("id <", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdLessThanOrEqualTo(String value) {
-            addCriterion("ID <=", value, "id");
+        public Criteria andIdLessThanOrEqualTo(Long value) {
+            addCriterion("id <=", value, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdLike(String value) {
-            addCriterion("ID like", value, "id");
+        public Criteria andIdIn(List<Long> values) {
+            addCriterion("id in", values, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdNotLike(String value) {
-            addCriterion("ID not like", value, "id");
+        public Criteria andIdNotIn(List<Long> values) {
+            addCriterion("id not in", values, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdIn(List<String> values) {
-            addCriterion("ID in", values, "id");
+        public Criteria andIdBetween(Long value1, Long value2) {
+            addCriterion("id between", value1, value2, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdNotIn(List<String> values) {
-            addCriterion("ID not in", values, "id");
+        public Criteria andIdNotBetween(Long value1, Long value2) {
+            addCriterion("id not between", value1, value2, "id");
             return (Criteria) this;
         }
 
-        public Criteria andIdBetween(String value1, String value2) {
-            addCriterion("ID between", value1, value2, "id");
+        public Criteria andDateDayIsNull() {
+            addCriterion("date_day is null");
             return (Criteria) this;
         }
 
-        public Criteria andIdNotBetween(String value1, String value2) {
-            addCriterion("ID not between", value1, value2, "id");
+        public Criteria andDateDayIsNotNull() {
+            addCriterion("date_day is not null");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineIsNull() {
-            addCriterion("Airline is null");
+        public Criteria andDateDayEqualTo(String value) {
+            addCriterion("date_day =", value, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineIsNotNull() {
-            addCriterion("Airline is not null");
+        public Criteria andDateDayNotEqualTo(String value) {
+            addCriterion("date_day <>", value, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineEqualTo(String value) {
-            addCriterion("Airline =", value, "airline");
+        public Criteria andDateDayGreaterThan(String value) {
+            addCriterion("date_day >", value, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineNotEqualTo(String value) {
-            addCriterion("Airline <>", value, "airline");
+        public Criteria andDateDayGreaterThanOrEqualTo(String value) {
+            addCriterion("date_day >=", value, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineGreaterThan(String value) {
-            addCriterion("Airline >", value, "airline");
+        public Criteria andDateDayLessThan(String value) {
+            addCriterion("date_day <", value, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineGreaterThanOrEqualTo(String value) {
-            addCriterion("Airline >=", value, "airline");
+        public Criteria andDateDayLessThanOrEqualTo(String value) {
+            addCriterion("date_day <=", value, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineLessThan(String value) {
-            addCriterion("Airline <", value, "airline");
+        public Criteria andDateDayLike(String value) {
+            addCriterion("date_day like", value, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineLessThanOrEqualTo(String value) {
-            addCriterion("Airline <=", value, "airline");
+        public Criteria andDateDayNotLike(String value) {
+            addCriterion("date_day not like", value, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineLike(String value) {
-            addCriterion("Airline like", value, "airline");
+        public Criteria andDateDayIn(List<String> values) {
+            addCriterion("date_day in", values, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineNotLike(String value) {
-            addCriterion("Airline not like", value, "airline");
+        public Criteria andDateDayNotIn(List<String> values) {
+            addCriterion("date_day not in", values, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineIn(List<String> values) {
-            addCriterion("Airline in", values, "airline");
+        public Criteria andDateDayBetween(String value1, String value2) {
+            addCriterion("date_day between", value1, value2, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineNotIn(List<String> values) {
-            addCriterion("Airline not in", values, "airline");
+        public Criteria andDateDayNotBetween(String value1, String value2) {
+            addCriterion("date_day not between", value1, value2, "dateDay");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineBetween(String value1, String value2) {
-            addCriterion("Airline between", value1, value2, "airline");
+        public Criteria andCompanyIsNull() {
+            addCriterion("company is null");
             return (Criteria) this;
         }
 
-        public Criteria andAirlineNotBetween(String value1, String value2) {
-            addCriterion("Airline not between", value1, value2, "airline");
+        public Criteria andCompanyIsNotNull() {
+            addCriterion("company is not null");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberIsNull() {
-            addCriterion("FlightNumber is null");
+        public Criteria andCompanyEqualTo(String value) {
+            addCriterion("company =", value, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberIsNotNull() {
-            addCriterion("FlightNumber is not null");
+        public Criteria andCompanyNotEqualTo(String value) {
+            addCriterion("company <>", value, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberEqualTo(String value) {
-            addCriterion("FlightNumber =", value, "flightnumber");
+        public Criteria andCompanyGreaterThan(String value) {
+            addCriterion("company >", value, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberNotEqualTo(String value) {
-            addCriterion("FlightNumber <>", value, "flightnumber");
+        public Criteria andCompanyGreaterThanOrEqualTo(String value) {
+            addCriterion("company >=", value, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberGreaterThan(String value) {
-            addCriterion("FlightNumber >", value, "flightnumber");
+        public Criteria andCompanyLessThan(String value) {
+            addCriterion("company <", value, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberGreaterThanOrEqualTo(String value) {
-            addCriterion("FlightNumber >=", value, "flightnumber");
+        public Criteria andCompanyLessThanOrEqualTo(String value) {
+            addCriterion("company <=", value, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberLessThan(String value) {
-            addCriterion("FlightNumber <", value, "flightnumber");
+        public Criteria andCompanyLike(String value) {
+            addCriterion("company like", value, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberLessThanOrEqualTo(String value) {
-            addCriterion("FlightNumber <=", value, "flightnumber");
+        public Criteria andCompanyNotLike(String value) {
+            addCriterion("company not like", value, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberLike(String value) {
-            addCriterion("FlightNumber like", value, "flightnumber");
+        public Criteria andCompanyIn(List<String> values) {
+            addCriterion("company in", values, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberNotLike(String value) {
-            addCriterion("FlightNumber not like", value, "flightnumber");
+        public Criteria andCompanyNotIn(List<String> values) {
+            addCriterion("company not in", values, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberIn(List<String> values) {
-            addCriterion("FlightNumber in", values, "flightnumber");
+        public Criteria andCompanyBetween(String value1, String value2) {
+            addCriterion("company between", value1, value2, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberNotIn(List<String> values) {
-            addCriterion("FlightNumber not in", values, "flightnumber");
+        public Criteria andCompanyNotBetween(String value1, String value2) {
+            addCriterion("company not between", value1, value2, "company");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberBetween(String value1, String value2) {
-            addCriterion("FlightNumber between", value1, value2, "flightnumber");
+        public Criteria andPlaneIsNull() {
+            addCriterion("plane is null");
             return (Criteria) this;
         }
 
-        public Criteria andFlightnumberNotBetween(String value1, String value2) {
-            addCriterion("FlightNumber not between", value1, value2, "flightnumber");
+        public Criteria andPlaneIsNotNull() {
+            addCriterion("plane is not null");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftIsNull() {
-            addCriterion("Aircraft is null");
+        public Criteria andPlaneEqualTo(String value) {
+            addCriterion("plane =", value, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftIsNotNull() {
-            addCriterion("Aircraft is not null");
+        public Criteria andPlaneNotEqualTo(String value) {
+            addCriterion("plane <>", value, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftEqualTo(String value) {
-            addCriterion("Aircraft =", value, "aircraft");
+        public Criteria andPlaneGreaterThan(String value) {
+            addCriterion("plane >", value, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftNotEqualTo(String value) {
-            addCriterion("Aircraft <>", value, "aircraft");
+        public Criteria andPlaneGreaterThanOrEqualTo(String value) {
+            addCriterion("plane >=", value, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftGreaterThan(String value) {
-            addCriterion("Aircraft >", value, "aircraft");
+        public Criteria andPlaneLessThan(String value) {
+            addCriterion("plane <", value, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftGreaterThanOrEqualTo(String value) {
-            addCriterion("Aircraft >=", value, "aircraft");
+        public Criteria andPlaneLessThanOrEqualTo(String value) {
+            addCriterion("plane <=", value, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftLessThan(String value) {
-            addCriterion("Aircraft <", value, "aircraft");
+        public Criteria andPlaneLike(String value) {
+            addCriterion("plane like", value, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftLessThanOrEqualTo(String value) {
-            addCriterion("Aircraft <=", value, "aircraft");
+        public Criteria andPlaneNotLike(String value) {
+            addCriterion("plane not like", value, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftLike(String value) {
-            addCriterion("Aircraft like", value, "aircraft");
+        public Criteria andPlaneIn(List<String> values) {
+            addCriterion("plane in", values, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftNotLike(String value) {
-            addCriterion("Aircraft not like", value, "aircraft");
+        public Criteria andPlaneNotIn(List<String> values) {
+            addCriterion("plane not in", values, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftIn(List<String> values) {
-            addCriterion("Aircraft in", values, "aircraft");
+        public Criteria andPlaneBetween(String value1, String value2) {
+            addCriterion("plane between", value1, value2, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftNotIn(List<String> values) {
-            addCriterion("Aircraft not in", values, "aircraft");
+        public Criteria andPlaneNotBetween(String value1, String value2) {
+            addCriterion("plane not between", value1, value2, "plane");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftBetween(String value1, String value2) {
-            addCriterion("Aircraft between", value1, value2, "aircraft");
+        public Criteria andDepartCityIsNull() {
+            addCriterion("depart_city is null");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftNotBetween(String value1, String value2) {
-            addCriterion("Aircraft not between", value1, value2, "aircraft");
+        public Criteria andDepartCityIsNotNull() {
+            addCriterion("depart_city is not null");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxIsNull() {
-            addCriterion("FuelOilTax is null");
+        public Criteria andDepartCityEqualTo(String value) {
+            addCriterion("depart_city =", value, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxIsNotNull() {
-            addCriterion("FuelOilTax is not null");
+        public Criteria andDepartCityNotEqualTo(String value) {
+            addCriterion("depart_city <>", value, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxEqualTo(String value) {
-            addCriterion("FuelOilTax =", value, "fueloiltax");
+        public Criteria andDepartCityGreaterThan(String value) {
+            addCriterion("depart_city >", value, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxNotEqualTo(String value) {
-            addCriterion("FuelOilTax <>", value, "fueloiltax");
+        public Criteria andDepartCityGreaterThanOrEqualTo(String value) {
+            addCriterion("depart_city >=", value, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxGreaterThan(String value) {
-            addCriterion("FuelOilTax >", value, "fueloiltax");
+        public Criteria andDepartCityLessThan(String value) {
+            addCriterion("depart_city <", value, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxGreaterThanOrEqualTo(String value) {
-            addCriterion("FuelOilTax >=", value, "fueloiltax");
+        public Criteria andDepartCityLessThanOrEqualTo(String value) {
+            addCriterion("depart_city <=", value, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxLessThan(String value) {
-            addCriterion("FuelOilTax <", value, "fueloiltax");
+        public Criteria andDepartCityLike(String value) {
+            addCriterion("depart_city like", value, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxLessThanOrEqualTo(String value) {
-            addCriterion("FuelOilTax <=", value, "fueloiltax");
+        public Criteria andDepartCityNotLike(String value) {
+            addCriterion("depart_city not like", value, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxLike(String value) {
-            addCriterion("FuelOilTax like", value, "fueloiltax");
+        public Criteria andDepartCityIn(List<String> values) {
+            addCriterion("depart_city in", values, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxNotLike(String value) {
-            addCriterion("FuelOilTax not like", value, "fueloiltax");
+        public Criteria andDepartCityNotIn(List<String> values) {
+            addCriterion("depart_city not in", values, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxIn(List<String> values) {
-            addCriterion("FuelOilTax in", values, "fueloiltax");
+        public Criteria andDepartCityBetween(String value1, String value2) {
+            addCriterion("depart_city between", value1, value2, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxNotIn(List<String> values) {
-            addCriterion("FuelOilTax not in", values, "fueloiltax");
+        public Criteria andDepartCityNotBetween(String value1, String value2) {
+            addCriterion("depart_city not between", value1, value2, "departCity");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxBetween(String value1, String value2) {
-            addCriterion("FuelOilTax between", value1, value2, "fueloiltax");
+        public Criteria andDestinationIsNull() {
+            addCriterion("destination is null");
             return (Criteria) this;
         }
 
-        public Criteria andFueloiltaxNotBetween(String value1, String value2) {
-            addCriterion("FuelOilTax not between", value1, value2, "fueloiltax");
+        public Criteria andDestinationIsNotNull() {
+            addCriterion("destination is not null");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityIsNull() {
-            addCriterion("FromCity is null");
+        public Criteria andDestinationEqualTo(String value) {
+            addCriterion("destination =", value, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityIsNotNull() {
-            addCriterion("FromCity is not null");
+        public Criteria andDestinationNotEqualTo(String value) {
+            addCriterion("destination <>", value, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityEqualTo(String value) {
-            addCriterion("FromCity =", value, "fromcity");
+        public Criteria andDestinationGreaterThan(String value) {
+            addCriterion("destination >", value, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityNotEqualTo(String value) {
-            addCriterion("FromCity <>", value, "fromcity");
+        public Criteria andDestinationGreaterThanOrEqualTo(String value) {
+            addCriterion("destination >=", value, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityGreaterThan(String value) {
-            addCriterion("FromCity >", value, "fromcity");
+        public Criteria andDestinationLessThan(String value) {
+            addCriterion("destination <", value, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityGreaterThanOrEqualTo(String value) {
-            addCriterion("FromCity >=", value, "fromcity");
+        public Criteria andDestinationLessThanOrEqualTo(String value) {
+            addCriterion("destination <=", value, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityLessThan(String value) {
-            addCriterion("FromCity <", value, "fromcity");
+        public Criteria andDestinationLike(String value) {
+            addCriterion("destination like", value, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityLessThanOrEqualTo(String value) {
-            addCriterion("FromCity <=", value, "fromcity");
+        public Criteria andDestinationNotLike(String value) {
+            addCriterion("destination not like", value, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityLike(String value) {
-            addCriterion("FromCity like", value, "fromcity");
+        public Criteria andDestinationIn(List<String> values) {
+            addCriterion("destination in", values, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityNotLike(String value) {
-            addCriterion("FromCity not like", value, "fromcity");
+        public Criteria andDestinationNotIn(List<String> values) {
+            addCriterion("destination not in", values, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityIn(List<String> values) {
-            addCriterion("FromCity in", values, "fromcity");
+        public Criteria andDestinationBetween(String value1, String value2) {
+            addCriterion("destination between", value1, value2, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityNotIn(List<String> values) {
-            addCriterion("FromCity not in", values, "fromcity");
+        public Criteria andDestinationNotBetween(String value1, String value2) {
+            addCriterion("destination not between", value1, value2, "destination");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityBetween(String value1, String value2) {
-            addCriterion("FromCity between", value1, value2, "fromcity");
+        public Criteria andFlightNumberIsNull() {
+            addCriterion("flight_number is null");
             return (Criteria) this;
         }
 
-        public Criteria andFromcityNotBetween(String value1, String value2) {
-            addCriterion("FromCity not between", value1, value2, "fromcity");
+        public Criteria andFlightNumberIsNotNull() {
+            addCriterion("flight_number is not null");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportIsNull() {
-            addCriterion("FromAirport is null");
+        public Criteria andFlightNumberEqualTo(String value) {
+            addCriterion("flight_number =", value, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportIsNotNull() {
-            addCriterion("FromAirport is not null");
+        public Criteria andFlightNumberNotEqualTo(String value) {
+            addCriterion("flight_number <>", value, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportEqualTo(String value) {
-            addCriterion("FromAirport =", value, "fromairport");
+        public Criteria andFlightNumberGreaterThan(String value) {
+            addCriterion("flight_number >", value, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportNotEqualTo(String value) {
-            addCriterion("FromAirport <>", value, "fromairport");
+        public Criteria andFlightNumberGreaterThanOrEqualTo(String value) {
+            addCriterion("flight_number >=", value, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportGreaterThan(String value) {
-            addCriterion("FromAirport >", value, "fromairport");
+        public Criteria andFlightNumberLessThan(String value) {
+            addCriterion("flight_number <", value, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportGreaterThanOrEqualTo(String value) {
-            addCriterion("FromAirport >=", value, "fromairport");
+        public Criteria andFlightNumberLessThanOrEqualTo(String value) {
+            addCriterion("flight_number <=", value, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportLessThan(String value) {
-            addCriterion("FromAirport <", value, "fromairport");
+        public Criteria andFlightNumberLike(String value) {
+            addCriterion("flight_number like", value, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportLessThanOrEqualTo(String value) {
-            addCriterion("FromAirport <=", value, "fromairport");
+        public Criteria andFlightNumberNotLike(String value) {
+            addCriterion("flight_number not like", value, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportLike(String value) {
-            addCriterion("FromAirport like", value, "fromairport");
+        public Criteria andFlightNumberIn(List<String> values) {
+            addCriterion("flight_number in", values, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportNotLike(String value) {
-            addCriterion("FromAirport not like", value, "fromairport");
+        public Criteria andFlightNumberNotIn(List<String> values) {
+            addCriterion("flight_number not in", values, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportIn(List<String> values) {
-            addCriterion("FromAirport in", values, "fromairport");
+        public Criteria andFlightNumberBetween(String value1, String value2) {
+            addCriterion("flight_number between", value1, value2, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportNotIn(List<String> values) {
-            addCriterion("FromAirport not in", values, "fromairport");
+        public Criteria andFlightNumberNotBetween(String value1, String value2) {
+            addCriterion("flight_number not between", value1, value2, "flightNumber");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportBetween(String value1, String value2) {
-            addCriterion("FromAirport between", value1, value2, "fromairport");
+        public Criteria andDepartTimeIsNull() {
+            addCriterion("depart_time is null");
             return (Criteria) this;
         }
 
-        public Criteria andFromairportNotBetween(String value1, String value2) {
-            addCriterion("FromAirport not between", value1, value2, "fromairport");
+        public Criteria andDepartTimeIsNotNull() {
+            addCriterion("depart_time is not null");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalIsNull() {
-            addCriterion("FromTerminal is null");
+        public Criteria andDepartTimeEqualTo(String value) {
+            addCriterion("depart_time =", value, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalIsNotNull() {
-            addCriterion("FromTerminal is not null");
+        public Criteria andDepartTimeNotEqualTo(String value) {
+            addCriterion("depart_time <>", value, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalEqualTo(String value) {
-            addCriterion("FromTerminal =", value, "fromterminal");
+        public Criteria andDepartTimeGreaterThan(String value) {
+            addCriterion("depart_time >", value, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalNotEqualTo(String value) {
-            addCriterion("FromTerminal <>", value, "fromterminal");
+        public Criteria andDepartTimeGreaterThanOrEqualTo(String value) {
+            addCriterion("depart_time >=", value, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalGreaterThan(String value) {
-            addCriterion("FromTerminal >", value, "fromterminal");
+        public Criteria andDepartTimeLessThan(String value) {
+            addCriterion("depart_time <", value, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalGreaterThanOrEqualTo(String value) {
-            addCriterion("FromTerminal >=", value, "fromterminal");
+        public Criteria andDepartTimeLessThanOrEqualTo(String value) {
+            addCriterion("depart_time <=", value, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalLessThan(String value) {
-            addCriterion("FromTerminal <", value, "fromterminal");
+        public Criteria andDepartTimeLike(String value) {
+            addCriterion("depart_time like", value, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalLessThanOrEqualTo(String value) {
-            addCriterion("FromTerminal <=", value, "fromterminal");
+        public Criteria andDepartTimeNotLike(String value) {
+            addCriterion("depart_time not like", value, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalLike(String value) {
-            addCriterion("FromTerminal like", value, "fromterminal");
+        public Criteria andDepartTimeIn(List<String> values) {
+            addCriterion("depart_time in", values, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalNotLike(String value) {
-            addCriterion("FromTerminal not like", value, "fromterminal");
+        public Criteria andDepartTimeNotIn(List<String> values) {
+            addCriterion("depart_time not in", values, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalIn(List<String> values) {
-            addCriterion("FromTerminal in", values, "fromterminal");
+        public Criteria andDepartTimeBetween(String value1, String value2) {
+            addCriterion("depart_time between", value1, value2, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalNotIn(List<String> values) {
-            addCriterion("FromTerminal not in", values, "fromterminal");
+        public Criteria andDepartTimeNotBetween(String value1, String value2) {
+            addCriterion("depart_time not between", value1, value2, "departTime");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalBetween(String value1, String value2) {
-            addCriterion("FromTerminal between", value1, value2, "fromterminal");
+        public Criteria andDepartAirportIsNull() {
+            addCriterion("depart_airport is null");
             return (Criteria) this;
         }
 
-        public Criteria andFromterminalNotBetween(String value1, String value2) {
-            addCriterion("FromTerminal not between", value1, value2, "fromterminal");
+        public Criteria andDepartAirportIsNotNull() {
+            addCriterion("depart_airport is not null");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeIsNull() {
-            addCriterion("FromDateTime is null");
+        public Criteria andDepartAirportEqualTo(String value) {
+            addCriterion("depart_airport =", value, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeIsNotNull() {
-            addCriterion("FromDateTime is not null");
+        public Criteria andDepartAirportNotEqualTo(String value) {
+            addCriterion("depart_airport <>", value, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeEqualTo(String value) {
-            addCriterion("FromDateTime =", value, "fromdatetime");
+        public Criteria andDepartAirportGreaterThan(String value) {
+            addCriterion("depart_airport >", value, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeNotEqualTo(String value) {
-            addCriterion("FromDateTime <>", value, "fromdatetime");
+        public Criteria andDepartAirportGreaterThanOrEqualTo(String value) {
+            addCriterion("depart_airport >=", value, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeGreaterThan(String value) {
-            addCriterion("FromDateTime >", value, "fromdatetime");
+        public Criteria andDepartAirportLessThan(String value) {
+            addCriterion("depart_airport <", value, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeGreaterThanOrEqualTo(String value) {
-            addCriterion("FromDateTime >=", value, "fromdatetime");
+        public Criteria andDepartAirportLessThanOrEqualTo(String value) {
+            addCriterion("depart_airport <=", value, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeLessThan(String value) {
-            addCriterion("FromDateTime <", value, "fromdatetime");
+        public Criteria andDepartAirportLike(String value) {
+            addCriterion("depart_airport like", value, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeLessThanOrEqualTo(String value) {
-            addCriterion("FromDateTime <=", value, "fromdatetime");
+        public Criteria andDepartAirportNotLike(String value) {
+            addCriterion("depart_airport not like", value, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeLike(String value) {
-            addCriterion("FromDateTime like", value, "fromdatetime");
+        public Criteria andDepartAirportIn(List<String> values) {
+            addCriterion("depart_airport in", values, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeNotLike(String value) {
-            addCriterion("FromDateTime not like", value, "fromdatetime");
+        public Criteria andDepartAirportNotIn(List<String> values) {
+            addCriterion("depart_airport not in", values, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeIn(List<String> values) {
-            addCriterion("FromDateTime in", values, "fromdatetime");
+        public Criteria andDepartAirportBetween(String value1, String value2) {
+            addCriterion("depart_airport between", value1, value2, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeNotIn(List<String> values) {
-            addCriterion("FromDateTime not in", values, "fromdatetime");
+        public Criteria andDepartAirportNotBetween(String value1, String value2) {
+            addCriterion("depart_airport not between", value1, value2, "departAirport");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeBetween(String value1, String value2) {
-            addCriterion("FromDateTime between", value1, value2, "fromdatetime");
+        public Criteria andDepartTerminalIsNull() {
+            addCriterion("depart_terminal is null");
             return (Criteria) this;
         }
 
-        public Criteria andFromdatetimeNotBetween(String value1, String value2) {
-            addCriterion("FromDateTime not between", value1, value2, "fromdatetime");
+        public Criteria andDepartTerminalIsNotNull() {
+            addCriterion("depart_terminal is not null");
             return (Criteria) this;
         }
 
-        public Criteria andTocityIsNull() {
-            addCriterion("ToCity is null");
+        public Criteria andDepartTerminalEqualTo(String value) {
+            addCriterion("depart_terminal =", value, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityIsNotNull() {
-            addCriterion("ToCity is not null");
+        public Criteria andDepartTerminalNotEqualTo(String value) {
+            addCriterion("depart_terminal <>", value, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityEqualTo(String value) {
-            addCriterion("ToCity =", value, "tocity");
+        public Criteria andDepartTerminalGreaterThan(String value) {
+            addCriterion("depart_terminal >", value, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityNotEqualTo(String value) {
-            addCriterion("ToCity <>", value, "tocity");
+        public Criteria andDepartTerminalGreaterThanOrEqualTo(String value) {
+            addCriterion("depart_terminal >=", value, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityGreaterThan(String value) {
-            addCriterion("ToCity >", value, "tocity");
+        public Criteria andDepartTerminalLessThan(String value) {
+            addCriterion("depart_terminal <", value, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityGreaterThanOrEqualTo(String value) {
-            addCriterion("ToCity >=", value, "tocity");
+        public Criteria andDepartTerminalLessThanOrEqualTo(String value) {
+            addCriterion("depart_terminal <=", value, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityLessThan(String value) {
-            addCriterion("ToCity <", value, "tocity");
+        public Criteria andDepartTerminalLike(String value) {
+            addCriterion("depart_terminal like", value, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityLessThanOrEqualTo(String value) {
-            addCriterion("ToCity <=", value, "tocity");
+        public Criteria andDepartTerminalNotLike(String value) {
+            addCriterion("depart_terminal not like", value, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityLike(String value) {
-            addCriterion("ToCity like", value, "tocity");
+        public Criteria andDepartTerminalIn(List<String> values) {
+            addCriterion("depart_terminal in", values, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityNotLike(String value) {
-            addCriterion("ToCity not like", value, "tocity");
+        public Criteria andDepartTerminalNotIn(List<String> values) {
+            addCriterion("depart_terminal not in", values, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityIn(List<String> values) {
-            addCriterion("ToCity in", values, "tocity");
+        public Criteria andDepartTerminalBetween(String value1, String value2) {
+            addCriterion("depart_terminal between", value1, value2, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityNotIn(List<String> values) {
-            addCriterion("ToCity not in", values, "tocity");
+        public Criteria andDepartTerminalNotBetween(String value1, String value2) {
+            addCriterion("depart_terminal not between", value1, value2, "departTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTocityBetween(String value1, String value2) {
-            addCriterion("ToCity between", value1, value2, "tocity");
+        public Criteria andDurationIsNull() {
+            addCriterion("duration is null");
             return (Criteria) this;
         }
 
-        public Criteria andTocityNotBetween(String value1, String value2) {
-            addCriterion("ToCity not between", value1, value2, "tocity");
+        public Criteria andDurationIsNotNull() {
+            addCriterion("duration is not null");
             return (Criteria) this;
         }
 
-        public Criteria andToairportIsNull() {
-            addCriterion("ToAirport is null");
+        public Criteria andDurationEqualTo(String value) {
+            addCriterion("duration =", value, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportIsNotNull() {
-            addCriterion("ToAirport is not null");
+        public Criteria andDurationNotEqualTo(String value) {
+            addCriterion("duration <>", value, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportEqualTo(String value) {
-            addCriterion("ToAirport =", value, "toairport");
+        public Criteria andDurationGreaterThan(String value) {
+            addCriterion("duration >", value, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportNotEqualTo(String value) {
-            addCriterion("ToAirport <>", value, "toairport");
+        public Criteria andDurationGreaterThanOrEqualTo(String value) {
+            addCriterion("duration >=", value, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportGreaterThan(String value) {
-            addCriterion("ToAirport >", value, "toairport");
+        public Criteria andDurationLessThan(String value) {
+            addCriterion("duration <", value, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportGreaterThanOrEqualTo(String value) {
-            addCriterion("ToAirport >=", value, "toairport");
+        public Criteria andDurationLessThanOrEqualTo(String value) {
+            addCriterion("duration <=", value, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportLessThan(String value) {
-            addCriterion("ToAirport <", value, "toairport");
+        public Criteria andDurationLike(String value) {
+            addCriterion("duration like", value, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportLessThanOrEqualTo(String value) {
-            addCriterion("ToAirport <=", value, "toairport");
+        public Criteria andDurationNotLike(String value) {
+            addCriterion("duration not like", value, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportLike(String value) {
-            addCriterion("ToAirport like", value, "toairport");
+        public Criteria andDurationIn(List<String> values) {
+            addCriterion("duration in", values, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportNotLike(String value) {
-            addCriterion("ToAirport not like", value, "toairport");
+        public Criteria andDurationNotIn(List<String> values) {
+            addCriterion("duration not in", values, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportIn(List<String> values) {
-            addCriterion("ToAirport in", values, "toairport");
+        public Criteria andDurationBetween(String value1, String value2) {
+            addCriterion("duration between", value1, value2, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportNotIn(List<String> values) {
-            addCriterion("ToAirport not in", values, "toairport");
+        public Criteria andDurationNotBetween(String value1, String value2) {
+            addCriterion("duration not between", value1, value2, "duration");
             return (Criteria) this;
         }
 
-        public Criteria andToairportBetween(String value1, String value2) {
-            addCriterion("ToAirport between", value1, value2, "toairport");
+        public Criteria andArrivalTimeIsNull() {
+            addCriterion("arrival_time is null");
             return (Criteria) this;
         }
 
-        public Criteria andToairportNotBetween(String value1, String value2) {
-            addCriterion("ToAirport not between", value1, value2, "toairport");
+        public Criteria andArrivalTimeIsNotNull() {
+            addCriterion("arrival_time is not null");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalIsNull() {
-            addCriterion("ToTerminal is null");
+        public Criteria andArrivalTimeEqualTo(String value) {
+            addCriterion("arrival_time =", value, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalIsNotNull() {
-            addCriterion("ToTerminal is not null");
+        public Criteria andArrivalTimeNotEqualTo(String value) {
+            addCriterion("arrival_time <>", value, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalEqualTo(String value) {
-            addCriterion("ToTerminal =", value, "toterminal");
+        public Criteria andArrivalTimeGreaterThan(String value) {
+            addCriterion("arrival_time >", value, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalNotEqualTo(String value) {
-            addCriterion("ToTerminal <>", value, "toterminal");
+        public Criteria andArrivalTimeGreaterThanOrEqualTo(String value) {
+            addCriterion("arrival_time >=", value, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalGreaterThan(String value) {
-            addCriterion("ToTerminal >", value, "toterminal");
+        public Criteria andArrivalTimeLessThan(String value) {
+            addCriterion("arrival_time <", value, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalGreaterThanOrEqualTo(String value) {
-            addCriterion("ToTerminal >=", value, "toterminal");
+        public Criteria andArrivalTimeLessThanOrEqualTo(String value) {
+            addCriterion("arrival_time <=", value, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalLessThan(String value) {
-            addCriterion("ToTerminal <", value, "toterminal");
+        public Criteria andArrivalTimeLike(String value) {
+            addCriterion("arrival_time like", value, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalLessThanOrEqualTo(String value) {
-            addCriterion("ToTerminal <=", value, "toterminal");
+        public Criteria andArrivalTimeNotLike(String value) {
+            addCriterion("arrival_time not like", value, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalLike(String value) {
-            addCriterion("ToTerminal like", value, "toterminal");
+        public Criteria andArrivalTimeIn(List<String> values) {
+            addCriterion("arrival_time in", values, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalNotLike(String value) {
-            addCriterion("ToTerminal not like", value, "toterminal");
+        public Criteria andArrivalTimeNotIn(List<String> values) {
+            addCriterion("arrival_time not in", values, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalIn(List<String> values) {
-            addCriterion("ToTerminal in", values, "toterminal");
+        public Criteria andArrivalTimeBetween(String value1, String value2) {
+            addCriterion("arrival_time between", value1, value2, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalNotIn(List<String> values) {
-            addCriterion("ToTerminal not in", values, "toterminal");
+        public Criteria andArrivalTimeNotBetween(String value1, String value2) {
+            addCriterion("arrival_time not between", value1, value2, "arrivalTime");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalBetween(String value1, String value2) {
-            addCriterion("ToTerminal between", value1, value2, "toterminal");
+        public Criteria andArrivalAirportIsNull() {
+            addCriterion("arrival_airport is null");
             return (Criteria) this;
         }
 
-        public Criteria andToterminalNotBetween(String value1, String value2) {
-            addCriterion("ToTerminal not between", value1, value2, "toterminal");
+        public Criteria andArrivalAirportIsNotNull() {
+            addCriterion("arrival_airport is not null");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeIsNull() {
-            addCriterion("ToDateTime is null");
+        public Criteria andArrivalAirportEqualTo(String value) {
+            addCriterion("arrival_airport =", value, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeIsNotNull() {
-            addCriterion("ToDateTime is not null");
+        public Criteria andArrivalAirportNotEqualTo(String value) {
+            addCriterion("arrival_airport <>", value, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeEqualTo(String value) {
-            addCriterion("ToDateTime =", value, "todatetime");
+        public Criteria andArrivalAirportGreaterThan(String value) {
+            addCriterion("arrival_airport >", value, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeNotEqualTo(String value) {
-            addCriterion("ToDateTime <>", value, "todatetime");
+        public Criteria andArrivalAirportGreaterThanOrEqualTo(String value) {
+            addCriterion("arrival_airport >=", value, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeGreaterThan(String value) {
-            addCriterion("ToDateTime >", value, "todatetime");
+        public Criteria andArrivalAirportLessThan(String value) {
+            addCriterion("arrival_airport <", value, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeGreaterThanOrEqualTo(String value) {
-            addCriterion("ToDateTime >=", value, "todatetime");
+        public Criteria andArrivalAirportLessThanOrEqualTo(String value) {
+            addCriterion("arrival_airport <=", value, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeLessThan(String value) {
-            addCriterion("ToDateTime <", value, "todatetime");
+        public Criteria andArrivalAirportLike(String value) {
+            addCriterion("arrival_airport like", value, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeLessThanOrEqualTo(String value) {
-            addCriterion("ToDateTime <=", value, "todatetime");
+        public Criteria andArrivalAirportNotLike(String value) {
+            addCriterion("arrival_airport not like", value, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeLike(String value) {
-            addCriterion("ToDateTime like", value, "todatetime");
+        public Criteria andArrivalAirportIn(List<String> values) {
+            addCriterion("arrival_airport in", values, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeNotLike(String value) {
-            addCriterion("ToDateTime not like", value, "todatetime");
+        public Criteria andArrivalAirportNotIn(List<String> values) {
+            addCriterion("arrival_airport not in", values, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeIn(List<String> values) {
-            addCriterion("ToDateTime in", values, "todatetime");
+        public Criteria andArrivalAirportBetween(String value1, String value2) {
+            addCriterion("arrival_airport between", value1, value2, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeNotIn(List<String> values) {
-            addCriterion("ToDateTime not in", values, "todatetime");
+        public Criteria andArrivalAirportNotBetween(String value1, String value2) {
+            addCriterion("arrival_airport not between", value1, value2, "arrivalAirport");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeBetween(String value1, String value2) {
-            addCriterion("ToDateTime between", value1, value2, "todatetime");
+        public Criteria andArrivalTerminalIsNull() {
+            addCriterion("arrival_terminal is null");
             return (Criteria) this;
         }
 
-        public Criteria andTodatetimeNotBetween(String value1, String value2) {
-            addCriterion("ToDateTime not between", value1, value2, "todatetime");
+        public Criteria andArrivalTerminalIsNotNull() {
+            addCriterion("arrival_terminal is not null");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesIsNull() {
-            addCriterion("TicketPrices is null");
+        public Criteria andArrivalTerminalEqualTo(String value) {
+            addCriterion("arrival_terminal =", value, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesIsNotNull() {
-            addCriterion("TicketPrices is not null");
+        public Criteria andArrivalTerminalNotEqualTo(String value) {
+            addCriterion("arrival_terminal <>", value, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesEqualTo(String value) {
-            addCriterion("TicketPrices =", value, "ticketprices");
+        public Criteria andArrivalTerminalGreaterThan(String value) {
+            addCriterion("arrival_terminal >", value, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesNotEqualTo(String value) {
-            addCriterion("TicketPrices <>", value, "ticketprices");
+        public Criteria andArrivalTerminalGreaterThanOrEqualTo(String value) {
+            addCriterion("arrival_terminal >=", value, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesGreaterThan(String value) {
-            addCriterion("TicketPrices >", value, "ticketprices");
+        public Criteria andArrivalTerminalLessThan(String value) {
+            addCriterion("arrival_terminal <", value, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesGreaterThanOrEqualTo(String value) {
-            addCriterion("TicketPrices >=", value, "ticketprices");
+        public Criteria andArrivalTerminalLessThanOrEqualTo(String value) {
+            addCriterion("arrival_terminal <=", value, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesLessThan(String value) {
-            addCriterion("TicketPrices <", value, "ticketprices");
+        public Criteria andArrivalTerminalLike(String value) {
+            addCriterion("arrival_terminal like", value, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesLessThanOrEqualTo(String value) {
-            addCriterion("TicketPrices <=", value, "ticketprices");
+        public Criteria andArrivalTerminalNotLike(String value) {
+            addCriterion("arrival_terminal not like", value, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesLike(String value) {
-            addCriterion("TicketPrices like", value, "ticketprices");
+        public Criteria andArrivalTerminalIn(List<String> values) {
+            addCriterion("arrival_terminal in", values, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesNotLike(String value) {
-            addCriterion("TicketPrices not like", value, "ticketprices");
+        public Criteria andArrivalTerminalNotIn(List<String> values) {
+            addCriterion("arrival_terminal not in", values, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesIn(List<String> values) {
-            addCriterion("TicketPrices in", values, "ticketprices");
+        public Criteria andArrivalTerminalBetween(String value1, String value2) {
+            addCriterion("arrival_terminal between", value1, value2, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesNotIn(List<String> values) {
-            addCriterion("TicketPrices not in", values, "ticketprices");
+        public Criteria andArrivalTerminalNotBetween(String value1, String value2) {
+            addCriterion("arrival_terminal not between", value1, value2, "arrivalTerminal");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesBetween(String value1, String value2) {
-            addCriterion("TicketPrices between", value1, value2, "ticketprices");
+        public Criteria andPriceIsNull() {
+            addCriterion("price is null");
             return (Criteria) this;
         }
 
-        public Criteria andTicketpricesNotBetween(String value1, String value2) {
-            addCriterion("TicketPrices not between", value1, value2, "ticketprices");
+        public Criteria andPriceIsNotNull() {
+            addCriterion("price is not null");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinIsNull() {
-            addCriterion("AircraftCabin is null");
+        public Criteria andPriceEqualTo(String value) {
+            addCriterion("price =", value, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinIsNotNull() {
-            addCriterion("AircraftCabin is not null");
+        public Criteria andPriceNotEqualTo(String value) {
+            addCriterion("price <>", value, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinEqualTo(String value) {
-            addCriterion("AircraftCabin =", value, "aircraftcabin");
+        public Criteria andPriceGreaterThan(String value) {
+            addCriterion("price >", value, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinNotEqualTo(String value) {
-            addCriterion("AircraftCabin <>", value, "aircraftcabin");
+        public Criteria andPriceGreaterThanOrEqualTo(String value) {
+            addCriterion("price >=", value, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinGreaterThan(String value) {
-            addCriterion("AircraftCabin >", value, "aircraftcabin");
+        public Criteria andPriceLessThan(String value) {
+            addCriterion("price <", value, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinGreaterThanOrEqualTo(String value) {
-            addCriterion("AircraftCabin >=", value, "aircraftcabin");
+        public Criteria andPriceLessThanOrEqualTo(String value) {
+            addCriterion("price <=", value, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinLessThan(String value) {
-            addCriterion("AircraftCabin <", value, "aircraftcabin");
+        public Criteria andPriceLike(String value) {
+            addCriterion("price like", value, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinLessThanOrEqualTo(String value) {
-            addCriterion("AircraftCabin <=", value, "aircraftcabin");
+        public Criteria andPriceNotLike(String value) {
+            addCriterion("price not like", value, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinLike(String value) {
-            addCriterion("AircraftCabin like", value, "aircraftcabin");
+        public Criteria andPriceIn(List<String> values) {
+            addCriterion("price in", values, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinNotLike(String value) {
-            addCriterion("AircraftCabin not like", value, "aircraftcabin");
+        public Criteria andPriceNotIn(List<String> values) {
+            addCriterion("price not in", values, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinIn(List<String> values) {
-            addCriterion("AircraftCabin in", values, "aircraftcabin");
+        public Criteria andPriceBetween(String value1, String value2) {
+            addCriterion("price between", value1, value2, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinNotIn(List<String> values) {
-            addCriterion("AircraftCabin not in", values, "aircraftcabin");
+        public Criteria andPriceNotBetween(String value1, String value2) {
+            addCriterion("price not between", value1, value2, "price");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinBetween(String value1, String value2) {
-            addCriterion("AircraftCabin between", value1, value2, "aircraftcabin");
+        public Criteria andAnnotationIsNull() {
+            addCriterion("annotation is null");
             return (Criteria) this;
         }
 
-        public Criteria andAircraftcabinNotBetween(String value1, String value2) {
-            addCriterion("AircraftCabin not between", value1, value2, "aircraftcabin");
+        public Criteria andAnnotationIsNotNull() {
+            addCriterion("annotation is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationEqualTo(String value) {
+            addCriterion("annotation =", value, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationNotEqualTo(String value) {
+            addCriterion("annotation <>", value, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationGreaterThan(String value) {
+            addCriterion("annotation >", value, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationGreaterThanOrEqualTo(String value) {
+            addCriterion("annotation >=", value, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationLessThan(String value) {
+            addCriterion("annotation <", value, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationLessThanOrEqualTo(String value) {
+            addCriterion("annotation <=", value, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationLike(String value) {
+            addCriterion("annotation like", value, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationNotLike(String value) {
+            addCriterion("annotation not like", value, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationIn(List<String> values) {
+            addCriterion("annotation in", values, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationNotIn(List<String> values) {
+            addCriterion("annotation not in", values, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationBetween(String value1, String value2) {
+            addCriterion("annotation between", value1, value2, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andAnnotationNotBetween(String value1, String value2) {
+            addCriterion("annotation not between", value1, value2, "annotation");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedIsNull() {
+            addCriterion("isdeleted is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedIsNotNull() {
+            addCriterion("isdeleted is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedEqualTo(Integer value) {
+            addCriterion("isdeleted =", value, "isdeleted");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedNotEqualTo(Integer value) {
+            addCriterion("isdeleted <>", value, "isdeleted");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedGreaterThan(Integer value) {
+            addCriterion("isdeleted >", value, "isdeleted");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedGreaterThanOrEqualTo(Integer value) {
+            addCriterion("isdeleted >=", value, "isdeleted");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedLessThan(Integer value) {
+            addCriterion("isdeleted <", value, "isdeleted");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedLessThanOrEqualTo(Integer value) {
+            addCriterion("isdeleted <=", value, "isdeleted");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedIn(List<Integer> values) {
+            addCriterion("isdeleted in", values, "isdeleted");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedNotIn(List<Integer> values) {
+            addCriterion("isdeleted not in", values, "isdeleted");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedBetween(Integer value1, Integer value2) {
+            addCriterion("isdeleted between", value1, value2, "isdeleted");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsdeletedNotBetween(Integer value1, Integer value2) {
+            addCriterion("isdeleted not between", value1, value2, "isdeleted");
             return (Criteria) this;
         }
     }

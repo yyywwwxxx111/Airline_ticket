@@ -1,191 +1,196 @@
 package com.demo.springboot.helloworld.common.domain;
 
 public class Flight {
-    private Integer tableid;
+    private Long id;
 
-    private String id;
+    private String dateDay;
 
-    private String airline;
+    private String company;
 
-    private String flightnumber;
+    private String plane;
 
-    private String aircraft;
+    private String departCity;
 
-    private String fueloiltax;
+    private String destination;
 
-    private String fromcity;
+    private String flightNumber;
 
-    private String fromairport;
+    private String departTime;
 
-    private String fromterminal;
+    private String departAirport;
 
-    private String fromdatetime;
+    private String departTerminal;
 
-    private String tocity;
+    private String duration;
 
-    private String toairport;
+    private String arrivalTime;
 
-    private String toterminal;
+    private String arrivalAirport;
 
-    private String todatetime;
+    private String arrivalTerminal;
 
-    private String ticketprices;
+    private String price;
 
-    private String aircraftcabin;
+    private String annotation;
 
-    public Integer getTableid() {
-        return tableid;
-    }
+    private Integer isdeleted;
 
-    public void setTableid(Integer tableid) {
-        this.tableid = tableid;
-    }
-
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id == null ? null : id.trim();
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public String getAirline() {
-        return airline;
+    public String getDateDay() {
+        return dateDay;
     }
 
-    public void setAirline(String airline) {
-        this.airline = airline == null ? null : airline.trim();
+    public void setDateDay(String dateDay) {
+        this.dateDay = dateDay == null ? null : dateDay.trim();
     }
 
-    public String getFlightnumber() {
-        return flightnumber;
+    public String getCompany() {
+        return company;
     }
 
-    public void setFlightnumber(String flightnumber) {
-        this.flightnumber = flightnumber == null ? null : flightnumber.trim();
+    public void setCompany(String company) {
+        this.company = company == null ? null : company.trim();
     }
 
-    public String getAircraft() {
-        return aircraft;
+    public String getPlane() {
+        return plane;
     }
 
-    public void setAircraft(String aircraft) {
-        this.aircraft = aircraft == null ? null : aircraft.trim();
+    public void setPlane(String plane) {
+        this.plane = plane == null ? null : plane.trim();
     }
 
-    public String getFueloiltax() {
-        return fueloiltax;
+    public String getDepartCity() {
+        return departCity;
     }
 
-    public void setFueloiltax(String fueloiltax) {
-        this.fueloiltax = fueloiltax == null ? null : fueloiltax.trim();
+    public void setDepartCity(String departCity) {
+        this.departCity = departCity == null ? null : departCity.trim();
     }
 
-    public String getFromcity() {
-        return fromcity;
+    public String getDestination() {
+        return destination;
     }
 
-    public void setFromcity(String fromcity) {
-        this.fromcity = fromcity == null ? null : fromcity.trim();
+    public void setDestination(String destination) {
+        this.destination = destination == null ? null : destination.trim();
     }
 
-    public String getFromairport() {
-        return fromairport;
+    public String getFlightNumber() {
+        return flightNumber;
     }
 
-    public void setFromairport(String fromairport) {
-        this.fromairport = fromairport == null ? null : fromairport.trim();
+    public void setFlightNumber(String flightNumber) {
+        this.flightNumber = flightNumber == null ? null : flightNumber.trim();
     }
 
-    public String getFromterminal() {
-        return fromterminal;
+    public String getDepartTime() {
+        return departTime;
     }
 
-    public void setFromterminal(String fromterminal) {
-        this.fromterminal = fromterminal == null ? null : fromterminal.trim();
+    public void setDepartTime(String departTime) {
+        this.departTime = departTime == null ? null : departTime.trim();
     }
 
-    public String getFromdatetime() {
-        return fromdatetime;
+    public String getDepartAirport() {
+        return departAirport;
     }
 
-    public void setFromdatetime(String fromdatetime) {
-        this.fromdatetime = fromdatetime == null ? null : fromdatetime.trim();
+    public void setDepartAirport(String departAirport) {
+        this.departAirport = departAirport == null ? null : departAirport.trim();
     }
 
-    public String getTocity() {
-        return tocity;
+    public String getDepartTerminal() {
+        return departTerminal;
     }
 
-    public void setTocity(String tocity) {
-        this.tocity = tocity == null ? null : tocity.trim();
+    public void setDepartTerminal(String departTerminal) {
+        this.departTerminal = departTerminal == null ? null : departTerminal.trim();
     }
 
-    public String getToairport() {
-        return toairport;
+    public String getDuration() {
+        return duration;
     }
 
-    public void setToairport(String toairport) {
-        this.toairport = toairport == null ? null : toairport.trim();
+    public void setDuration(String duration) {
+        this.duration = duration == null ? null : duration.trim();
     }
 
-    public String getToterminal() {
-        return toterminal;
+    public String getArrivalTime() {
+        return arrivalTime;
     }
 
-    public void setToterminal(String toterminal) {
-        this.toterminal = toterminal == null ? null : toterminal.trim();
+    public void setArrivalTime(String arrivalTime) {
+        this.arrivalTime = arrivalTime == null ? null : arrivalTime.trim();
     }
 
-    public String getTodatetime() {
-        return todatetime;
+    public String getArrivalAirport() {
+        return arrivalAirport;
     }
 
-    public void setTodatetime(String todatetime) {
-        this.todatetime = todatetime == null ? null : todatetime.trim();
+    public void setArrivalAirport(String arrivalAirport) {
+        this.arrivalAirport = arrivalAirport == null ? null : arrivalAirport.trim();
     }
 
-    public String getTicketprices() {
-        return ticketprices;
+    public String getArrivalTerminal() {
+        return arrivalTerminal;
     }
 
-    public void setTicketprices(String ticketprices) {
-        this.ticketprices = ticketprices == null ? null : ticketprices.trim();
+    public void setArrivalTerminal(String arrivalTerminal) {
+        this.arrivalTerminal = arrivalTerminal == null ? null : arrivalTerminal.trim();
     }
 
-    public String getAircraftcabin() {
-        return aircraftcabin;
+    public String getPrice() {
+        return price;
     }
 
-    public void setAircraftcabin(String aircraftcabin) {
-        this.aircraftcabin = aircraftcabin == null ? null : aircraftcabin.trim();
+    public void setPrice(String price) {
+        this.price = price == null ? null : price.trim();
     }
 
-    public Flight(String fromcity, String fromdatetime, String tocity) {
-        this.fromcity = fromcity;
-        this.fromdatetime = fromdatetime;
-        this.tocity = tocity;
+    public String getAnnotation() {
+        return annotation;
+    }
+
+    public void setAnnotation(String annotation) {
+        this.annotation = annotation == null ? null : annotation.trim();
+    }
+
+    public Integer getIsdeleted() {
+        return isdeleted;
+    }
+
+    public void setIsdeleted(Integer isdeleted) {
+        this.isdeleted = isdeleted;
     }
 
     @Override
     public String toString() {
         return "Flight{" +
-                "tableid=" + tableid +
-                ", id='" + id + '\'' +
-                ", airline='" + airline + '\'' +
-                ", flightnumber='" + flightnumber + '\'' +
-                ", aircraft='" + aircraft + '\'' +
-                ", fueloiltax='" + fueloiltax + '\'' +
-                ", fromcity='" + fromcity + '\'' +
-                ", fromairport='" + fromairport + '\'' +
-                ", fromterminal='" + fromterminal + '\'' +
-                ", fromdatetime='" + fromdatetime + '\'' +
-                ", tocity='" + tocity + '\'' +
-                ", toairport='" + toairport + '\'' +
-                ", toterminal='" + toterminal + '\'' +
-                ", todatetime='" + todatetime + '\'' +
-                ", ticketprices='" + ticketprices + '\'' +
-                ", aircraftcabin='" + aircraftcabin + '\'' +
+                "id=" + id +
+                ", dateDay='" + dateDay + '\'' +
+                ", company='" + company + '\'' +
+                ", plane='" + plane + '\'' +
+                ", departCity='" + departCity + '\'' +
+                ", destination='" + destination + '\'' +
+                ", flightNumber='" + flightNumber + '\'' +
+                ", departTime='" + departTime + '\'' +
+                ", departAirport='" + departAirport + '\'' +
+                ", departTerminal='" + departTerminal + '\'' +
+                ", duration='" + duration + '\'' +
+                ", arrivalTime='" + arrivalTime + '\'' +
+                ", arrivalAirport='" + arrivalAirport + '\'' +
+                ", arrivalTerminal='" + arrivalTerminal + '\'' +
+                ", price='" + price + '\'' +
+                ", annotation='" + annotation + '\'' +
+                ", isdeleted=" + isdeleted +
                 '}';
     }
 }

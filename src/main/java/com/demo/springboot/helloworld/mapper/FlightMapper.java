@@ -12,7 +12,7 @@ public interface FlightMapper {
 
     int deleteByExample(FlightExample example);
 
-    int deleteByPrimaryKey(Integer tableid);
+    int deleteByPrimaryKey(Long id);
 
     int insert(Flight record);
 
@@ -20,7 +20,7 @@ public interface FlightMapper {
 
     List<Flight> selectByExample(FlightExample example);
 
-    Flight selectByPrimaryKey(Integer tableid);
+    Flight selectByPrimaryKey(Long id);
 
     int updateByExampleSelective(@Param("record") Flight record, @Param("example") FlightExample example);
 
