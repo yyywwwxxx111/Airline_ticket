@@ -15,4 +15,10 @@ public interface UserMapperExtend {
     List<User> selectByEmail(String email);
 
     List<User> selectByPhone(String phone);
+
+    User selectByIs_login();
+
+    void setByIsLogin(User user);
+
+    void outlogin(User user);
 }

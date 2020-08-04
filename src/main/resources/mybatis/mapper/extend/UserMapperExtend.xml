@@ -13,4 +13,13 @@
     <select id="selectByPhone" resultMap="BaseResultMap">
     select * from User where phone = #{phone}
     </select>
+    <select id="selectByIs_login" resultMap="BaseResultMap">
+        select * from User where is_login = 1
+    </select>
+    <update id="setByIsLogin">
+        update  user set is_login = 1 where email = #{email}
+    </update>
+    <update id="outlogin">
+        update  user set is_login = 0 where email = #{email}
+    </update>
 </mapper>

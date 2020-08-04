@@ -4,8 +4,13 @@ import com.demo.springboot.helloworld.common.domain.User;
 import com.demo.springboot.helloworld.common.domain.UserExample;
 import com.demo.springboot.helloworld.mapper.ServerMapper;
 import com.demo.springboot.helloworld.mapper.UserMapper;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+
 
 import java.util.List;
 
@@ -30,31 +35,53 @@ public class UserServiceimpl implements UserService {
         if (users.isEmpty()){
             return false;
         }
-        else
-            return true;
+        else {
+                userMapper.setByIsLogin(user);
+                return true;
+        }
 
     }
 
     @Override
-    public boolean register(User user) {
-        UserExample example = new UserExample();
+    public int register(User user) {
         List<User> users = userMapper.selectByEmail(user.getEmail());
         if (!users.isEmpty()) { //有重复邮箱
-            System.out.println("hhh");
-            return false;
+            return 1;
         } else {
             List<User> users1 = userMapper.selectByPhone(user.getPhone());
             if (!users1.isEmpty()) {
-                return false;
+                return 2;
             } else {
                 if (!user.getPassword().equals(user.getPassword2()) ) {
                     System.out.println("hh");
-                    return false;
+                    return 3;
                 }else {
                     userMapper.insert(user);
-                    return true;
+                    //user.setIsLogin(1);
+                    return 4;
                 }
             }
         }
+    }
+
+    @Override
+    public User find(User user) {
+//        UserExample example=new UserExample();
+//        example.createCriteria().andIsLoginEqualTo(1);
+         user = userMapper.selectByIs_login();
+        return user;
+
+    }
+
+    @Override
+    public PageInfo<User> findusers(int pageNo, int pageSize) {
+        PageHelper.startPage(pageNo,pageSize);
+        List<User> users=userMapper.selectByExample(null);
+        return new PageInfo<>(users);
+    }
+
+    @Override
+    public void outlogin(User user) {
+        userMapper.outlogin(user);
     }
 }

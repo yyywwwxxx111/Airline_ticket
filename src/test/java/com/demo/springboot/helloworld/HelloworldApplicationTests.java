@@ -1,17 +1,17 @@
-package com.demo.springboot.helloworld;
+//package com.demo.springboot.helloworld;
 
-import com.demo.springboot.helloworld.common.domain.User;
-import com.demo.springboot.helloworld.common.domain.UserExample;
-import com.demo.springboot.helloworld.mapper.UserMapper;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.List;
+//import com.demo.springboot.helloworld.common.domain.User;
+//import com.demo.springboot.helloworld.common.domain.UserExample;
+//import com.demo.springboot.helloworld.mapper.UserMapper;
+//import org.junit.jupiter.api.Test;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.boot.test.context.SpringBootTest;
+//
+//import java.util.List;
 //测试类
-@SpringBootTest //启动springboot
+//@SpringBootTest //启动springboot
 
-class HelloworldApplicationTests {
+//class HelloworldApplicationTests {
 //    @Autowired
 //    BookMapper bookMapper;
 //    @Autowired
@@ -31,28 +31,28 @@ class HelloworldApplicationTests {
 //    void test(){
 //        //模拟登陆一一操作的admin
 //        //自动注入接口
-//        //根据id查询用户
+//        根据id查询用户
 //        String name = "admin";
 //        String pwd = "admin";
 //        AdminExample example = new AdminExample();
 //        example.createCriteria().andLoginnameEqualTo(name).andPasswordEqualTo(pwd);
 //        List<Admin> admins = adminMapper.selectByExample(example);
 //    }
-    @Autowired
-    UserMapper userMapper;
+//    @Autowired
+//    UserMapper userMapper;
 
 //@Test
 //    void test(){
-//    //根据id查询用户
-//    //User user = userMapper.selectByPrimaryKey(111l);
-//    //select * from user where uidpk=111
-//    //System.out.println();
-//    //根据用户名和密码查询
+    //根据id查询用户
+    //User user = userMapper.selectByPrimaryKey(111l);
+    //select * from user where uidpk=111
+    //System.out.println();
+    //根据用户名和密码查询
 //    String name="admin";
-//    String password="admin";
-////    User user=new User();
-////    user.setName(name);
-////    user.setPassword(password);
+////    String password="admin";
+//////    User user=new User();
+//////    user.setName(name);
+//////    user.setPassword(password);
 //    UserExample example = new UserExample();//空模板
 //    example.createCriteria().andNameEqualTo(name).andPasswordEqualTo(password);//name=admin and password=admin
 //    List<User> users = userMapper.selectByExample(example);//查询所有
@@ -67,24 +67,24 @@ class HelloworldApplicationTests {
 //    int i = userMapper.insert(user);
 ////更新
 //    userMapper.updateByPrimaryKey(user);
-//
-//
-////    UserExample example1=new UserExample();
-////    UserExample.Criteria criteria= example1.createCriteria();
-////    criteria.andNameEqualTo(name).andPasswordEqualTo(password);
-////    criteria.andUidPkBetween(1l,5l);  三个条件
-//
-//}
-//
 
-@Test
-    void test2(){
-    //根据用户名查询用户
-    String name="111";
-    String password="111";
-    User user=new User();
-    user.setName(name);
-    user.setPassword(password);
+
+//    UserExample example1=new UserExample();
+//    UserExample.Criteria criteria= example1.createCriteria();
+//    criteria.andNameEqualTo(name).andPasswordEqualTo(password);
+//    criteria.andUidPkBetween(1l,5l);  三个条件
+
+//}
+
+
+//@Test
+//    void test2(){
+//    //根据用户名查询用户
+//    String name="111";
+//    String password="111";
+//    User user=new User();
+//    user.setName(name);
+//    user.setPassword(password);
 //    UserExample example=new UserExample();
 //    example.createCriteria().andNameEqualTo(name);
 //    List<User> users = userMapper.selectByExample(example);
@@ -94,6 +94,6 @@ class HelloworldApplicationTests {
 
 
 
-}
+//}
 
-}
+//}
