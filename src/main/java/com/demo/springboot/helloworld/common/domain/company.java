@@ -1,6 +1,6 @@
 package com.demo.springboot.helloworld.common.domain;
 
-public class company {
+public class Company {
     private Long id;
 
     private String name;
@@ -19,5 +19,13 @@ public class company {
 
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "Company{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

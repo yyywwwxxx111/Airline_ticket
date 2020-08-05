@@ -82,11 +82,11 @@ class HelloworldApplicationTests {
 //
 
 @Test
-    void test2(){
+    void test2() {
     //根据用户名查询用户
-    String name="111";
-    String password="111";
-    User user=new User();
+    String name = "111";
+    String password = "111";
+    User user = new User();
     user.setName(name);
     user.setPassword(password);
 //    UserExample example=new UserExample();
@@ -95,6 +95,7 @@ class HelloworldApplicationTests {
 //    System.out.println(users);
 //    List<User> users=userMapper.selectByName(name,password);
 //    List<User> user1= userMapper.selectByAll(1,user);
+    }
 
 
     @Test

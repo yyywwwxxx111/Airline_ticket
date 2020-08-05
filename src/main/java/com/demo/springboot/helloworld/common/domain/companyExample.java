@@ -3,14 +3,14 @@ package com.demo.springboot.helloworld.common.domain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class companyExample {
+public class CompanyExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public companyExample() {
+    public CompanyExample() {
         oredCriteria = new ArrayList<>();
     }
 
