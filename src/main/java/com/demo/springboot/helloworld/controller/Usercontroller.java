@@ -1,6 +1,7 @@
 package com.demo.springboot.helloworld.controller;
 
 import com.demo.springboot.helloworld.common.domain.User;
+import com.demo.springboot.helloworld.common.utils.Result;
 import com.demo.springboot.helloworld.service.UserService;
 import com.demo.springboot.helloworld.service.UserServiceimpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,7 +42,7 @@ public class Usercontroller {
 
 
     @Autowired
-     public UserService userService;
+    UserService userService;
     @RequestMapping("/login")
    //@ResponseBody
     public String login(ModelMap model , String email, String password) {
@@ -67,27 +68,76 @@ public class Usercontroller {
 
     @RequestMapping("/register")
     public String register(ModelMap model,String phone,String email,String password,String password2,@RequestParam(defaultValue = "张三") String name
-    ,@RequestParam(defaultValue = "男") String gender ){
-        User user=new User();
+    ,@RequestParam(defaultValue = "男") String gender,@RequestParam(defaultValue = "0") int is_login ) {
+        User user = new User();
         user.setPhone(phone);
         user.setEmail(email);
         user.setPassword(password);
         user.setPassword2(password2);
         user.setName(name);
         user.setGender(gender);
+        user.setIsLogin(is_login);
 
-        if (userService.register(user)){
-            System.out.println("ok!");
-            return "login_success";
-        }else {
-            System.out.println("no!");
-            String msg="注册失败";//回显到视图层
-            //model.addAttribute("err_msg",msg);//回显
-            model.put("err_msg",msg);
-            return "register";
+
+        switch (userService.register(user)) {
+            case 1: {
+                String msg = "邮箱已被注册";//回显到视图层
+                model.put("err_msg", msg);//回显
+                return "register";
+
+            }
+            case 2: {
+                String msg = "手机号已被注册";//回显到视图层
+                model.put("err_msg", msg);//回显
+                return "register";
+            }
+            case 3: {
+                String msg = "两次密码不正确";//回显到视图层
+                model.put("err_msg", msg);//回显
+                return "register";
+            }
+            case 4: {
+                System.out.println("ok!");
+
+            }
 
         }
 
+        return "profile";
+    }
+
+    @RequestMapping("/profile")
+    public String profile(ModelMap model){
+        User user=new User();
+        User users=new User();
+        users=userService.find(user);
+        model.put("name",users.getName());
+        model.put("exp",users.getExp());
+        model.put("school",users.getSchool());
+        //System.out.println();
+        return "profile";
+
+    }
+
+
+    @RequestMapping(value = "/getuser")
+    @ResponseBody
+    public Object usgmngg(@RequestParam(defaultValue = "1") int pageNo,
+                          @RequestParam(defaultValue = "10") int pageSize){
+
+
+
+        return Result.success(userService.findusers(pageNo,pageSize),"分页 查询user 对象");
+
+    }
+
+    @RequestMapping("/outlogin")
+    public String relogin(){
+        User user=new User();
+        User users=new User();
+        users=userService.find(user);
+        userService.outlogin(users);
+        return "login";
     }
 }
 

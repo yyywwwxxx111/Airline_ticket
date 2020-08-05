@@ -96,7 +96,6 @@ class HelloworldApplicationTests {
 //    List<User> users=userMapper.selectByName(name,password);
 //    List<User> user1= userMapper.selectByAll(1,user);
 
-}
 
     @Test
     void test3(){

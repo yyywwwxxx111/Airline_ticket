@@ -1,6 +1,10 @@
 package com.demo.springboot.helloworld.common.domain;
 
-public class User {
+import com.demo.springboot.helloworld.common.domain.extend.UserExtend;
+import org.springframework.stereotype.Repository;
+
+
+public class User extends UserExtend {
     private Long uidPk;
 
     private String name;
@@ -14,6 +18,14 @@ public class User {
     private String phone;
 
     private String password2;
+
+    private Integer isLogin;
+
+    private String major;
+
+    private String exp;
+
+    private String school;
 
     public Long getUidPk() {
         return uidPk;
@@ -69,5 +81,37 @@ public class User {
 
     public void setPassword2(String password2) {
         this.password2 = password2 == null ? null : password2.trim();
+    }
+
+    public Integer getIsLogin() {
+        return isLogin;
+    }
+
+    public void setIsLogin(Integer isLogin) {
+        this.isLogin = isLogin;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major == null ? null : major.trim();
+    }
+
+    public String getExp() {
+        return exp;
+    }
+
+    public void setExp(String exp) {
+        this.exp = exp == null ? null : exp.trim();
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public void setSchool(String school) {
+        this.school = school == null ? null : school.trim();
     }
 }
