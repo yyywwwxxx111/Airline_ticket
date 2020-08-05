@@ -354,7 +354,7 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li class="active"><a href="index.html"><i class="fa  fa-internet-explorer"></i>搜索功能</a></li>
+                        <li class="active"><a href="/index"><i class="fa  fa-internet-explorer"></i>搜索功能</a></li>
                         <li calss="active"><a href="airline/map.html"><i class="fa fa-plane"></i>世界地图</a></li>
                         <!--解决点击之后tag未亮问题-->
                     </ul>
@@ -368,8 +368,8 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="tour/pasttour.html"><i class="fa fa-circle-o"></i>待出发行程</a></li>
-                        <li><a href="tour/pasttour.html"><i class="fa fa-circle-o"></i>历史订单</a></li>
+                        <li><a href="/tour/tour.html"><i class="fa fa-circle-o"></i>待出发行程</a></li>
+                        <li><a href="/tour/tour.html"><i class="fa fa-circle-o"></i>历史订单</a></li>
                     </ul>
                 </li>
                 <li class="active">
@@ -393,9 +393,9 @@
 
                 <!----------------------分隔------------------------------->
                 <li class="header">其他功能</li>
-                <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>帮助中心</span></a></li>
+                <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>个人中心</span></a></li>
                 <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>客服中心</span></a></li>
-                <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>退出登陆</span></a></li>
+                <li><a href="/outlogin"><i class="fa fa-circle-o text-red"></i> <span>退出登陆</span></a></li>
             </ul>
         </section>
         <!-- /.sidebar -->
@@ -432,15 +432,13 @@
 
                             <ul class="list-group list-group-unbordered">
                                 <li class="list-group-item">
-                                    <b>未出行行程</b> <a class="pull-right">5个</a>
+
                                 </li>
-                                <li class="list-group-item">
-                                    <b>历史行程</b> <a class="pull-right">3个</a>
-                                </li>
+
 
                             </ul>
 
-                            <a href="tour/pasttour.html" class="btn btn-primary btn-block"><b>查看订单</b></a>
+                            <a href="/tour/tour.html" class="btn btn-primary btn-block"><b>查看订单</b></a>
                         </div>
                         <!-- /.box-body -->
                     </form>
@@ -491,218 +489,70 @@
                 <div class="col-md-9">
                     <div class="nav-tabs-custom">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#timeline" data-toggle="tab">个人行程</a></li>
-                            <li><a href="#settings" data-toggle="tab">我的信息</a></li>
+
+                            <li class="active"><a href="#settings" data-toggle="tab">我的信息</a></li>
                         </ul>
                         <div class="tab-content">
                             <!-- /.tab-pane -->
-                            <div class="active tab-pane" id="timeline">
-                                <!-- The timeline -->
-                                <ul class="timeline timeline-inverse">
-                                    <!-- timeline time label -->
-                                    <li class="time-label">
-                                            <span class="bg-green">
-                                                2020年8月20日
-                                            </span>
-                                    </li>
-                                    <!-- /.timeline-label -->
-                                    <!-- timeline item -->
-                                    <li>
-                                        <i class="fa fa-clock-o bg-blue"></i>
 
-                                        <div class="timeline-item" style="background-color: whitesmoke">
-                                            <span class="time"><i class="fa fa-clock-o"></i></span>
-
-                                            <h3 class="timeline-header">您的航班 </h3>
-
-                                            <div class="timeline-body row" style="display: flex">
-                                                <div class="col-md-4">
-                                                    <h4><b>深圳航空</b></h4>
-                                                </div>
-
-                                                <div class="col-md-8" style="display: flex">
-                                                <span><h4>20:08</h4>&nbsp;&nbsp;北京</span>
-                                                <span class="line"><h5>---------------------></h5></span>
-                                                    <span><h4>20:08</h4>&nbsp;&nbsp;广州</span>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <h4><b>¥800</b></h4>
-                                                </div>
-
-                                            </div>
-                                            <div class="timeline-footer">
-                                                <a class="btn btn-primary btn-xs" href="tour/pasttour.html">查看详情</a>
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="time-label">
-                                            <span class="bg-green">
-                                                2020年8月25日
-                                            </span>
-                                    </li>
-                                    <!-- END timeline item -->
-                                    <!-- timeline item -->
-                                    <li>
-                                        <i class="fa fa-clock-o bg-blue"></i>
-
-                                        <div class="timeline-item" style="background-color: whitesmoke">
-                                            <span class="time"><i class="fa fa-clock-o"></i></span>
-
-                                            <h3 class="timeline-header">您的航班 </h3>
-
-                                            <div class="timeline-body row" style="display: flex">
-                                                <div class="col-md-4">
-                                                    <h4><b>深圳航空</b></h4>
-                                                </div>
-
-                                                <div class="col-md-8" style="display: flex">
-                                                    <span><h4>20:08</h4>&nbsp;&nbsp;北京</span>
-                                                    <span class="line"><h5>---------------------></h5></span>
-                                                    <span><h4>20:08</h4>&nbsp;&nbsp;广州</span>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <h4><b>¥800</b></h4>
-                                                </div>
-
-                                            </div>
-                                            <div class="timeline-footer">
-                                                <a class="btn btn-primary btn-xs" href="tour/pasttour.html">查看详情</a>
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- END timeline item -->
-                                    <!-- timeline item -->
-                                    <li class="time-label">
-                                            <span class="bg-green">
-                                                2020年8月25日
-                                            </span>
-                                    </li>
-                                    <!-- END timeline item -->
-                                    <!-- timeline item -->
-                                    <li>
-                                        <i class="fa fa-clock-o bg-blue"></i>
-
-                                        <div class="timeline-item" style="background-color: whitesmoke">
-                                            <span class="time"><i class="fa fa-clock-o"></i></span>
-
-                                            <h3 class="timeline-header">您的航班 </h3>
-
-                                            <div class="timeline-body row" style="display: flex">
-                                                <div class="col-md-4">
-                                                    <h4><b>深圳航空</b></h4>
-                                                </div>
-
-                                                <div class="col-md-8" style="display: flex">
-                                                    <span><h4>20:08</h4>&nbsp;&nbsp;北京</span>
-                                                    <span class="line"><h5>---------------------></h5></span>
-                                                    <span><h4>20:08</h4>&nbsp;&nbsp;广州</span>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <h4><b>¥800</b></h4>
-                                                </div>
-
-                                            </div>
-                                            <div class="timeline-footer">
-                                                <a class="btn btn-primary btn-xs" href="tour/pasttour.html">查看详情</a>
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- END timeline item -->
-                                    <!-- timeline time label -->
-                                    <li class="time-label">
-                        <span class="bg-red">
-                          2020年7月4日
-                        </span>
-                                    </li>
-                                    <!-- /.timeline-label -->
-                                    <!-- timeline item -->
-                                    <li>
-                                        <i class="fa fa-clock-o bg-blue"></i>
-
-                                        <div class="timeline-item" style="background-color: whitesmoke">
-                                            <span class="time"><i class="fa fa-clock-o"></i></span>
-
-                                            <h3 class="timeline-header">您的航班 </h3>
-
-                                            <div class="timeline-body row" style="display: flex">
-                                                <div class="col-md-4">
-                                                    <h4><b>深圳航空</b></h4>
-                                                </div>
-
-                                                <div class="col-md-8" style="display: flex">
-                                                    <span><h4>20:08</h4>&nbsp;&nbsp;北京</span>
-                                                    <span class="line"><h5>---------------------></h5></span>
-                                                    <span><h4>20:08</h4>&nbsp;&nbsp;广州</span>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <h4><b>¥800</b></h4>
-                                                </div>
-
-                                            </div>
-                                            <div class="timeline-footer">
-                                                <a class="btn btn-primary btn-xs" href="tour/pasttour.html">查看详情</a>
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- END timeline item -->
-
-                                </ul>
-                            </div>
                             <!-- /.tab-pane -->
 
-                            <div class="tab-pane" id="settings">
-                                <form class="form-horizontal">
+                            <div class="active tab-pane" id="settings" >
+                                <form class="form-horizontal" action="/revise" method="get">
                                     <div class="form-group">
-                                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+                                        <label  class="col-sm-2 control-label">邮箱</label>
 
                                         <div class="col-sm-10">
-                                            <input type="email" class="form-control" id="inputname1" placeholder="Name">
+                                            <input type="email" class="form-control" name="email" placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                        <label  class="col-sm-2 control-label">姓名</label>
 
                                         <div class="col-sm-10">
-                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                            <input type="email" class="form-control" name="name" placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+                                        <label  class="col-sm-2 control-label">手机号码</label>
 
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                            <input type="text" class="form-control" name="phone" placeholder="Phone">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputExperience" class="col-sm-2 control-label">Experience</label>
+                                        <label  class="col-sm-2 control-label">个性签名</label>
 
                                         <div class="col-sm-10">
-                                            <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+                                            <textarea class="form-control" name="exp" placeholder="Experience"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="inputSkills" class="col-sm-2 control-label">Skills</label>
+                                        <label  class="col-sm-2 control-label">学校</label>
 
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                                            <input type="text" class="form-control" name="school" placeholder="School">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label  class="col-sm-2 control-label">专业</label>
+
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="major" placeholder="Major">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
                                             <div class="checkbox">
                                                 <label>
-                                                    <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                                                    <input type="checkbox"> 我同意<a href="#">修改信息的条例</a>
                                                 </label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
-                                            <button type="submit" class="btn btn-danger">Submit</button>
+                                            <button type="submit" class="btn btn-danger">提交</button>
                                         </div>
                                     </div>
                                 </form>

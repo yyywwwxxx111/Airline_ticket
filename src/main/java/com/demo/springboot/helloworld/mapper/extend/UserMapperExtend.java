@@ -21,4 +21,6 @@ public interface UserMapperExtend {
     void setByIsLogin(User user);
 
     void outlogin(User user);
+
+    void insertByLogin(User user);
 }

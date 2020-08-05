@@ -4,13 +4,12 @@ import com.demo.springboot.helloworld.common.domain.User;
 import com.demo.springboot.helloworld.common.utils.Result;
 import com.demo.springboot.helloworld.service.UserService;
 import com.demo.springboot.helloworld.service.UserServiceimpl;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -46,25 +45,34 @@ public class Usercontroller {
     @RequestMapping("/login")
    //@ResponseBody
     public String login(ModelMap model , String email, String password) {
-        User user=new User();
-        user.setEmail(email);
-        user.setPassword(password);
-        if(userService.match(user)){
 
-            System.out.println("ok!");
-            return"login_success";
-        }
-        else{
-            System.out.println("no!");
-            String msg="用户名或密码错误";//回显到视图层
+        User user = new User();
+        User users = new User();
+        if (userService.find(user) ==null) {//如果未登陆
+            users.setEmail(email);
+            users.setPassword(password);
+            if (userService.match(users)) {
+
+                System.out.println("ok!");
+                return "login_success";
+            } else {
+                System.out.println("no!");
+                String msg = "用户名或密码错误";//回显到视图层
+                //model.addAttribute("err_msg",msg);//回显
+                model.put("err_msg", msg);
+                return "login";
+            }
+
+
+        }else
+        {
+            String msg = "请先退出登陆";//回显到视图层
             //model.addAttribute("err_msg",msg);//回显
-            model.put("err_msg",msg);
+            model.put("err_msg", msg);
             return "login";
 
         }
-
     }
-
 
     @RequestMapping("/register")
     public String register(ModelMap model,String phone,String email,String password,String password2,@RequestParam(defaultValue = "张三") String name
@@ -106,18 +114,20 @@ public class Usercontroller {
         return "profile";
     }
 
-    @RequestMapping("/profile")
-    public String profile(ModelMap model){
-        User user=new User();
-        User users=new User();
-        users=userService.find(user);
-        model.put("name",users.getName());
-        model.put("exp",users.getExp());
-        model.put("school",users.getSchool());
+    @RequestMapping(value="/page/profile")
+    public String profile(ModelMap model) {
+        User user = new User();
+        User users = new User();
+        users = userService.find(user);
+        model.put("name", users.getName());
+        model.put("exp", users.getExp());
+        model.put("school", users.getSchool());
         //System.out.println();
+        /////////查询机票信息//////////
         return "profile";
 
     }
+
 
 
     @RequestMapping(value = "/getuser")
@@ -131,6 +141,9 @@ public class Usercontroller {
 
     }
 
+
+
+
     @RequestMapping("/outlogin")
     public String relogin(){
         User user=new User();
@@ -139,6 +152,37 @@ public class Usercontroller {
         userService.outlogin(users);
         return "login";
     }
+
+    @RequestMapping("/revise")
+    public String revisee(@RequestParam(value="name") String name,
+                          @RequestParam(value="email") String email,
+                          @RequestParam(value="major")String major,
+                          @RequestParam(value="phone")String phone,
+                          @RequestParam(value="school")String school,
+                          @RequestParam(value="exp")String exp ){
+
+        User user=new User();
+//        User users=new User();
+//        users=userService.find(users);
+        user.setName(name);
+        user.setPhone(phone);
+        user.setEmail(email);
+        user.setExp(exp);
+        user.setMajor(major);
+        user.setSchool(school);
+//        user.setPassword(users.getPassword());
+//        user.setGender(users.getGender());
+//        user.setPassword2(users.getPassword2());
+//        user.setIsLogin(users.getIsLogin());
+
+
+        userService.insert(user);
+        return "index";
+    }
+
+
+
+
 }
 
 

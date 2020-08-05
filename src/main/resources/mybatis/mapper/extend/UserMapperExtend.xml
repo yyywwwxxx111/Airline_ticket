@@ -22,4 +22,8 @@
     <update id="outlogin">
         update  USER set is_login = 0 where email = #{email}
     </update>
+    <insert id="insertByLogin">
+        update USER set name=#{name},phone=#{phone},email=#{email},exp=#{exp},school=#{school},major=#{major}
+         where is_login=1
+    </insert>
 </mapper>

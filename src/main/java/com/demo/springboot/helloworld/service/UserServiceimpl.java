@@ -85,4 +85,10 @@ public class UserServiceimpl implements UserService {
     public void outlogin(User user) {
         userMapper.outlogin(user);
     }
+
+    @Override
+    public void insert(User user) {
+        userMapper.insertByLogin(user);
+
+    }
 }

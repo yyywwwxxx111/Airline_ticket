@@ -17,7 +17,7 @@
 
     <script src="/layer/layer.js"
             th:src="@{/layer/layer.js}"></script>
-    <title>用户购票详情</title>
+    <title>购票详情</title>
 </head>
 <body>
 
@@ -57,25 +57,11 @@
 
     $(function () {
 
-        var uid = getUrlQueryString('uid');
-        alert(uid);
 
-
-        function getUrlQueryString(names, urls) {
-            urls = urls || window.location.href;
-            urls && urls.indexOf("?") > -1 ? urls = urls
-                .substring(urls.indexOf("?") + 1) : "";
-            var reg = new RegExp("(^|&)" + names + "=([^&]*)(&|$)", "i");
-            var r = urls ? urls.match(reg) : window.location.search.substr(1)
-                .match(reg);
-            if (r != null && r[2] != "")
-                return unescape(r[2]);
-            return null;
-        };
 
         $('#table1').bootstrapTable('destroy').bootstrapTable({
             method: 'get',
-            url: "/usrmng",
+            url: "/tour",
             striped: true,
             dataField: "list",
             totalField: "total",
@@ -88,7 +74,6 @@
                 return {
                     pageSize: params.limit,
                     pageNo: params.offset / params.limit + 1,
-                    uid:uid
                 }
             },
             sidePagination: 'server',

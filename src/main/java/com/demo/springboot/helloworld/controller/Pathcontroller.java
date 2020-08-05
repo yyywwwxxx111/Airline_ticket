@@ -21,4 +21,21 @@ public class Pathcontroller {
         return "index";
     }
 
+    @RequestMapping(value = "/profile")
+    public String toPageee()
+    {
+        return "profile";
+    }
+
+    @RequestMapping(value = "/page/tour/{path}")
+    public String toPageeee(@PathVariable("path") String p)
+    {
+        return p;
+    }
+
+
+
+
+
+
 }

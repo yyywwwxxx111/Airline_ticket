@@ -19,4 +19,6 @@ public interface UserService {
      PageInfo<User> findusers(int pageNo, int pageSize);
 
      void outlogin(User user);
+
+     void insert(User user);
 }
