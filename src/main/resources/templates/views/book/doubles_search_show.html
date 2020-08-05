@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>查询结果</title>
+</head>
+<body>
+<table width="100%" border="1" cellspacing="5">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>起飞城市</th>
+        <th>到达城市</th>
+        <th>航班号</th>
+        <th>票价</th>
+        <th>出发时间</th>
+        <th>出发机场</th>
+        <th>到达时间</th>
+        <th>到达机场</th>
+        <th>航空公司</th>
+        <th>机型</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="s:${flights}">
+        <td th:text="${s.id}"></td>
+        <td th:text="${s.departCity}"></td>
+        <td th:text="${s.destination}"></td>
+        <td th:text="${s.flightNumber}"></td>
+        <td th:text="${s.price}"></td>
+        <td th:text="${s.departTime}"></td>
+        <td th:text="${s.departAirport}"></td>
+        <td th:text="${s.arrivalTime}"></td>
+        <td th:text="${s.arrivalAirport}"></td>
+        <td th:text="${s.company}"></td>
+        <td th:text="${s.plane}"></td>
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

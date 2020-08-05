@@ -170,6 +170,38 @@
         });
 
 
+        $(".remove-batch").click(function () {
+            var rows =  $('#table1').bootstrapTable('getSelections');
+            var ids= $.map(rows,function (row) {
+                return row.id;
+            });
 
+            if(ids.length>0){
+                layer.confirm("确认删除", {icon: 3, title:'删除操作'}, function(index){
+                    //do something
+                    $.ajax({
+                        type: "delete",
+                        url: "/deleteBooks",
+                        contentType:"application/json",
+                        data:JSON.stringify(ids),
+                        success: function(msg){
+                            if(msg["success"]){
+                                $('#table1').bootstrapTable('refresh');
+                                layer.msg("批量操作成功",{time:700});
+                                /*   $('#table1').bootstrapTable('remove', {
+                                     field: 'id',
+                                     values: ids
+                                   });*/
+
+                            }
+                        }
+                    });
+                    layer.close(index);
+                });
+            }else {
+                layer.msg("未选中行",{time:700});
+            }
+
+        });
     })
 </script>
