@@ -8,10 +8,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -25,9 +22,14 @@ public class Companycontroller {
     @Autowired
     CompanyService companyService;
 
+    @GetMapping("/listcompanies")
+    public String toCompanyPage(){
+        return "/company";
+    }
+
     @ResponseBody
     //@RequestMapping("/company")
-    @GetMapping("/company")
+    @GetMapping("/getcompanies")
 //    public PageInfo<Company> getList(){
 //        return companyService.getList();
 //    }
@@ -35,9 +37,18 @@ public class Companycontroller {
         return Result.success(companyService.getList(pageNo, pageSize), "分页 查询company对象");
     }
 
-    @GetMapping("/listcompanies")
-    public String toCompanyPage(){
-        return "/company";
+    @DeleteMapping("/deleteCompany")
+    @ResponseBody
+    public Object deleteCompany(@RequestBody Company company){
+        companyService.deleteCompanyById(company);
+        return Result.success(company.getId());
+    }
+
+    @DeleteMapping("/deleteCompanies")
+    @ResponseBody
+    public Object deleteCompanies(@RequestBody List<Integer> ids){
+        companyService.deleteCompaniesByIds(ids);
+        return Result.success();
     }
 
 }

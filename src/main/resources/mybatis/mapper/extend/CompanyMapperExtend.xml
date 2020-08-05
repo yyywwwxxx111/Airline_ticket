@@ -7,4 +7,10 @@
         <include refid="Base_Column_List"/>
         from company
     </select>
+    <delete id="deleteCompaniesByIds">
+        delete from company where id in
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </delete>
 </mapper>
