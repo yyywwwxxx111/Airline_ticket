@@ -38,6 +38,7 @@
         <table tableName="User" domainObjectName="User"/>
         <table tableName="Server" domainObjectName="Server"/>
         <table tableName="flight_ticket" domainObjectName="Flight"/>
+        <table tableName="company" domainObjectName="Company"/>
 
     </context>
 </generatorConfiguration>

@@ -170,27 +170,4 @@ public class Flight {
     public void setIsdeleted(Integer isdeleted) {
         this.isdeleted = isdeleted;
     }
-
-    @Override
-    public String toString() {
-        return "Flight{" +
-                "id=" + id +
-                ", dateDay='" + dateDay + '\'' +
-                ", company='" + company + '\'' +
-                ", plane='" + plane + '\'' +
-                ", departCity='" + departCity + '\'' +
-                ", destination='" + destination + '\'' +
-                ", flightNumber='" + flightNumber + '\'' +
-                ", departTime='" + departTime + '\'' +
-                ", departAirport='" + departAirport + '\'' +
-                ", departTerminal='" + departTerminal + '\'' +
-                ", duration='" + duration + '\'' +
-                ", arrivalTime='" + arrivalTime + '\'' +
-                ", arrivalAirport='" + arrivalAirport + '\'' +
-                ", arrivalTerminal='" + arrivalTerminal + '\'' +
-                ", price='" + price + '\'' +
-                ", annotation='" + annotation + '\'' +
-                ", isdeleted=" + isdeleted +
-                '}';
-    }
 }

@@ -1,7 +1,9 @@
 package com.demo.springboot.helloworld;
 
+import com.demo.springboot.helloworld.common.domain.Company;
 import com.demo.springboot.helloworld.common.domain.User;
 import com.demo.springboot.helloworld.common.domain.UserExample;
+import com.demo.springboot.helloworld.mapper.CompanyMapper;
 import com.demo.springboot.helloworld.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,6 +42,8 @@ class HelloworldApplicationTests {
 //    }
     @Autowired
     UserMapper userMapper;
+    @Autowired
+    CompanyMapper companyMapper;
 
 //@Test
 //    void test(){
@@ -92,8 +96,12 @@ class HelloworldApplicationTests {
 //    List<User> users=userMapper.selectByName(name,password);
 //    List<User> user1= userMapper.selectByAll(1,user);
 
-
-
 }
+
+    @Test
+    void test3(){
+        List<Company> companies = companyMapper.myList();
+        System.out.println(companies);
+    }
 
 }
