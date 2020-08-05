@@ -4,9 +4,7 @@ import com.demo.springboot.helloworld.common.domain.Flight;
 import com.demo.springboot.helloworld.common.domain.FlightExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
 public interface FlightMapper {
     long countByExample(FlightExample example);
 

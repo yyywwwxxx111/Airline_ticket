@@ -11,9 +11,9 @@
         </commentGenerator>
         <!--覆盖生成XML文件-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/Project?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=false"
+                        connectionURL="jdbc:mysql://192.168.101.129:3306/project?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull"
                         userId="root"
-                        password="yuwenxiang">
+                        password="suncaper123">
         </jdbcConnection>
 
         <javaTypeResolver>
@@ -37,6 +37,8 @@
 
         <table tableName="User" domainObjectName="User"/>
         <table tableName="Server" domainObjectName="Server"/>
+        <table tableName="flight_ticket" domainObjectName="Flight"/>
+        <table tableName="company" domainObjectName="Company"/>
 
     </context>
 </generatorConfiguration>
