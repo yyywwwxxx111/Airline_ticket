@@ -54,7 +54,17 @@
 </html>
 
 <script>
+
     $(function () {
+        // // var tem = $(this).parents("class").find(".ID").val();
+        // $('btn_update').click( function(){
+        //     //const tem = $(this).parents("class").find("ID").val();
+        //     var uid=row.uidPk;
+        //     window.location.href = "ticket.html?index="+uid;
+        // });
+
+
+
 
 
 
@@ -72,7 +82,8 @@
             queryParams: function (params) {
                 return {
                     pageSize: params.limit,
-                    pageNo: params.offset / params.limit + 1
+                    pageNo: params.offset / params.limit + 1,
+
                 }
             },
             sidePagination: 'server',
@@ -86,9 +97,10 @@
             paginationLoop: false,
             columns: [
                 {
+                    class:'ID',
                     title: 'ID',
-                    field: 'id',
-                    visible: false,
+                    field: 'uidPk',
+                    visible: true,
                     width: 160
                 },
                 {
@@ -133,7 +145,24 @@
                     width: 15,
                     align: 'center'
                 },
+                {
+                    title: '操作',
+                    width: 80,
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        return [
+                            '<a href="ticket.html?uid='+row.uidPk+'" >',
 
+                            ' <button  type="button" class="btn btn-primary btn-xs btn_update" >',
+                            '查看购票详情',
+                            '</button>',
+
+                            '</a>'
+                        ].join('')
+                    },
+                    //events:window.location.href
+
+                }
             ],
             locale: 'zh-CN',
             responseHandler: function (data) {
@@ -141,6 +170,10 @@
             }
 
         });
+
+
+
+
 
     })
 </script>

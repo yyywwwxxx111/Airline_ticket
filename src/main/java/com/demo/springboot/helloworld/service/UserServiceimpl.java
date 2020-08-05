@@ -23,6 +23,7 @@ public class UserServiceimpl implements UserService {
 //        List<User> user=userMapper.selectByExample(example);
 //        return null;
 //    }
+
         @Autowired
         UserMapper userMapper;
 

@@ -1,6 +1,8 @@
 package com.demo.springboot.helloworld.common.domain;
 
 import com.demo.springboot.helloworld.common.domain.extend.UserExtend;
+import org.springframework.stereotype.Repository;
+
 
 public class User extends UserExtend {
     private Long uidPk;

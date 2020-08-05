@@ -42,7 +42,7 @@ public class Usercontroller {
 
 
     @Autowired
-     public UserService userService;
+    UserService userService;
     @RequestMapping("/login")
    //@ResponseBody
     public String login(ModelMap model , String email, String password) {
@@ -131,7 +131,7 @@ public class Usercontroller {
 
     }
 
-    @RequestMapping(value = "/outlogin")
+    @RequestMapping("/outlogin")
     public String relogin(){
         User user=new User();
         User users=new User();
