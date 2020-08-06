@@ -2,14 +2,11 @@ package com.demo.springboot.helloworld.service;
 
 import com.demo.springboot.helloworld.common.domain.User;
 import com.demo.springboot.helloworld.common.domain.UserExample;
-import com.demo.springboot.helloworld.mapper.ServerMapper;
 import com.demo.springboot.helloworld.mapper.UserMapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
 
 
 import java.util.List;

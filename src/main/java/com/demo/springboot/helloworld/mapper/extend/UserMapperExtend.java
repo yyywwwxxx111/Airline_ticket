@@ -1,8 +1,8 @@
 package com.demo.springboot.helloworld.mapper.extend;
 
 import com.demo.springboot.helloworld.common.domain.User;
-import com.demo.springboot.helloworld.common.domain.UserExample;
-import org.apache.ibatis.annotations.Param;
+
+
 
 import java.util.List;
 

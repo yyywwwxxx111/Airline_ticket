@@ -2,7 +2,10 @@ package com.demo.springboot.helloworld.service;
 
 import com.demo.springboot.helloworld.common.domain.Flight;
 import com.demo.springboot.helloworld.common.domain.FlightExample;
+import com.demo.springboot.helloworld.common.domain.flight_ticket;
+import com.demo.springboot.helloworld.common.domain.flight_ticketExample;
 import com.demo.springboot.helloworld.mapper.FlightMapper;
+import com.demo.springboot.helloworld.mapper.flight_ticketMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
@@ -12,26 +15,26 @@ import java.util.List;
 @Service
 public class SearchServiceIml implements SearchService {
     @Autowired
-    private FlightMapper flightMapper;
+    private flight_ticketMapper flight_ticketMapper;
 
     @Override
-    public List<Flight> search(String fromcity, String tocity, String date) {
+    public List<flight_ticket> search(String fromcity, String tocity, String date) {
         String[] dated = date.split("\\s+");
         dated[0] = dated[0].substring(0, 5) + "%";
         dated[1] = dated[1].substring(0, 5) + "%";
         System.out.println(dated[0]);
-        FlightExample flightExample = new FlightExample();
+        flight_ticketExample flightExample = new flight_ticketExample();
         flightExample.createCriteria().andDepartCityEqualTo(fromcity).andDestinationEqualTo(tocity).andDateDayLike(dated[0]);//.andPasswordEqualTo(admin.getPassword());
-        List<Flight> flights1 = flightMapper.selectByExample(flightExample);
+        List<flight_ticket> flights1 = flight_ticketMapper.selectByExample(flightExample);
 //        for(Flight i:flights1){
 //            model.addAttribute(i);
 //        }
 
-        FlightExample flightExample1 = new FlightExample();
+        flight_ticketExample flightExample1 = new flight_ticketExample();
         flightExample1.createCriteria().andDepartCityEqualTo(tocity).andDestinationEqualTo(fromcity).andDateDayLike(dated[1]);//.andPasswordEqualTo(admin.getPassword());
-        List<Flight> flights2 = flightMapper.selectByExample(flightExample1);
+        List<flight_ticket> flights2 = flight_ticketMapper.selectByExample(flightExample1);
 
-        for (Flight i : flights2) {
+        for (flight_ticket i : flights2) {
             flights1.add(i);
         }
 //        for(Flight i:flights2){

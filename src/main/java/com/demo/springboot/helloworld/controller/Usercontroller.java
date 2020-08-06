@@ -3,8 +3,6 @@ package com.demo.springboot.helloworld.controller;
 import com.demo.springboot.helloworld.common.domain.User;
 import com.demo.springboot.helloworld.common.utils.Result;
 import com.demo.springboot.helloworld.service.UserService;
-import com.demo.springboot.helloworld.service.UserServiceimpl;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

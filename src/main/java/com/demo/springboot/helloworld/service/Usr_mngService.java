@@ -1,6 +1,6 @@
 package com.demo.springboot.helloworld.service;
 
-import com.demo.springboot.helloworld.common.domain.User;
+
 import com.demo.springboot.helloworld.common.domain.flight_ticket;
 import com.github.pagehelper.PageInfo;
 import org.springframework.stereotype.Service;
