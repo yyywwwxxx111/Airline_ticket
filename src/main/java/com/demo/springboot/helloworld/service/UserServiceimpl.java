@@ -69,8 +69,7 @@ public class UserServiceimpl implements UserService {
     public User find(User user) {
 //        UserExample example=new UserExample();
 //        example.createCriteria().andIsLoginEqualTo(1);
-         user = userMapper.selectByIs_login();
-        return user;
+        return userMapper.selectByIs_login();
 
     }
 
