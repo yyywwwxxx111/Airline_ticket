@@ -2,6 +2,7 @@ package com.demo.springboot.helloworld.controller;
 
 
 import com.demo.springboot.helloworld.common.domain.Flight;
+import com.demo.springboot.helloworld.common.domain.flight_ticket;
 import com.demo.springboot.helloworld.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -39,11 +40,11 @@ public class SearchController {
 //        return "show";
 //    }
     @RequestMapping("/views/book/doubles_search_show")
-//    @ResponseBody
+    @ResponseBody
     public String getshow(Model model , @RequestParam("fromcity") String fromcity, @RequestParam("tocity") String tocity,
-                           @RequestParam("date") String date, Flight flight){
+                           @RequestParam("date") String date, flight_ticket flight){
 //        return Result.success(searchService.search(fromcity,tocity,date),"分页 查询ticket 对象");
-        List<Flight> flights = searchService.search(fromcity,tocity,date);
+        List<flight_ticket> flights = searchService.search(fromcity,tocity,date);
         model.addAttribute("flights", flights);
         return "views/book/doubles_search_show";
     }
