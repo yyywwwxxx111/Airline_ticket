@@ -9,4 +9,6 @@ import org.springframework.stereotype.Service;
 public interface Usr_mngService {
 
     PageInfo<flight_ticket> finduser(int pageNo, int pageSize,long uid);
+
+    Object findticket(int pageNo, int pageSize, flight_ticket flight);
 }

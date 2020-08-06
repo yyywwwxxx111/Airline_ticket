@@ -22,4 +22,12 @@ public class Usr_mngServiceimpl implements Usr_mngService {
         return new PageInfo<>(flight);
 
     }
+
+    @Override
+    public Object findticket(int pageNo, int pageSize, flight_ticket flight) {
+
+        PageHelper.startPage(pageNo,pageSize);
+        List<flight_ticket> flights= usr_flightMapper.selectBysearch(flight);
+        return new PageInfo<>(flights);
+    }
 }

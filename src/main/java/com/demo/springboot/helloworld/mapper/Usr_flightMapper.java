@@ -6,7 +6,9 @@ import java.util.List;
 
 import com.demo.springboot.helloworld.mapper.extend.Usr_flightMapperExtend;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface Usr_flightMapper extends Usr_flightMapperExtend {
     long countByExample(usr_flightExample example);
 

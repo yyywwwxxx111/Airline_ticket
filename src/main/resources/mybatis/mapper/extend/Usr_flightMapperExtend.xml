@@ -23,4 +23,8 @@
     <select id="selectByMatch" resultMap="resultMap">
         select * from flight_ticket f,usr_flight u where u.flight_id=f.id and u.uid=#{uid}
     </select>
+    <select id="selectBysearch" resultMap="resultMap">
+        select * from flight_ticket where date_Day like '%${dateDay}%' and depart_city=#{departCity}
+        and destination = #{destination}
+    </select>
 </mapper>
