@@ -5,7 +5,6 @@ import com.demo.springboot.helloworld.common.utils.Result;
 import com.demo.springboot.helloworld.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,21 +20,7 @@ public class Usercontroller {
     //把对象传递到页面视图层 Model Modelmap
 
 
-    //    public String login(String email,String password){
-//
-//        if(email.equals("admin@123") && password.equals("admin123")){
-//
-//
-//            System.out.println("ok!");
-//            return"login_success";
-//        }
-//        else{
-//            System.out.println("no!");
-//            return "login";
-//
-//        }
-//
-//    }
+
 
 
     @Autowired
@@ -51,10 +36,8 @@ public class Usercontroller {
             users.setPassword(password);
             if (userService.match(users)) {
 
-                System.out.println("ok!");
                 return "login_success";
             } else {
-                System.out.println("no!");
                 String msg = "用户名或密码错误";//回显到视图层
                 //model.addAttribute("err_msg",msg);//回显
                 model.put("err_msg", msg);
