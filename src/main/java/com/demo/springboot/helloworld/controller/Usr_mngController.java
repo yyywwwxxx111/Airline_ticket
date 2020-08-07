@@ -6,6 +6,7 @@ import com.demo.springboot.helloworld.service.UserService;
 import com.demo.springboot.helloworld.service.Usr_mngService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -49,5 +50,12 @@ public class Usr_mngController {
         return Result.success(usr_mngService.finduser(pageNo,pageSize,uid),"分页 查询user 对象");
 
 
+    }
+
+    @RequestMapping(value="/buyticket")
+    public String buy() {
+
+
+        return "search";
     }
 }

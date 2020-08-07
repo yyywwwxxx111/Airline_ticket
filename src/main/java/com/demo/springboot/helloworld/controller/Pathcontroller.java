@@ -33,6 +33,18 @@ public class Pathcontroller {
         return p;
     }
 
+    @RequestMapping(value = "/page/news")
+    public String toNews()
+    {
+        return "news";
+    }
+
+    @RequestMapping(value = "/page/attention")
+    public String toAtt()
+    {
+        return "attetion";
+    }
+
 
 
 

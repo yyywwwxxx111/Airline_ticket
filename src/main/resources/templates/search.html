@@ -77,7 +77,17 @@
             console.log("具体参数数组："+paValue);
             //alert(paValue[2]);
 
+        window.operateEvents  = {
+            // 更改操作的方法
+            'click .btn_update': function (e, value, row, index) {
+                var id = row.id;
+                layer.confirm("确认购买: "+row.flightNumber+ "  该次航班吗?", {icon: 3, title:'购买操作'}, function(index){
+                    //do something
 
+                    layer.close(index);
+                });
+            },
+        }
 
         $('#table1').bootstrapTable('destroy').bootstrapTable({
             method: 'get',
@@ -205,6 +215,19 @@
                     width: 25,
                     align: 'center'
                 },
+                {
+                    title: '操作',
+                    width: 10,
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        return [
+                            ' <button  type="button" class="btn btn-primary btn-xs btn_update">',
+                            '购买',
+                            '</button>',
+                        ].join('')
+                    },
+                    events: window.operateEvents
+                }
 
             ],
             locale: 'zh-CN',
