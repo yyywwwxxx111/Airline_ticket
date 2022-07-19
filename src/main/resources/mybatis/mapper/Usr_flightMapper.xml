@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.demo.springboot.helloworld.mapper.Usr_flightMapper">
-  <resultMap id="BaseResultMap" type="com.demo.springboot.helloworld.common.domain.usr_flight">
+<mapper namespace="com.mapper.Usr_flightMapper">
+  <resultMap id="BaseResultMap" type="com.common.domain.usr_flight">
     <id column="uid" jdbcType="BIGINT" property="uid" />
     <result column="flight_id" jdbcType="BIGINT" property="flightId" />
   </resultMap>
@@ -66,7 +66,7 @@
   <sql id="Base_Column_List">
     uid, flight_id
   </sql>
-  <select id="selectByExample" parameterType="com.demo.springboot.helloworld.common.domain.usr_flightExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.common.domain.usr_flightExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -90,17 +90,17 @@
     delete from usr_flight
     where uid = #{uid,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.demo.springboot.helloworld.common.domain.usr_flightExample">
+  <delete id="deleteByExample" parameterType="com.common.domain.usr_flightExample">
     delete from usr_flight
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.demo.springboot.helloworld.common.domain.usr_flight">
+  <insert id="insert" parameterType="com.common.domain.usr_flight">
     insert into usr_flight (uid, flight_id)
     values (#{uid,jdbcType=BIGINT}, #{flightId,jdbcType=BIGINT})
   </insert>
-  <insert id="insertSelective" parameterType="com.demo.springboot.helloworld.common.domain.usr_flight">
+  <insert id="insertSelective" parameterType="com.common.domain.usr_flight">
     insert into usr_flight
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="uid != null">
@@ -119,7 +119,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.demo.springboot.helloworld.common.domain.usr_flightExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.common.domain.usr_flightExample" resultType="java.lang.Long">
     select count(*) from usr_flight
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -147,7 +147,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.demo.springboot.helloworld.common.domain.usr_flight">
+  <update id="updateByPrimaryKeySelective" parameterType="com.common.domain.usr_flight">
     update usr_flight
     <set>
       <if test="flightId != null">
@@ -156,7 +156,7 @@
     </set>
     where uid = #{uid,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.demo.springboot.helloworld.common.domain.usr_flight">
+  <update id="updateByPrimaryKey" parameterType="com.common.domain.usr_flight">
     update usr_flight
     set flight_id = #{flightId,jdbcType=BIGINT}
     where uid = #{uid,jdbcType=BIGINT}

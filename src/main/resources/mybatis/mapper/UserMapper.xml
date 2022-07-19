@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.demo.springboot.helloworld.mapper.UserMapper">
-  <resultMap id="BaseResultMap" type="com.demo.springboot.helloworld.common.domain.User">
+<mapper namespace="com.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.common.domain.User">
     <id column="uid_pk" jdbcType="BIGINT" property="uidPk" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="password" jdbcType="VARCHAR" property="password" />
@@ -75,7 +75,7 @@
   <sql id="Base_Column_List">
     uid_pk, name, password, gender, email, phone, password2, is_login, major, exp, school
   </sql>
-  <select id="selectByExample" parameterType="com.demo.springboot.helloworld.common.domain.UserExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.common.domain.UserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -99,13 +99,13 @@
     delete from USER
     where uid_pk = #{uidPk,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.demo.springboot.helloworld.common.domain.UserExample">
+  <delete id="deleteByExample" parameterType="com.common.domain.UserExample">
     delete from USER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.demo.springboot.helloworld.common.domain.User">
+  <insert id="insert" parameterType="com.common.domain.User">
     insert into USER (uid_pk, name, password, 
       gender, email, phone, 
       password2, is_login, major, 
@@ -115,7 +115,7 @@
       #{password2,jdbcType=VARCHAR}, #{isLogin,jdbcType=INTEGER}, #{major,jdbcType=VARCHAR}, 
       #{exp,jdbcType=VARCHAR}, #{school,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.demo.springboot.helloworld.common.domain.User">
+  <insert id="insertSelective" parameterType="com.common.domain.User">
     insert into USER
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="uidPk != null">
@@ -188,7 +188,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.demo.springboot.helloworld.common.domain.UserExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.common.domain.UserExample" resultType="java.lang.Long">
     select count(*) from USER
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -252,7 +252,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.demo.springboot.helloworld.common.domain.User">
+  <update id="updateByPrimaryKeySelective" parameterType="com.common.domain.User">
     update USER
     <set>
       <if test="name != null">
@@ -288,7 +288,7 @@
     </set>
     where uid_pk = #{uidPk,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.demo.springboot.helloworld.common.domain.User">
+  <update id="updateByPrimaryKey" parameterType="com.common.domain.User">
     update USER
     set name = #{name,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
