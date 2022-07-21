@@ -1,7 +1,7 @@
 # Airline ticket 
 
 This is an airline ticket website, you can search and buy the ticket you like.
-Conducted the Ticket inquiry, Booking, order inquiry module of an Airline Ticket Search System.
+Conducted the Ticket inquiry, Booking, order inquiry module of an Airline Ticket platform.
 <p align="center">
 <a href="http://www.oracle.com/technetwork/java/javase/overview/index.html"><img src="https://img.shields.io/badge/language-java%208.0-orange.svg"></a>
 <a href="https://www.jetbrains.com/idea/"><img src="https://img.shields.io/badge/platform-jetbrains-66FF99.svg"></a>
